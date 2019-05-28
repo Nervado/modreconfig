@@ -1,0 +1,95 @@
+PN-514001 - C264 - 4|||
+1D_GE-514001D   -  17  -   p127|||
+Função no Relé a Ser Lida|Endereçamento Modbus||
+HSHD_01 - Comando Fch Disjuntor - GE-514001D|1025.4||
+HSLD_01 - Comando Abre Disjuntor - GE-514001D|1025.3||
+YSD_P27_01  - Proteção Func. 27 - GE-514001D|113.6||
+YSD_P51_01  - Proteção Func. 51 - GE-514001D|22.6||
+YSD_P67F_01  - Proteção Func. 67-F - GE-514001D|23.6||
+YSD_P67N_01  - Proteção Func. 67N - GE-514001D|24.6||
+YSD_P67R_01  - Proteção Func. 67-R - GE-514001D|21.6||
+YSD_P86_01  - Proteção Func. 86 - GE-514001D|17.3||
+YSD_RD_01  - DJ Ready - GE-514001D|17.1||
+YSD_TEST_01  - DJ Teste - GE-514001D|17.2||
+YSHLD_01  - Posição DJ - GE-514001D|16.0||
+D2_TF-514204B   -   18  -   p127|||
+Função no Relé a Ser Lida|Endereçamento Modbus||
+HSHD2_01 - Comando Fch Disjuntor - TF-514204B|1025.4||
+HSLD2_01 - Comando Abre Disjuntor - TF-514204B|1025.3||
+YSD2_CTER_01  - Chave Terra - TF-514204B|17.5||
+YSD2_P27_01  - Proteção Func. 27 - TF-514204B|113.5||
+YSD2_P67F_01  - Proteção Func. 67-F - TF-514204B|22.6||
+YSD2_P67NF_01  - Proteção Func. 67N-F - TF-514204B|25.6||
+YSD2_P67NT_01  - Proteção Func. 51 - TF-514204B|24.6||
+YSD2_P67T_01  - Proteção Func. 67-T - TF-514204B|21.6||
+YSD2_P86_01  - Proteção Func. 86 - TF-514204B|17.3||
+YSD2_RD_01  - DJ Ready - TF-514204B|17.1||
+YSD2_TEST_01  - DJ Teste - TF-514204B|17.2||
+YSHLD2_01  - Posição DJ - TF-514204B|16.0||
+TETD2_S_01  - Analógicas - Tensão Fase S - TF-514204B|138||
+ITA4_R_01 - Corrente Fase R -  TF-514204B|49||
+ITA4_S_01 - Corrente Fase S -  TF-514204B|51||
+ITA4_T_01 - Corrente Fase T -  TF-514204B|53||
+TJT1D2_PA_01  - Analógicas - Potencia Ativa - TF-514204B|159||
+TJT1D2_PR_01  - Analógicas - Potencia Reativa - TF-514204B|160||
+H1_TIE_H   -   19  -   p127|||
+Função no Relé a Ser Lida|Endereçamento Modbus||
+HSHH1_01 - Comando Fch Disjuntor -TIE TC-D2 H1|1025.4||
+HSLH1_01 - Comando Abre Disjuntor - TIE TC-D2 H1|1025.3||
+YSH1_P27_01  - Proteção Func. 27 - TIE TC-D2 H1|113.5||
+YSH1_P50_01  - Proteção Func. 50 - TIE TC-D2 H1|23.6||
+YSH1_P51_01  - Proteção Func. 51 - TIE TC-D2 H1|21.6||
+YSH1_P67_01  - Proteção Func. 67 - TIE TC-D2 H1|22.6||
+YSH1_P67N_01  - Proteção Func. 67N - TIE TC-D2 H1|25.6||
+YSH1_RD_01  - DJ Ready - TIE TC-D2 H1|17.1||
+YSH1_TEST_01  - DJ Teste - TIE TC-D2 H1|17.2||
+YSHLH1_01  - Posição DJ - TIE TC-D2 H1|16.0||
+TETH1_S_01  - Analógicas - Tensão Fase S - TIE TC-D2 H1|138||
+H2_TIE_H   -   20  -   p127|||
+Função no Relé a Ser Lida|Endereçamento Modbus||
+HSHH2_01 - Comando Fch Disjuntor -TIE TC-D2 H2|1025.4||
+HSLH2_01 - Comando Abre Disjuntor - TIE TC-D2 H2|1025.3||
+YSH2_P27_01  - Proteção Func. 27 - TIE TC-D2 H2|113.5||
+YSH2_P50_01  - Proteção Func. 50 - TIE TC-D2 H2|23.6||
+YSH2_P51_01  - Proteção Func. 51 - TIE TC-D2 H2|21.6||
+YSH2_P67_01  - Proteção Func. 67 - TIE TC-D2 H2|22.6||
+YSH2_P67N_01  - Proteção Func. 67N - TIE TC-D2 H2|25.6||
+YSH2_RD_01  - DJ Ready - TIE TC-D2 H2|17.1||
+YSH2_TEST_01  - DJ Teste - TIE TC-D2 H2|17.2||
+YSHLH2_01  - Posição DJ - TIE TC-D2 H2|16.0||
+TETH2_S_01  - Analógicas - Tensão Fase S - TIE TC-D2 H2|138||
+2A10_TF-514201A  -   22  -   p632|||
+Função no Relé a Ser Lida|Endereçamento Modbus||
+YS2A10_P50_01  - Proteção Func. 50 - TF-514201A|1025.4||
+YS2A10_P50G_01  - Proteção Func. 50GS - TF-514201A|1025.3||
+YS2A10_P51_01  - Proteção Func. 51 - TF-514201A|23.6||
+YS2A10_P67_01  - Proteção Func. 67 - TF-514201A|21.6||
+YS2A10_P67N_01  - Proteção Func. 67N - TF-514201A|22.6||
+YS2A10_P79_01  - Proteção Func. 79 - TF-514201A|25.6||
+YS2A10_P87_01  - Proteção Func. 87 - TF-514201A|17.1||
+YS2A10_TEST_01  - DJ Teste - TF-514201A|17.2||
+YSHL2A10_01  - Posição DJ - TF-514201A|16.0||
+TET1A10_S_01  - Analógicas - Tensão Fase S - TF-514201A|138||
+TIT2A10_M_01  - Analógicas - Corrente média entre fases - TF-514201A|134||
+TJT1A10_PA_01  - Analógicas - Potencia Ativa - TF-514201A|136||
+TJT1A10_PR_01  - Analógicas - Potencia Reativa - TF-514201A|138||
+1B1_TF-514201B  -    21 -   p127|||
+Função no Relé a Ser Lida|Endereçamento Modbus||
+HSHB1_01 - Comando Fch Disjuntor - TF-514201B|1025.4||
+HSLB1_01 - Comando Abre Disjuntor -  TF-514201B|1025.3||
+YS1B1_CTER_01  - Posição Chave Terra - TF-514201B|17.5||
+YS1B1_P27_01  - Proteção Func.27 - TF-514201B|113.6||
+YS1B1_P86_01  - Proteção Func. 86 - TF-514201B|17.3||
+YS1B1_RD_01  - DJ Ready - TF-514201B|17.1||
+YS1B1_TEST_01  - DJ Teste - TF-514201B|17.2||
+YSB1_P67F_01  - Proteção Func. 67-F - TF-514201B|22.6||
+YSB1_P67NF_01  - Proteção Func. 67N-F - TF-514201B|25.6||
+YSB1_P67NT_01  - Proteção Func. 67N-T - TF-514201B|24.6||
+YSB1_P67T_01  - Proteção Func. 67-T - TF-514201B|21.6||
+YSHL1B1_01  - Posição DJ - TF-514201B|17.0||
+TET1B1_S_01  - Analógicas - Tensão Fase S - TF-514201B|138||
+ITB1_R_01 - Corrente Fase R  - TF-514201B|49||
+ITB1_S_01 - Corrente Fase S  - TF-514201B|51||
+ITB1_T_01 - Corrente Fase T - TF-514201B|53||
+TJT1B1_PA_R_01  - Analógicas - Potencia Ativa - TF-514201B|159||
+TJT1B1_PR_S_01  - Analógicas - Potencia Reativa - TF-514201B|160||

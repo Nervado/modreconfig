@@ -1,0 +1,77 @@
+PN-514001 - C264 - 2|||
+A2_SPARE   -  7   -   p127|||
+Função no Relé a Ser Lida|Endereçamento Modbus||
+HSHA2_01 - Comando Fch Disjuntor - SPARE|1025.4||
+HSLC1_01 - Comando Abre Disjuntor - SPARE|1025.3||
+YS1A2_P50GS_01  - Proteção Func. 50GS - SPARE|26.6||
+YS1A2_P51_01  - Proteção Func. 51 - SPARE|22.6||
+YSA2_CTER_01  - Chave Terra - SPARE|17.5||
+YSA2_P27_01  - Proteção Func. 27 - SPARE|113.6||
+YSA2_P50_01  - Proteção Func. 50 - SPARE|23.6||
+YSA2_P86_01  - Proteção Func. 86 - SPARE|17.3||
+YSA2_RD_01  - DJ Ready - SPARE|17.1||
+YSA2_TEST_01  - DJ Teste - SPARE|17.2||
+YSHLA2_01  - Posição DJ - SPARE|17.0||
+ETA2_S_01  - Analógicas - Tensão Fase S - SPARE|138||
+JTA2_PA_01  - Analógicas - Potencia Ativa - SPARE|159||
+JTA2_PR_01  - Analógicas - Potencia Reativa - SPARE|161||
+ETA1_S_01  - Analógicas - Tensão Fase S - SPARE|139||
+1C_GE-514001C   -  10   -   p127|||
+Função no Relé a Ser Lida|Endereçamento Modbus||
+HSHC_01 - Comando Fch Disjuntor - GE-514001C|1025.4||
+HSLC_01 - Comando Abre Disjuntor - GE-514001C|1025.3||
+ YSC_P50GS_01  - Proteção Func. 50GS - GE-514001C|26.6||
+ YSC_P51_01  - Proteção Func. 51 - GE-514001C|22.6||
+ YSC_P67F_01  - Proteção Func. 67-F - GE-514001C|23.6||
+ YSC_P67N_01  - Proteção Func. 67-N - GE-514001C|24.6||
+ YSC_P67R_01  - Proteção Func. 67-R - GE-514001C|21.6||
+ YSC_P86_01  - Proteção Func. 86 - GE-514001C|17.3||
+ YSC_RD_01  - DJ Ready - GE-514001C|17.1||
+ YSC_TEST_01  - DJ Teste - GE-514001C|17.2||
+ YSHLC_01  - Posição DJ - GE-514001C|17.0||
+C1_TF-514204A   -  10  -   p127|||
+Função no Relé a Ser Lida|Endereçamento Modbus||
+HSHC1_01 - Comando Fch Disjuntor - TF-514204A|1025.4||
+HSLC1_01 - Comando Abre Disjuntor - TF-514204A|1025.3||
+ YSC1_CTER_01  - Chave Terra - TF-514204A|17.5||
+ YSC1_P27_01  - Proteção Func. 27 - TF-514204A|113.6||
+ YSC1_P67F_01  - Proteção Func. 67-T - TF-514204A|24.6||
+ YSC1_P67NF_01  - Proteção Func. 67N-F - TF-514204A|25.6||
+ YSC1_P67NT_01  - Proteção Func. 67N-T - TF-514204A|24.6||
+ YSC1_P67T_01  - Proteção Func. 67-T - TF-514204A|21.6||
+ YSC1_P86_01  - Proteção Func. 86 - TF-514204A|17.3||
+ YSC1_RD_01  - DJ Ready - TF-514204A|17.1||
+ YSC1_TEST_01  - DJ Teste - TF-514204A|17.2||
+ YSHLC1_01  - Posição DJ - TF-514204A|17.0||
+ETC1_S_01  - Analógicas - Tensão Fase S - TF-514204A|138||
+ITA4_R_01 - Corrente Fase R - CF-M-UC-123101A|49||
+ITA4_S_01 - Corrente Fase S - CF-M-UC-123101A|51||
+ITA4_T_01 - Corrente Fase T - CF-M-UC-123101A|53||
+JT1C1_PA_01  - Analógicas - Potencia Ativa - TF-514204A|159||
+JT1C1_PR_01  - Analógicas - Potencia Reativa - TF-514204A|161||
+FA_TIE_F   -  8   -   p127|||
+Função no Relé a Ser Lida|Endereçamento Modbus||
+HSHF1_01 - Comando Fch Disjuntor - 52.01-F1|1025.4||
+HSLF1_01 - Comando Abre Disjuntor - 52.01-F1|1025.3||
+ YSF1_P27_01  - Proteção Func. 27 - 52.01-F1|113.6||
+ YSF1_P50_01  - Proteção Func. 50 - 52.01-F1|23.6||
+ YSF1_P50GS_01  - Proteção Func. 50GS - 52.01-F1|26.6||
+ YSF1_P51_01  - Proteção Func. 51 - 52.01-F1|21.6||
+ YSF1_P67_01  - Proteção Func. 67 - 52.01-F1|22.6||
+ YSF1_P67N_01  - Proteção Func. 67N - 52.01-F1|25.6||
+ YSF1_RD_01  - DJ Ready - 52.01-F1|17.1||
+ YSF1_TEST_01  - DJ Teste - 52.01-F1|17.2||
+ YSHLF1_01  - Posição DJ - 52.01-F1|17.0||
+ETF1_S_01  - Analógicas - Tensão Fase S - 52.01-F1|138||
+FB_TIE_F   -  9   -   p127|||
+Função no Relé a Ser Lida|Endereçamento Modbus||
+HSHF2_01 - Comando Fch Disjuntor - 52.01-F2|1025.4||
+HSLF2_01 - Comando Abre Disjuntor - 52.01-F2|1025.3||
+ YSF2_P50_01  - Proteção Func. 50 - 52.01-F2|23.6||
+ YSF2_P50GS_01  -  descrição errada Falha de OLM|17.5||
+ YSF2_P51_01  - Proteção Func. 51 - 52.01-F2|20.6||
+ YSF2_P67_01  - Proteção Func. 67 - 52.01-F2|22.6||
+ YSF2_P67N_01  - Proteção Func. 67N - 52.01-F2|25.6||
+YS_D_ARC_A_01 - Protecao de Arco|17.1||
+YS_D_ARC_C1_01 - Protecao de Arco|17.2||
+ETF2_S_01  - Analógicas - Tensão Fase S - 52.01-F2|138||

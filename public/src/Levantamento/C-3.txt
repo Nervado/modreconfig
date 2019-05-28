@@ -1,0 +1,74 @@
+PN-514001 - C264 - 3|||
+C2_TF-514203C   -  13   -   p127|||
+Função no Relé a Ser Lida|Endereçamento Modbus||
+HSHC2_01 - Comando Fch Disjuntor - TF-514203C|1025.4||
+HSLC2_01 - Comando Abre Disjuntor - TF-514203C|1025.3||
+YSC2_CTER_01  - Chave Terra - TF-514203C|17.5||
+YSC2_P27_01  - Proteção Func. 27 - TF-514203C|113.2||
+YSC2_P67F_01  - Proteção Func. 67-F - TF-514203C|22.6||
+YSC2_P67NF_01  - Proteção Func. 67N-F - TF-514203C|25.6||
+YSC2_P67NT_01  - Proteção Func. 67N-T - TF-514203C|24.6||
+YSC2_P67T_01  - Proteção Func. 67-T - TF-514203C|21.6||
+YSC2_P86_01  - Proteção Func. 86 - TF-514203C|17.3||
+YSC2_RD_01  - DJ Ready - TF-514203C|17.1||
+YSC2_TEST_01  - DJ Teste - TF-514203C|17.2||
+YSHLC2_01  - Posição DJ - TF-514203C|16.0||
+ETC2_S_01  - Analógicas - Tensão Fase S - TF-514203C|138||
+JT1C2_PA_01  - Analógicas - Potencia Ativa - TF-514203C|159||
+JT1C2_PR_01  - Analógicas - Potencia Reativa - TF-514203C|160||
+C5_CF-M-UC-01C  -  12   -   p127|||
+Função no Relé a Ser Lida|Endereçamento Modbus||
+HSHC5_01 - Comando Fch Disjuntor - CF-M-UC-123101C|1025.4||
+HSLC5_01 - Comando Abre Disjuntor - CF-M-UC-123101C|1025.3||
+YSC5_CTER_01  - Chave Terra - CF-M-UC-123101C|17.5||
+YSC5_P27_01  - Proteção Func. 27 - CF-M-UC-123101C|113.6||
+YSC5_P67F_01  - Proteção Func. 50GS - CF-M-UC-123101C|26.6||
+YSC5_P67NF_01  - Proteção Func. 67N-F - CF-M-UC-123101C|25.6||
+YSC5_P67NT_01  - Proteção Func. 67N-T - CF-M-UC-123101C|24.6||
+YSC5_P67T_01  - Proteção Func. 67-T - CF-M-UC-123101C|21.6||
+YSC5_P86_01  - Proteção Func. 86 - CF-M-UC-123101C|17.3||
+YSC5_RD_01  - DJ Ready - CF-M-UC-123101C|17.1||
+YSC5_TEST_01  - DJ Teste - CF-M-UC-123101C|17.2||
+YSHLC5_01  - Posição DJ - CF-M-UC-123101C|17.0||
+TETC5_S_01  - Analógicas - Tensão Fase S - CF-M-UC-123101C|138||
+ITC5_R_01 - Corrente Fase R - CF-M-UC-123101C|49||
+ITC5_S_01 - Corrente Fase S - CF-M-UC-123101C|51||
+ITC5_T_01 - Corrente Fase T - CF-M-UC-123101C|53||
+JT1C5_PA_01  - Analógicas - Potencia Ativa - CF-M-UC-123101C|159||
+JT1C5_PR_01  - Analógicas - Potencia Reativa - CF-M-UC-123101C|161||
+1E_GE-526201   -   16   -   p127|||
+Função no Relé a Ser Lida|Endereçamento Modbus||
+HSHE_01 - Comando Fch Disjuntor - CF-M-UC-123101C|1025.4||
+HSLE_01 - Comando Abre Disjuntor - CF-M-UC-123101C|1025.3||
+YSE_P27_01  - Proteção Func. 27 - GE-526201|113.2||
+YSE_P50_01  - Proteção Func. 50 - GE-526201|23.6||
+YSE_P50GS_01  - Proteção Func. 50GS - GE-526201|26.6||
+YSE_P51_01  - Proteção Func. 51 - GE-526201|21.6||
+YSE_P67F_01  - Proteção Func. 67-F - GE-526201|22.6||
+YSE_P67N_01  - Proteção Func. 67-N - GE-526201|24.6||
+YSE_P67R_01  - Proteção Func. 67-R - GE-526201|21.6||
+YSE_P86_01  - Proteção Func. 86 - GE-526201|17.3||
+YSE_RD_01  - DJ Ready - GE-526201|17.1||
+YSE_TEST_01  - DJ Teste - GE-526201|17.2||
+YSHLE_01  - Posição DJ - GE-526201|17.0||
+G1_TIE_G   -  14   -   p127 |||
+Função no Relé a Ser Lida|Endereçamento Modbus||
+HSHG1_01 - Comando Fch Disjuntor - 52.01G1|1025.4||
+HSLG1_01 - Comando Abre Disjuntor - 52.01G1|1025.3||
+YSG1_P50GS_01  - Proteção Func. 50GS - 52.01G1|26.6||
+YSG1_P51_01  - Proteção Func. 51 - 52.01G1|21.6||
+YSG1_P67_01  - Proteção Func. 67 - 52.01G1|22.6||
+YSG1_P67N_01  - Proteção Func. 67N - 52.01G1|25.6||
+YSG1_RD_01  - DJ Ready - 52.01G1|17.1||
+YSG1_TEST_01  - DJ Teste - 52.01G1|17.2||
+YSHLG1_01  - Posição DJ - 52.01G1|17.0||
+G2_TIE_G   -  15  -   p127|||
+Função no Relé a Ser Lida|Endereçamento Modbus||
+YSG2_P27_01  - Proteção Func. 27 - 52.01G2|113.2||
+YSG2_P50_01  - Proteção Func. 50 - 52.01G2|23.6||
+YSG2_P51_01  - Proteção Func. 50GS - 52.01G2|26.6||
+YSG2_P67_01  - Proteção Func. 67 - 52.01G2|22.6||
+YSG2_P67N_01  - Proteção Func. 67N - 52.01G2|25.6||
+YSG2_RD_01  - DJ Ready - 52.01G2|17.1||
+YSG2_TEST_01  - DJ Teste - 52.01G2|17.2||
+YSHLG2_01  - Posição DJ - 52.01G2|17.0||

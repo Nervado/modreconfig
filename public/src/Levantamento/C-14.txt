@@ -1,0 +1,110 @@
+PN-514003 - C264 - 9|||
+1_SPARE   -  1   -   p225|||
+Fun��o no Rel� a Ser Lida|Endere�amento Modbus||
+HSHC1A_03 Comando Fechar  DJ  - SPARE|1024.7||
+HSLC1A_03 Comando Abrir DJ  - SPARE|1024.6||
+YSHLC1A_03 Posi��o DJ 52-01 - SPARE|16.0||
+YSC1A_RD_03 DJ 52-01 Ready - SPARE|16.2||
+YSC1A_TEST_03 DJ 52-01 Teste - SPARE|16.3||
+YSC1A_P86_03 Prote��o Func. 86 - SPARE|16.5||
+YSC1A_P27_03 Prote��o Func. 27 - SPARE|42.6||
+YSC1A_P37_03 Prote��o Func. 37 - SPARE|25.6||
+YSC1A_P46_03 Prote��o Func. 46 - SPARE|23.6||
+YSC1A_P48_03 Prote��o Func. 48 - SPARE|28.2||
+YSC1A_P49_03 Prote��o Func. 49 - SPARE|26.1||
+YSC1A_P50_03 Prote��o Func. 50 - SPARE|20.6||
+YSC1A_P51_03 Prote��o Func. 51 - SPARE|20.6||
+YSC1A_P51N_03 Prote��o Func. 51N - SPARE|23.6||
+ITC1A_R_03 Anal�gicas - Corrente Fase R - SPARE|48||
+ITC1A_S_03 Anal�gicas - Corrente Fase S - SPARE|50||
+ITC1A_T_03 Anal�gicas - Corrente Fase T - SPARE|52||
+2B_TF-514401A   -  3   -   p122|||
+Fun��o no Rel� a Ser Lida|Endere�amento Modbus||
+HSHC2B_03 Comando Fechar  DJ  - TF-514401A|1027.9||
+HSLC2B_03 Comando Abrir DJ  - TF-514401A|1027.8||
+YSHLC2B_03 Posi��o DJ 52-03 - TF-514401A|16.0||
+YSC2B_RD_03 DJ 52-03 Ready - TF-514401A|16.1||
+YSC2B_TEST_03 DJ 52-03 Teste - TF-514401A|16.2||
+YSC2B_P86_03 Prote��o Func. 86 - TF-514401A|19.2||
+YSC2B_P50_03 Prote��o Func. 50 - TF-514401A|22.6||
+YSC2B_P37_03 Prote��o Func. 37 - TF-514401A|33.6||
+YSC2B_P51_03 Prote��o Func. 51 - TF-514401A|20.6||
+YSC2B_P46_03 Prote��o Func. 46 - TF-514401A|34.6||
+YSC2B_P48_03 Prote��o Func 48 - TF-514401A|19.9||
+YSC2B_P49_03 Prote��o Func 49 - TF-514401A|35.1||
+YSC2B_P51N_03 Prote��o Func 51N - TF-514401A|23.6||
+ITC2B_R_03 Anal�gicas - Corrente Fase R - SPARE|48||
+ITC2B_S_03 Anal�gicas - Corrente Fase S - SPARE|50||
+ITC2B_T_03 Anal�gicas - Corrente Fase T - SPARE|52||
+3A_GD526001A   -  4 -   p122|||
+Fun��o no Rel� a Ser Lida|Endere�amento Modbus||
+HSHC3A_03 Comando Fechar  DJ  - GD-526001A|1027.9||
+HSLC3A_03 Comando Abrir DJ - GD-526001A|1027.8||
+YSHLC3A_03 Posi��o DJ 52-05 - GD-526001A|16.0||
+YSC3A_RD_03 DJ 52-05 Ready - GD-526001A|16.1||
+YSC3A_TEST_03 DJ 52-05 Teste - GD-526001A|16.2||
+YSC3A_P86_03 Prote��o Func. 86 - GD-526001A|19.2||
+YSC3A_P50_03 Prote��o Func. 50 - GD-526001A|22.6||
+YSC3A_P37_03 Prote��o Func. 37 - GD-526001A|33.6||
+YSC3A_P51_03 Prote��o Func. 51 - GD-526001A|20.6||
+YSC3A_P46_03 Prote��o Func. 46 - GD-526001A|34.6||
+YSC3A_P48_03 Prote��o Func 48 - GD-526001A|19.9||
+YSC3A_P49_03 Prote��o Func 49 - GD-526001A|35.1||
+YSC3A_P51N_03 Prote��o Func 51N - GD-526001A|23.6||
+ITC3A_R_03 Anal�gicas - Corrente Fase R  - GD-526001A|48||
+ITC3A_S_03 Anal�gicas - Corrente Fase S  - GD-526001A|50||
+ITC3A_T_03 Anal�gicas - Corrente Fase T  - GD-526001A|52||
+2_SPARE    -  1   -   p122|||
+Fun��o no Rel� a Ser Lida|Endere�amento Modbus||
+HSHC2A_03 Comando Fechar  DJ  - SPARE|1027.9||
+HSLC2A_03 Comando Abrir DJ  - SPARE|1027.8||
+YSHLC2A_03 Posi��o DJ 52-02 - SPARE|16.0||
+YSC2A_RD_03 DJ 52-02 Ready - SPARE|16.1||
+YSC2A_TEST_03 DJ 52-02 Teste - SPARE|16.2||
+YSC2A_P86_03 Prote��o Func. 86 - SPARE|19.2||
+YSC2A_P50_03 Prote��o Func. 50 - SPARE|22.6||
+YSC2A_P37_03 Prote��o Func. 37 - SPARE|33.6||
+YSC2A_P51_03 Prote��o Func. 51 - SPARE|20.6||
+YSC2A_P46_03 Prote��o Func. 46 - SPARE|34.6||
+YSC2A_P48_03 Prote��o Func 48 - SPARE|19.9||
+YSC2A_P49_03 Prote��o Func 49 - SPARE|35.1||
+YSC2A_P51N_03 Prote��o Func 51N - SPARE|23.6||
+ITC2A_R_03 Anal�gicas - Corrente Fase R - SPARE|48||
+ITC2A_S_03 Anal�gicas - Corrente Fase S - SPARE|50||
+ITC2A_T_03 Anal�gicas - Corrente Fase T - SPARE|52||
+2C_GD-526002A   -  4   -   p122|||
+Fun��o no Rel� a Ser Lida|Endere�amento Modbus||
+HSHC2C_03 Comando Fechar  DJ  - GD-526002A|1027.9||
+HSLC2C_03 Comando Abrir DJ   - GD-526002A|1027.8||
+YSHLC2C_03 Posi��o DJ 52-04 - GD-526002A|16.0||
+YSC2C_RD_03 DJ 52-04 Ready - GD-526002A|16.1||
+YSC2C_TEST_03 DJ 52-04 Teste - GD-526002A|16.2||
+YSC2C_P86_03 Prote��o Func. 86 - GD-526002A|19.2||
+YSC2C_P50_03 Prote��o Func. 50 - GD-526002A|22.6||
+YSC2C_P37_03 Prote��o Func. 37 - GD-526002A|33.6||
+YSC2C_P51_03 Prote��o Func. 51 - GD-526002A|20.6||
+YSC2C_P46_03 Prote��o Func. 46 - GD-526002A|34.6||
+YSC2C_P48_03 Prote��o Func 48 - GD-526002A|19.9||
+YSC2C_P49_03 Prote��o Func 49 - GD-526002A|35.1||
+YSC2C_P51N_03 Prote��o Func 51N - GD-526002A|23.6||
+ITC2C_R_03 Anal�gicas - Corrente Fase R - GD-526002A|48||
+ITC2C_S_03 Anal�gicas - Corrente Fase S - GD-526002A|50||
+ITC2C_T_03 Anal�gicas - Corrente Fase T - GD-526002A|52||
+2B_UH-520001   -  6   -   p122|||
+Fun��o no Rel� a Ser Lida|Endere�amento Modbus||
+HSHC2B_03 Comando Fechar  DJ  -  UH-520001|1027.9||
+HSLC2B_03 Comando Abrir DJ   -  UH-520001|1027.8||
+YSHLC3B_03 Posi��o DJ 52-06 - UH-520001|16.0||
+YSC3B_RD_03 DJ 52-06 Ready - UH-520001|16.1||
+YSC3B_TEST_03 DJ 52-06 Teste - UH-520001|16.2||
+YSC3B_P86_03 Prote��o Func. 86 - UH-520001|19.2||
+YSC3B_P50_03 Prote��o Func. 50 - UH-520001|22.6||
+YSC3B_P37_03 Prote��o Func. 37 - UH-520001|33.6||
+YSC3B_P51_03 Prote��o Func. 51 - UH-520001|20.6||
+YSC3B_P46_03 Prote��o Func. 46 - UH-520001|34.6||
+YSC3B_P48_03 Prote��o Func 48 - UH-520001|19.9||
+YSC3B_P49_03 Prote��o Func 49 - UH-520001|35.1||
+YSC3B_P51N_03 Prote��o Func 51N - UH-520001|23.6||
+ITC3B_R_03 Anal�gicas - Corrente Fase R  - UH-520001|48||
+ITC3B_S_03 Anal�gicas - Corrente Fase S  - UH-520001|50||
+ITC3B_T_03 Anal�gicas - Corrente Fase T  - UH-520001|52||

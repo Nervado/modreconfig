@@ -1,0 +1,92 @@
+PN-514002 - C264 - 13|||
+B10_CF-M-B-513303 - 24 - p127|||
+Função no Relé a Ser Lida|Endereçamento Modbus||
+HSL2B10_02 - Comando Abrir DJ - CF-M-B-513303|1024.3||
+HSH2B10_02 - Comando Fechar DJ - CF-M-B-513303|1024.4||
+YSHL2B10_02 - Posição DJ - CF-M-B-513303|16.0||
+YS2B10_RD_02 - DJ Ready - CF-M-B-513303|16.1||
+YS2B10_TEST_02 - DJ Teste - CF-M-B-513303|16.2||
+YS2B10_P86_02 - Proteção Func. 86 - CF-M-B-513303|16.3||
+YS2B10_P50_02 - Proteção Func. 50 - CF-M-B-513303|20.6||
+YS2B10_P67N_02 - Proteção Func. 67N - CF-M-B-513303|23.6||
+YS2B10_P49_02 - Proteção Func. 49 - CF-M-B-513303|32.1||
+YS2B10_P37_02 - Proteção Func. 37 - CF-M-B-513303|33.6||
+IT2B10_R_02 - Analógicas - Corrente Fase R - CF-M-B-513303|48||
+IT2B10_S_02 - Analógicas - Corrente Fase S - CF-M-B-513303|50||
+IT2B10_T_02 - Analógicas - Corrente Fase T - CF-M-B-513303|52||
+JT2B10_PA_02 - Analógicas - Potencia Ativa - CF-M-B-513303|158||
+JT2B10_PR_02 - Analógicas - Potencia Reativa - CF-M-B-513303|160||
+YS2B10_P46_02 - Proteção Func. 46 - CF-M-B-513303|124.6||
+YS2B10_STUS_02  - STATUS RELE 24|19.4||
+2B_TF-514201B - 25 - p127|||
+Função no Relé a Ser Lida|Endereçamento Modbus||
+HSL5202B_02 - Comando Abrir DJ - TF-514201B|1024.3||
+HSH5202B_02 - Comando Fechar DJ - TF-514201B|1024.4||
+YSHL02B_02 - Posição DJ - TF-514201B|16.0||
+YS02B_RD_02 - DJ Ready - TF-514201B|16.1||
+YS02B_TEST_02 - DJ Teste - TF-514201B|16.2||
+YS02B_P86_02 - Proteção Func. 86 - TF-514201B|16.3||
+YS02B_P51_02 - Proteção Func. 51 - TF-514201B|21.6||
+YS02B_P67N_02 - Proteção Func. 67-F - TF-514201B|22.6||
+IT02B_R_02 - Analógicas - Corrente Fase R - TF-514201B|48||
+IT02B_S_02 - Analógicas - Corrente Fase S - TF-514201B|50||
+IT02B_T_02 - Analógicas - Corrente Fase T - TF-514201B|52||
+ET02B_02 - Analógicas - Tensão Fase S - TF-514201B|137||
+JT02B_PA_02 - Analógicas - Potencia Ativa - TF-514201B|158||
+JT02B_PR_02 - Analógicas - Potencia Reativa - TF-514201B|160||
+JT02B_FP_02 - Analógicas - Fator de Potência - TF-514201B|162||
+YS02B_P271_02 - Proteção Func. 27-1 Estag. - TF-514201B|112.6||
+YS02B_P272_02 - Proteção Func. 27-2 Estag. - TF-514201B|113.6||
+YS02B_P67_02 - Proteção Func. 59N - TF-514201B|122.6||
+YS02B_STUS_02  - STATUS RELE 25|19.4||
+2CA_TIE BREAKER A - 26 - p127|||
+Função no Relé a Ser Lida|Endereçamento Modbus||
+HSL02CA_02 - Comando Abrir DJ - TIE BREAKER A|1024.3||
+HSH02CA_02 - Comando Fechar DJ - TIE BREAKER A|1024.4||
+YSHL02CA_02 - Posição DJ - TIE BREAKER A|16.0||
+YS02CA_RD_02 - DJ Ready - TIE BREAKER A|16.1||
+YS02CA_TEST_02 - DJ Teste - TIE BREAKER A|16.2||
+YS02CA_P86_02 - Proteção Func. 86 - TIE BREAKER A|16.3||
+YS02CA_P51_02 - Proteção Func. 51 - TIE BREAKER A|21.6||
+YS02CA_P67F_02 - Proteção Func. 67-F - TIE BREAKER A|22.6||
+YS02CA_P271_02 - Proteção Func. 27-1 Estag. - TIE BREAKER A|112.6||
+YS02CA_P272_02 - Proteção Func. 27-2 Estag. - TIE BREAKER A|113.6||
+YS02CA_P59_02 - Proteção Func. 59N - TIE BREAKER A|122.6||
+ET02CA_R_02 - Analógicas - Tensão Barra B - TIE BREAKER A|130||
+YS02CA_STUS_02  - STATUS RELE 26|19.4||
+2CB_TIE BREAKER B - 27 - p127|||
+Função no Relé a Ser Lida|Endereçamento Modbus||
+HSL02CB_02 - Comando Abrir DJ - TIE BREAKER B|1024.3||
+HSH02CB_02 - Comando Fechar DJ - TIE BREAKER B|1024.4||
+YSHL02CB_02 - Posição DJ - TIE BREAKER B|16.0||
+YS02CB_RD_02 - DJ Ready - TIE BREAKER B|16.1||
+YS02CB_TEST_02 - DJ Teste - TIE BREAKER B|16.2||
+YS02CB_P86_02 - Proteção Func. 86 - TIE BREAKER B|16.3||
+YS02CB_P51_02 - Proteção Func. 51 - TIE BREAKER B|21.6||
+YS02CB_P67F_02 - Proteção Func. 67-F - TIE BREAKER B|22.6||
+YS02CB_P271_02 - Proteção Func. 27-1 Estag. - TIE BREAKER B|112.6||
+YS02CB_P272_02 - Proteção Func. 27-2 Estag. - TIE BREAKER B|113.6||
+YS02CB_P59_02 - Proteção Func. 59N - TIE BREAKER B|122.6||
+ET02CB_R_02 - Analógicas - Tensão Barra A - TIE BREAKER B|130||
+YS02CB_STUS_02  - STATUS RELE 27|19.4||
+2A_TF-514201A - 28 - p127|||
+Função no Relé a Ser Lida|Endereçamento Modbus||
+IT02A_S_02 - Analógicas - Corrente Fase S - TF-514201A|50||
+IT02A_T_02 - Analógicas - Corrente Fase T - TF-514201A|52||
+YSHL02A_02 - Posição DJ - TF-514201A|16.0||
+YS02A_RD_02 - DJ Ready - TF-514201A|16.1||
+YS02A_TEST_02 - DJ Teste - TF-514201A|16.2||
+YS02A_P86_02 - Proteção Func. 86 - TF-514201A|16.3||
+YS02A_P51_02 - Proteção Func. 51 - TF-514201A|21.6||
+YS02A_P67F_02 - Proteção Func. 67-F - TF-514201A|22.6||
+IT02A_R_02 - Analógicas - Corrente Fase R - TF-514201A|48||
+ET02A_02 - Analógicas - Tensão Fase S - TF-514201A|137||
+JT02A_PA_02 - Analógicas - Potencia Ativa - TF-514201A|158||
+JT02A_PR_02 - Analógicas - Potencia Reativa - TF-514201A|160||
+JT02A_FP_02 - Analógicas - Fator de Potência - TF-514201A|162||
+YS02A_P271_02 - Proteção Func. 27-1 Estag. - TF-514201A|112.6||
+YS02A_P272_02 - Proteção Func. 27-2 Estag. - TF-514201A|113.6||
+YS02A_P59_02 - Proteção Func. 59N - TF-514201A|122.6||
+HSL5202A_02 - Comando Abrir DJ - TF-514201A|1024.3||
+HSH5202A_02 - Comando Fechar DJ - TF-514201A|1024.4||
+YS02A_STUS_02  - STATUS RELE 28|19.4||

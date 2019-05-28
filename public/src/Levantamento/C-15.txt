@@ -1,0 +1,133 @@
+﻿PN-514003 - C264 - 15|||
+3C_PN-514007   -   7   -   p122|||
+Fun��o no Rel� a Ser Lida|Endere�amento Modbus||
+HSHC3C_03 Comando Fechar  DJ   - PN-514007|1027.9||
+HSLC3C_03 Comando Abrir DJ   - PN-514007|1027.8||
+YSHLC3C_03 Posi��o DJ 52-07 - PN-514007|16.0||
+YSC3C_RD_03 DJ 52-07 Ready - PN-514007|16.1||
+YSC3C_TEST_03 DJ 52-07 Teste - PN-514007|16.2||
+YSC3C_P86_03 Prote��o Func. 86 - PN-514007|19.2||
+YSC3C_P50_03 Prote��o Func. 50 - PN-514007|22.6||
+YSC3C_P37_03 Prote��o Func. 37 - PN-514007|33.6||
+YSC3C_P51_03 Prote��o Func. 51 - PN-514007|20.6||
+YSC3C_P46_03 Prote��o Func. 46 - PN-514007|34.6||
+YSC3C_P48_03 Prote��o Func 48 - PN-514007|19.9||
+YSC3C_P49_03 Prote��o Func 49 - PN-514007|35.1||
+YSC3C_P51N_03 Prote��o Func 51N - PN-514007|23.6||
+ITC3C_R_03 Anal�gicas - Corrente Fase R  - PN-514007|48||
+ITC3C_S_03 Anal�gicas - Corrente Fase S  - PN-514007|50||
+ITC3C_T_03 Anal�gicas - Corrente Fase T  - PN-514007|52||
+3A_52.03A   -  9   -   p127|||
+Fun��o no Rel� a Ser Lida|Endere�amento Modbus||
+HSHC6A_03 Comando Fechar  DJ   - 52-03.A|1027.9||
+HSLC6A_03 Comando Abrir DJ  - 52-03.A|1027.8||
+YSHLC6A_03 Posi��o DJ 52-03.A - 52-03.A|16.0||
+YSC6A_RD_03 Contator DJ 52-03.A Ready - 52-03.A|16.1||
+YSC6A_TEST_03 Contator DJ 52-03.A Teste - 52-03.A|16.2||
+YSC6A_P86_03 Prote��o Func. 86 - 52-03.A|19.2||
+YSC6A_P50_03 Prote��o Func. 50 - 52-03.A|22.6||
+YSC6A_P50GS_03 Prote��o Func. 50GS - 52-03.A|35.1||
+YSC6A_P51_03 Prote��o Func. 51 - 52-03.A|20.6||
+YSC6A_P67_03 Prote��o Func. 67 - 52-03.A|21.6||
+YSC6A_P67N_03 Prote��o Func. 67N - 52-03.A|24.6||
+YSC6A_P27_03 Prote��o Func. 27 - 52-03.A|19.3||
+YSC6A_PARCO_03 Prote��o Arco - 52-03.A|16.10||
+ETC6A_R_03 Anal�gicas - Tens�o Fase R Barra 1 - 52-03.A|128||
+ETC6A_S_03 Anal�gicas - Tens�o Fase S Barra 1 - 52-03.A|130||
+ETC6A_T_03 Anal�gicas - Tens�o Fase T Barra 1 - 52-03.A|132||
+ITC6A_R_03 Anal�gicas - Corrente Fase R  -52-03.A|48||
+ITC6A_S_03 Anal�gicas - Corrente Fase S  -52-03.A|50||
+ITC6A_T_03 Anal�gicas - Corrente Fase T  -52-03.A|52||
+JTC6A_PA_R_03 Anal�gicas - Potencia Ativa - 52-03.A|158||
+JTC6A_PR_S_03 Anal�gicas - Potencia Ativa - 52-03.A|160||
+JTC6A_FP_T_03 Anal�gicas - Fator de Potencia - 52-03.A|162||
+3B_52.03C_TIE_B   -  11   -   p127|||
+Fun��o no Rel� a Ser Lida|Endere�amento Modbus||
+HSHC7B_03 Comando Fechar  DJ   - 52-03.B|1027.9||
+HSLC7B_03 Comando Abrir DJ  - 52-03.B|1027.8||
+YSC7B_TEST_03 Contator DJ 52-03.C-B Teste - 52-03.C-B|16.3||
+YSC7B_P86_03 Prote��o Func. 86 - 52-03.C-B|16.4||
+YSC7B_P50_03 Prote��o Func. 50 - 52-03.C-B|22.6||
+YSC7B_P50GS_03 Prote��o Func. 50GS - 52-03.C-B|35.1||
+YSC7B_P51_03 Prote��o Func. 51 - 52-03.C-B|20.6||
+YSC7B_P67_03 Prote��o Func. 67 - 52-03.C-B|21.6||
+YSC7B_P67N_03 Prote��o Func. 67N - 52-03.C-B|24.6||
+YSC7B_P27_03 Prote��o Func. 27 - 52-03.C-B|19.3||
+YSC7B_PARCO_03 Prote��o Arco - 52-03.C-B|16.10||
+YSHLC7B_03 Posi��o DJ 52-03.C-B - 52-03.C-B|16.1||
+YSC7B_RD_03 Contator DJ 52-03.C-B Ready - 52-03.C-B|16.2||
+ETC7B_R_03 Anal�gicas - Tens�o Fase R Barra 1 - 52-03.C-B|128||
+ETC7B_S_03 Anal�gicas - Tens�o Fase S Barra 1 - 52-03.C-B|130||
+ETC7B_T_03 Anal�gicas - Tens�o Fase T Barra 1 - 52-03.C-B|132||
+ITC7B_R_03 Anal�gicas - Corrente Fase R  -52-03.C-B|48||
+ITC7B_S_03 Anal�gicas - Corrente Fase S  -52-03.C-B|50||
+ITC7B_T_03 Anal�gicas - Corrente Fase T  -52-03.C-B|52||
+JTC7B_PA_R_03 Anal�gicas - Potencia Ativa - 52-03.C-B|158||
+JTC7B_PR_S_03 Anal�gicas - Potencia Reativa - 52-03.C-B|160||
+JTC7B_FP_T_03 Anal�gicas - Fator de Potencia - 52-03.C-B|162||
+4A_PN-514005   -  8 -   p122|||
+Fun��o no Rel� a Ser Lida|Endere�amento Modbus||
+HSHC4A_03 Comando Fechar  DJ  - PN-514005|1027.9||
+HSLC4A_03 Comando Abrir DJ  - PN-514005|1027.8||
+YSHLC4A_03 Posi��o DJ 52-08 - PN-514005|16.0||
+YSC4A_RD_03 DJ 52-08 Ready - PN-514005|16.1||
+YSC4A_TEST_03 DJ 52-08 Teste - PN-514005|16.2||
+YSC4A_P86_03 Prote��o Func. 86 - PN-514005|19.2||
+YSC4A_P50_03 Prote��o Func. 50 - PN-514005|22.6||
+YSC4A_P37_03 Prote��o Func. 37 - PN-514005|33.6||
+YSC4A_P51_03 Prote��o Func. 51 - PN-514005|20.6||
+YSC4A_P46_03 Prote��o Func. 46 - PN-514005|34.6||
+YSC4A_P48_03 Prote��o Func 48 - PN-514005|19.9||
+YSC4A_P49_03 Prote��o Func 49 - PN-514005|35.1||
+YSC4A_P51N_03 Prote��o Func 51N - PN-514005|23.6||
+ITC4A_R_03 Anal�gicas - Corrente Fase R - PN-514005|48||
+ITC4A_S_03 Anal�gicas - Corrente Fase S - PN-514005|50||
+ITC4A_T_03 Anal�gicas - Corrente Fase T - PN-514005|52||
+7A_TIE_A_52.03.C-A   -   10   -   p127|||
+Fun��o no Rel� a Ser Lida|Endere�amento Modbus||
+HSHC7A_03 Comando Fechar  DJ   - 52-03.A|1027.9||
+HSLC7A_03 Comando Abrir DJ  - 52-03.A|1027.8||
+YSC7A_TEST_03 Contator DJ 52-03.C-A Teste - 52-03.C-A|16.3||
+YSC7A_P86_03 Prote��o Func. 86 - 52-03.C-A|16.4||
+YSC7A_P50_03 Prote��o Func. 50 - 52-03.C-A|22.6||
+YSC7A_P50GS_03 Prote��o Func. 50GS - 52-03.C-A|35.1||
+YSC7A_P51_03 Prote��o Func. 51 - 52-03.C-A|20.6||
+YSC7A_P67_03 Prote��o Func. 67 - 52-03.C-A|21.6||
+YSC7A_P67N_03 Prote��o Func. 67N - 52-03.C-A|24.6||
+YSC7A_P27_03 Prote��o Func. 27 - 52-03.C-A|19.3||
+YSC7A_PARCO_03 Prote��o Arco - 52-03.C-A|16.10||
+YSHLC7A_03 Posi��o DJ 52-03.C-A - 52-03.C-A|16.1||
+YSC7A_RD_03 Contator DJ 52-03.C-A Ready - 52-03.C-A|16.2||
+ETC7A_R_03 Anal�gicas - Tens�o Fase R Barra 1 - 52-03.C-A|128||
+ETC7A_S_03 Anal�gicas - Tens�o Fase S Barra 1 - 52-03.C-A|130||
+ETC7A_T_03 Anal�gicas - Tens�o Fase T Barra 1 - 52-03.C-A|132||
+ITC7A_R_03 Anal�gicas - Corrente Fase R  -52-03.C-A|48||
+ITC7A_S_03 Anal�gicas - Corrente Fase S  -52-03.C-A|50||
+ITC7A_T_03 Anal�gicas - Corrente Fase T  -52-03.C-A|52||
+JTC7A_PA_R_03 Anal�gicas - Potencia Ativa - 52-03.C-A|158||
+JTC7A_PR_S_03 Anal�gicas - Potencia Reativa - 52-03.C-A|160||
+JTC7A_FP_T_03 Anal�gicas - Fator de Potencia - 52-03.C-A|162||
+C9A_TF-514202B   -  12   -   p127|||
+Fun��o no Rel� a Ser Lida|Endere�amento Modbus||
+HSHC9A_03 Comando Fechar  DJ   - 52-03.B|1027.9||
+HSLC9A_03 Comando Abrir DJ  - 52-03.B|1027.8||
+YSHLC9A_03 Posi��o DJ 52-03.B - 52-03.B|16.3||
+YSC9A_RD_03 Contator DJ 52-03.B Ready - 52-03.B|16.4||
+YSC9A_TEST_03 Contator DJ 52-03.B Teste - 52-03.B|22.6||
+YSC9A_P86_03 Prote��o Func. 86 - 52-03.B|35.1||
+YSC9A_P50_03 Prote��o Func. 50 - 52-03.B|20.6||
+YSC9A_P50GS_03 Prote��o Func. 50GS - 52-03.B|21.6||
+YSC9A_P51_03 Prote��o Func. 51 - 52-03.B|24.6||
+YSC9A_P67_03 Prote��o Func. 67 - 52-03.B|19.3||
+YSC9A_P67N_03 Prote��o Func. 67N - 52-03.B|16.10||
+YSC9A_P27_03 Prote��o Func. 27 - 52-03.B|16.1||
+YSC9A_PARCO_03 Prote��o Arco - 52-03.B|16.2||
+ETC9A_R_03 Anal�gicas - Tens�o Fase R Barra 1 - 52-03.B|128||
+ETC9A_S_03 Anal�gicas - Tens�o Fase S Barra 1 - 52-03.B|130||
+ETC9A_T_03 Anal�gicas - Tens�o Fase T Barra 1 - 52-03.B|132||
+ITC9A_R_03 Anal�gicas - Corrente Fase R  -52-03.B|48||
+ITC9A_S_03 Anal�gicas - Corrente Fase S  -52-03.B|50||
+ITC9A_T_03 Anal�gicas - Corrente Fase T  -52-03.B|52||
+JTC9A_PA_R_03 Anal�gicas - Potencia Ativa - 52-03.B|158||
+JTC9A_PR_S_03 Anal�gicas - Potencia Reativa - 52-03.B|160||
+JTC9A_FP_T_03 Anal�gicas - Fator de Potencia - 52-03.B|162||

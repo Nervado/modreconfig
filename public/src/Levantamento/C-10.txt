@@ -1,0 +1,157 @@
+PN-514002 - C264 - 10|||
+B11_SPARE   -   7   -   p241|||
+Função no Relé a Ser Lida|Endereçamento Modbus||
+HSL2B11_02 - Comando Abrir DJ - SPARE|20.0||
+HSH2B11_02 - Comando Fechar DJ - SPARE|20.1||
+IT2B11_R_02 - Corrente Fase R - SPARE|217||
+IT2B11_S_02 - Corrente Fase S - SPARE|219||
+IT2B11_T_02 - Corrente Fase T - SPARE|221||
+JT2B11_PA_02  - Analógicas - Potencia Ativa - SPARE|299||
+JT2B11_PR_02  - Analógicas - Potencia Reativa - SPARE|302||
+YS2B11_P47_02  - Proteção Func. 47 - SPARE|723.1||
+YS2B11_P50_02  - Proteção Func. 50 - SPARE|723.3||
+YS2B11_P66_02  - Proteção Func. 66 - SPARE|723.5||
+YSHL2B11_02  - Posição DJ - SPARE|725.0||
+YS2B11_RD_02  - DJ Ready - SPARE|725.1||
+YS2B11_TEST_02  - DJ Teste - SPARE|725.2||
+YS2B11_P86_02  - Proteção Func. 86 - SPARE|725.3||
+YS2B11_CTER_02  - Posição Chave Terra - SPARE|725.5||
+YS2B11_P49_02  - Proteção Func. 49 - SPARE|730.3||
+YS2B11_P37_02  - Proteção Func. 37 - SPARE|732.4||
+YS2B11_P46_02  - Proteção Func. 46 - SPARE|732.9||
+YS2B11_P27_02  - Proteção Func. 27 - SPARE|732.14||
+YS2B11_P50G_02  - Proteção Func. 50GS - SPARE|733.12||
+YS2B11_P48_02  - Proteção Func. 48 - SPARE|734.2||
+YS2B11_P59_02  - Proteção Func. 59 - SPARE|735.2||
+YS2B11_P87_02  - Proteção Func. 87 - SPARE|737.5||
+YS2B11_STUS_02  - STATUS RELE 07|19.4||
+B3_M-C-UC-122501B    -   8   -   p241|||
+Função no Relé a Ser Lida|Endereçamento Modbus||
+HSL2B3_02 - Comando Abrir DJ - M-C-UC-122501B|20.0||
+HSH2B3_02 - Comando Fechar DJ - M-C-UC-122501B|20.1||
+IT2B3_R_02 - Corrente Fase R - M-C-UC-122501B|217||
+IT2B3_S_02 - Corrente Fase S - M-C-UC-122501B|219||
+IT2B3_T_02 - Corrente Fase T - M-C-UC-122501B|221||
+JT2B3_PA_02  - Analógicas - Potencia Ativa - M-C-UC-122501B|299||
+JT2B3_PR_02  - Analógicas - Potencia Reativa - M-C-UC-122501B|302||
+YS2B3_P47_02  - Proteção Func. 47 - M-C-UC-122501B|723.1||
+YS2B3_P50_02  - Proteção Func. 50 - M-C-UC-122501B|723.3||
+YS2B3_P66_02  - Proteção Func. 66 - M-C-UC-122501B|723.5||
+YSHL2B3_02  - Posição DJ - M-C-UC-122501B|725.0||
+YS2B3_RD_02  - DJ Ready - M-C-UC-122501B|725.1||
+YS2B3_TEST_02  - DJ Teste - M-C-UC-122501B|725.2||
+YS2B3_P86_02  - Proteção Func. 86 - M-C-UC-122501B|725.3||
+YS2B3_CTER_02  - Posição Chave Terra - M-C-UC-122501B|725.5||
+YS2B3_P49_02  - Proteção Func. 49 - M-C-UC-122501B|730.3||
+YS2B3_P37_02  - Proteção Func. 37 - M-C-UC-122501B|732.4||
+YS2B3_P46_02  - Proteção Func. 46 - M-C-UC-122501B|732.9||
+YS2B3_P27_02  - Proteção Func. 27 - M-C-UC-122501B|732.14||
+YS2B3_P50G_02  - Proteção Func. 50GS - M-C-UC-122501B|733.12||
+YS2B3_P48_02  - Proteção Func. 48 - M-C-UC-122501B|734.2||
+YS2B3_P59_02  - Proteção Func. 59 - M-C-UC-122501B|735.2||
+YS2B3_P87_02  - Proteção Func. 87 - M-C-UC-122501B|737.5||
+YS2B3_STUS_02  - STATUS RELE 08|19.4||
+B4_M-B-511104B   -   9   -   p241|||
+Função no Relé a Ser Lida|Endereçamento Modbus||
+HSL2B4_02 - Comando Abrir DJ - M-B-511104B|20.0||
+HSH2B4_02 - Comando Fechar DJ - M-B-511104B|20.1||
+IT2B4_R_02 - Corrente Fase R - M-B-511104B|217||
+IT2B4_S_02 - Corrente Fase S - M-B-511104B|219||
+IT2B4_T_02 - Corrente Fase T - M-B-511104B|221||
+JT2B4_PA_02  - Analógicas - Potencia Ativa - M-B-511104B|299||
+JT2B4_PR_02  - Analógicas - Potencia Reativa - M-B-511104B|302||
+YS2B4_P47_02  - Proteção Func. 47 - M-B-511104B|723.1||
+YS2B4_P50_02  - Proteção Func. 50 - M-B-511104B|723.3||
+YS2B4_P66_02  - Proteção Func. 66 - M-B-511104B|723.5||
+YSHL2B4_02  - Posição DJ - M-B-511104B|725.0||
+YS2B4_RD_02  - DJ Ready - M-B-511104B|725.1||
+YS2B4_TEST_02  - DJ Teste - M-B-511104B|725.2||
+YS2B4_P86_02  - Proteção Func. 86 - M-B-511104B|725.3||
+YS2B4_CTER_02  - Posição Chave Terra - M-B-511104B|725.5||
+YS2B4_P49_02  - Proteção Func. 49 - M-B-511104B|730.3||
+YS2B4_P37_02  - Proteção Func. 37 - M-B-511104B|732.4||
+YS2B4_P46_02  - Proteção Func. 46 - M-B-511104B|732.9||
+YS2B4_P27_02  - Proteção Func. 27 - M-B-511104B|732.14||
+YS2B4_P50G_02  - Proteção Func. 50GS - M-B-511104B|733.12||
+YS2B4_P48_02  - Proteção Func. 48 - M-B-511104B|734.2||
+YS2B4_P59_02  - Proteção Func. 59 - M-B-511104B|735.2||
+YS2B4_P87_02  - Proteção Func. 87 - M-B-511104B|737.5||
+YS2B4_STUS_02  - STATUS RELE 09|19.4||
+B2_M-B-511101D   -   10   -   p241|||
+Função no Relé a Ser Lida|Endereçamento Modbus||
+HSL2B2_02 - Comando Abrir DJ - M-B-511101D|20.0||
+HSH2B2_02 - Comando Fechar DJ - M-B-511101D|20.1||
+IT2B2_R_02 - Corrente Fase R - M-B-511101D|217||
+IT2B2_S_02 - Corrente Fase S - M-B-511101D|219||
+IT2B2_T_02 - Corrente Fase T - M-B-511101D|221||
+JT2B2_PA_02  - Analógicas - Potencia Ativa - M-B-511101D|299||
+JT2B2_PR_02  - Analógicas - Potencia Reativa - M-B-511101D|302||
+YS2B2_P47_02  - Proteção Func. 47 - M-B-511101D|723.1||
+YS2B2_P50_02  - Proteção Func. 50 - M-B-511101D|723.3||
+YS2B2_P66_02  - Proteção Func. 66 - M-B-511101D|723.5||
+YSHL2B2_02  - Posição DJ - M-B-511101D|725.0||
+YS2B2_RD_02  - DJ Ready - M-B-511101D|725.1||
+YS2B2_TEST_02  - DJ Teste - M-B-511101D|725.2||
+YS2B2_P86_02  - Proteção Func. 86 - M-B-511101D|725.3||
+YS2B2_CTER_02  - Posição Chave Terra - M-B-511101D|725.5||
+YS2B2_P49_02  - Proteção Func. 49 - M-B-511101D|730.3||
+YS2B2_P37_02  - Proteção Func. 37 - M-B-511101D|732.4||
+YS2B2_P46_02  - Proteção Func. 46 - M-B-511101D|732.9||
+YS2B2_P27_02  - Proteção Func. 27 - M-B-511101D|732.14||
+YS2B2_P50G_02  - Proteção Func. 50GS - M-B-511101D|733.12||
+YS2B2_P48_02  - Proteção Func. 48 - M-B-511101D|734.2||
+YS2B2_P59_02  - Proteção Func. 59 - M-B-511101D|735.2||
+YS2B2_P87_02  - Proteção Func. 87 - M-B-511101D|737.5||
+YS2B2_STUS_02  - STATUS RELE 10|19.4||
+B1_M-B-511101B   -   11   -   p241|||
+Função no Relé a Ser Lida|Endereçamento Modbus||
+HSL2B1_02 - Comando Abrir DJ - M-B-511101B|20.0||
+HSH2B1_02 - Comando Fechar DJ - M-B-511101B|20.1||
+IT2B1_R_02 - Corrente Fase R - M-B-511101B|217||
+IT2B1_S_02 - Corrente Fase S - M-B-511101B|219||
+IT2B1_T_02 - Corrente Fase T - M-B-511101B|221||
+JT2B1_PA_02  - Analógicas - Potencia Ativa - M-B-511101B|299||
+JT2B1_PR_02  - Analógicas - Potencia Reativa - M-B-511101B|302||
+YS2B1_P47_02  - Proteção Func. 47 - M-B-511101B|723.1||
+YS2B1_P50_02  - Proteção Func. 50 - M-B-511101B|723.3||
+YS2B1_P66_02  - Proteção Func. 66 - M-B-511101B|723.5||
+YSHL2B1_02  - Posição DJ - M-B-511101B|725.0||
+YS2B1_RD_02  - DJ Ready - M-B-511101B|725.1||
+YS2B1_TEST_02  - DJ Teste - M-B-511101B|725.2||
+YS2B1_P86_02  - Proteção Func. 86 - M-B-511101B|725.3||
+YS2B1_CTER_02  - Posição Chave Terra - M-B-511101B|725.5||
+YS2B1_P49_02  - Proteção Func. 49 - M-B-511101B|730.3||
+YS2B1_P37_02  - Proteção Func. 37 - M-B-511101B|732.4||
+YS2B1_P46_02   - Proteção Func. 46 - M-B-511101B|732.9||
+YS2B1_P27_02  - Proteção Func. 27 - M-B-511101B|732.14||
+YS2B1_P50G_02  - Proteção Func. 50GS - M-B-511101B|733.12||
+YS2B1_P48_02  - Proteção Func. 48 - M-B-511101B|734.2||
+YS2B1_P59_02  - Proteção Func. 59 - M-B-511101B|735.2||
+YS2B1_P87_02  - Proteção Func. 87 - M-B-511101B|737.5||
+YS2B1_STUS_02  - STATUS RELE 11|19.4||
+A1_M-B-511101A   -   12   -   p241|||
+Função no Relé a Ser Lida|Endereçamento Modbus||
+HSL2A1_02 - Comando Abrir DJ - M-B-511101A|20.0||
+HSH2A1_02 - Comando Fechar DJ - M-B-511101A|20.1||
+IT2A1_R_02 - Corrente Fase R - M-B-511101A|217||
+IT2A1_S_02 - Corrente Fase S - M-B-511101A|219||
+IT2A1_T_02 - Corrente Fase T - M-B-511101A|221||
+JT2A1_PA_02  - Analógicas - Potencia Ativa - M-B-511101A|299||
+JT2A1_PR_02  - Analógicas - Potencia Reativa - M-B-511101A|302||
+YS2A1_P47_02  - Proteção Func. 47 - M-B-511101A|723.1||
+YS2A1_P50_02  - Proteção Func. 50 - M-B-511101A|723.3||
+YS2A1_P66_02  - Proteção Func. 66 - M-B-511101A|723.5||
+YSHL2A1_02  - Posição DJ - M-B-511101A|725.0||
+YS2A1_RD_02  - DJ Ready - M-B-511101A|725.1||
+YS2A1_TEST_02  - DJ Teste - M-B-511101A|725.2||
+YS2A1_P86_02  - Proteção Func. 86 - M-B-511101A|725.3||
+YS2A1_CTER_02  - Posição Chave Terra - M-B-511101A|725.5||
+YS2A1_P49_02  - Proteção Func. 49 - M-B-511101A|730.3||
+YS2A1_P37_02  - Proteção Func. 37 - M-B-511101A|732.4||
+YS2A1_P46_02  - Proteção Func. 46 - M-B-511101A|732.9||
+YS2A1_P27_02  - Proteção Func. 27 - M-B-511101A|732.14||
+YS2A1_P50GS_02  - Proteção Func. 50GS - M-B-511101A|733.12||
+YS2A1_P48_02  - Proteção Func. 48 - M-B-511101A|734.2||
+YS2A1_P59_02  - Proteção Func. 59 - M-B-511101A|735.2||
+YS2A1_P51_02  - Proteção Func. 87 - M-B-511101A|737.5||
+YS2A1_STUS_02  - STATUS RELE 12|19.4||

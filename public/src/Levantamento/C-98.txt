@@ -1,0 +1,66 @@
+PN-514001-C264-99|||
+B5_M-B-512401B  -  1   -   p241|||
+Função no Relé a Ser Lida|Endereçamento Modbus||
+HSL2B5_02 - Comando Abrir Disjuntor - M-B-512401B|20.1||
+HSH2B5_02 - Comando Fechar Disjuntor - M-B-512401B|20.2||
+FRQP241 - Frequencia - M-B-512401B|19.0||
+FRQP242 - Frequencia - M-B-512401B|20.0||
+FRQP243 - Frequencia - M-B-512401B|21.0||
+FRQP244 - Frequencia - M-B-512401B|22.0||
+FRQP245 - Frequencia - M-B-512401B|23.0||
+FRQP246 - Frequencia - M-B-512401B|24.0||
+A8_TF-514203A   -   28   -   p127|||
+Função no Relé a Ser Lida|Endereçamento Modbus||
+HSHA8_01 - Comando Fch Disjuntor - TF-514203A|1024.3||
+HSLA8_01 - Comando Abre Disjuntor - TF-514203A|1024.4||
+YSA8_RD_01  - DJ Ready - TF-514203A|20.0||
+YSA8_TEST_01  - DJ Teste - TF-514203A|50.0||
+YSA8_P86_01  - Proteção Func. 86 - TF-514203A|60.0||
+YS1A8_CTER_01  - Chave Terra - TF-514203A|90.0||
+YSA8_P27_01  - Proteção Func. 27 - TF-514203A|150.0||
+YSA8_P67T_01  - Proteção Func. 67-T - TF-514203A|166.0||
+YSA8_P67F_01  - Proteção Func. 67-F - TF-514203A|166.1||
+2B_TF-514401A   -  20   -   p122|||
+Função no Relé a Ser Lida|Endereçamento Modbus||
+HSHC2B_03 Comando Fechar  DJ  - TF-514401A|1024.3||
+HSLC2B_03 Comando Abrir DJ  - TF-514401A|1024.4||
+YSHLC2B_03 Posição DJ 52-03 - TF-514401A|16.0||
+YSC2B_RD_03 DJ 52-03 Ready - TF-514401A|16.1||
+YSC2B_TEST_03 DJ 52-03 Teste - TF-514401A|16.2||
+YSC2B_P86_03 Proteção Func. 86 - TF-514401A|19.2||
+YSC2B_P50_03 Proteção Func. 50 - TF-514401A|22.6||
+YSC2B_P37_03 Proteção Func. 37 - TF-514401A|33.6||
+YSC2B_P51_03 Proteção Func. 51 - TF-514401A|20.6||
+YSC2B_P46_03 Proteção Func. 46 - TF-514401A|34.6||
+YSC2B_P48_03 Proteção Func 48 - TF-514401A|19.9||
+YSC2B_P49_03 Proteção Func 49 - TF-514401A|35.1||
+YSC2B_P51N_03 Proteção Func 51N - TF-514401A|23.6||
+ITC2B_R_03 Analógicas - Corrente Fase R - SPARE|48||
+ITC2B_S_03 Analógicas - Corrente Fase S - SPARE|50||
+ITC2B_T_03 Analógicas - Corrente Fase T - SPARE|52||
+4B_AF-51000XA   -  25   -   p632|||
+Função no Relé a Ser Lida|Endereçamento Modbus||
+HSHC2B_03T2 Comando Fechar  DJ  - TF-514401A|201.9||
+HSLC2B_03T2 Comando Abrir DJ  - TF-514401A|201.8||
+YSHLC2B_03T2 Posição DJ 52-03 - TF-514401A|10.0||
+ITC2B_R_03T2 Analógicas - Corrente Fase R - SPARE|20||
+ITC2B_S_03T2 Analógicas - Corrente Fase S - SPARE|26||
+ITC2B_T_03T2 Analógicas - Corrente Fase T - SPARE|31||
+4B_AF-51000XB  -  7   -   p632|||
+Função no Relé a Ser Lida|Endereçamento Modbus||
+HSHC2B_03T2 Comando Fechar  DJ  - TF-514401A|201.9||
+HSLC2B_03T2 Comando Abrir DJ  - TF-514401A|201.8||
+YSHLC2B_03T2 Posição DJ 52-03 - TF-514401A|01.0||
+YSC2B_RD_03T2 DJ 52-03 Ready - TF-514401A|02.0||
+YSC2B_TEST_03T2 DJ 52-03 Teste - TF-514401A|03.0||
+YSC2B_P86_03T2 Proteção Func. 86 - TF-514401A|04.0||
+YSC2B_P50_03T2 Proteção Func. 50 - TF-514401A|05.0||
+YSC2B_P37_03T2 Proteção Func. 37 - TF-514401A|06.0||
+YSC2B_P51_03T2 Proteção Func. 51 - TF-514401A|07.0||
+YSC2B_P46_03T2 Proteção Func. 46 - TF-514401A|08.0||
+YSC2B_P48_03T2 Proteção Func 48 - TF-514401A|09.0||
+YSC2B_P49_03T2 Proteção Func 49 - TF-514401A|10.0||
+YSC2B_P51N_03T2 Proteção Func 51N - TF-514401A|148.0||
+ITC2B_R_03T2 Analógicas - Corrente Fase R - SPARE|150||
+ITC2B_S_03T2 Analógicas - Corrente Fase S - SPARE|152||
+ITC2B_T_03T2 Analógicas - Corrente Fase T - SPARE|156||

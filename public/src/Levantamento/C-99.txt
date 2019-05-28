@@ -1,0 +1,45 @@
+PN-514001-C264-98|||
+B5_M-B-512401B  -  1   -   p241|||
+Função no Relé a Ser Lida|Endereçamento Modbus||
+HSL2B5_02 - Comando Abrir Disjuntor - M-B-512401B|20.1||
+HSH2B5_02 - Comando Fechar Disjuntor - M-B-512401B|20.2||
+YSHL2B5_02  - Posição DJ - M-B-512401B|725.0||
+HSL2B5_02 - Comando Abrir Disjuntor - M-B-512401B|725.1||
+HSH2B5_02 - Comando Fechar Disjuntor - M-B-512401B|725.2||
+YS2B5_P86_02  - Proteção Func. 86 - M-B-512401B|725.3||
+YS2B5_CTER_02  - Posição Chave Terra - M-B-512401B|725.5||
+YS2B5_P27_02  - Proteção Func. 27 - M-B-512401B|732.14||
+YS2B5_P37_02  - Proteção Func. 37 - M-B-512401B|732.4||
+YS2B5_P59_02  - Proteção Func. 59 - M-B-512401B|735.2||
+YS2B5_P46_02  - Proteção Func. 46 - M-B-512401B|732.9||
+YS2B5_P47_02  - Proteção Func. 47 - M-B-512401B|723.1||
+YS2B5_P48_02  - Proteção Func. 48 - M-B-512401B|734.2||
+YS2B5_P49_02  - Proteção Func. 49 - M-B-512401B|730.3||
+YS2B5_P50_02  - Proteção Func. 50 - M-B-512401B|723.3||
+YS2B5_P50G_02  - Proteção Func. 50GS - M-B-512401B|733.12||
+YS2B5_P51_02  - Proteção Func. 51 - M-B-512401B|737.5||
+YS2B5_P66_02  - Proteção Func. 66 - M-B-512401B|723.5||
+YS2B5_R_02 - Corrente Fase R - M-B-512401D|217||
+YS2B5_S_02 - Corrente Fase S - M-B-512401D|219||
+YS2B5_T_02 - Corrente Fase T - M-B-512401D|221||
+JT2B5_PA_02  - Analógicas - Potencia Ativa - M-B-512401B|299||
+JT2B5_PR_02  - Analógicas - Potencia Reativa - M-B-512401B|302||
+A8_TF-514203A   -   28   -   p127|||
+Função no Relé a Ser Lida|Endereçamento Modbus||
+HSHA8_01 - Comando Fch Disjuntor - TF-514203A|2048.4||
+HSLA8_01 - Comando Abre Disjuntor - TF-514203A|2048.3||
+YSA8_RD_01  - DJ Ready - TF-514203A|32.1||
+ YSA8_TEST_01  - DJ Teste - TF-514203A|32.2||
+ YSA8_P86_01  - Proteção Func. 86 - TF-514203A|32.3||
+ YS1A8_CTER_01  - Chave Terra - TF-514203A|32.5||
+ YSA8_P27_01  - Proteção Func. 27 - TF-514203A|224.6||
+ YSA8_P67T_01  - Proteção Func. 67-T - TF-514203A|40.6||
+ YSA8_P67F_01  - Proteção Func. 67-F - TF-514203A|42.6||
+ YSA8_P67NT_01  - Proteção Func. 67N-T - TF-514203A|48.6||
+ YSA8_P67NF_01  - Proteção Func. 67N-F - TF-514203A|46.6||
+JTA8_PA_01  - Analógicas - Potencia Ativa - TF-514203A|316||
+JTA8_PR_01  - Analógicas - Potencia Reativa - TF-514203A|320||
+ETA8_S_01  - Analógicas - Tensão Fase S - TF-514203A|274||
+ITA8_R_01 - Corrente Fase R - TF-514203A|96||
+ITA8_S_01 - Corrente Fase S - TF-514203A|100||
+ITA8_T_01 - Corrente Fase T - TF-514203A|104||

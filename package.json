@@ -1,0 +1,23 @@
+{
+  "name": "modreconfig",
+  "version": "1.0.0",
+  "description": "Escreve códigos em SCL siemens para o clp s7200",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nervado/modreconfig.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nervado/modreconfig/issues"
+  },
+  "homepage": "https://github.com/Nervado/modreconfig#readme",
+  "devDependencies": {
+    "electron": "^5.0.2"
+  }
+}

@@ -1,0 +1,551 @@
+FUNCTION "CONCENTRADOR2" : VOID
+TITLE =Concentrador 2
+AUTHOR : 'UNI-RJ'
+VERSION : 0.1
+
+BEGIN
+NETWORK
+TITLE =Rearrajo
+
+      L     "UNI_RECV_CP5".JT2A11_PA_02; 
+      T     QW     2; //Analógicas - Potencia Ativa - SPARE
+      L     "UNI_RECV_CP5".JT2A11_PR_02; 
+      T     QW     4; //Analógicas - Potencia Reativa  - SPARE
+      L     "UNI_RECV_CP5".JT2A2_PA_02; 
+      T     QW     8; //Analógicas - Potencia Ativa - M-B-511101C
+      L     "UNI_RECV_CP5".JT2A2_PR_02; 
+      T     QW    10; //Analógicas - Potencia Reativa  - M-B-511101C
+      L     "UNI_RECV_CP5".JT2A3_PA_02; 
+      T     QW    14; //Analógicas - Potencia Ativa - M-B-511101E
+      L     "UNI_RECV_CP5".JT2A3_PR_02; 
+      T     QW    16; //Analógicas - Potencia Reativa  - M-B-511101E
+      L     "UNI_RECV_CP5".JT2A4_PA_02; 
+      T     QW    20; //Analógicas - Potencia Ativa - M-B-511104B
+      L     "UNI_RECV_CP5".JT2A4_PR_02; 
+      T     QW    22; //Analógicas - Potencia Reativa  - M-B-511104B
+      L     "UNI_RECV_CP5".JT2A5_PA_02; 
+      T     QW    26; //Analógicas - Potencia Ativa - M-B-511104A
+      L     "UNI_RECV_CP5".JT2A5_PR_02; 
+      T     QW    28; //Analógicas - Potencia Reativa  - M-B-511104A
+      L     "UNI_RECV_CP5".JT2A6_PA_02; 
+      T     QW    32; //Analógicas - Potencia Ativa - M-B-512401A
+      L     "UNI_RECV_CP5".JT2A6_PR_02; 
+      T     QW    34; //Analógicas - Potencia Reativa  - M-B-512401A
+
+// E021C8-CP-ELE26
+
+      A     "UNI_RECV_CP8".YSHL2A12_02; 
+      =     Q     37.0; //Posição DJ - SPARE;
+      A     "UNI_RECV_CP8".YS2A12_RD_02; 
+      =     Q     37.1; //DJ  Ready - SPARE;
+      A     "UNI_RECV_CP8".YS2A12_TEST_02; 
+      =     Q     37.2; //DJ  Teste - SPARE;
+      A     "UNI_RECV_CP8".YS2A12_P86_02; 
+      =     Q     37.3; //Proteção Func. 86 - SPARE;
+      A     "UNI_RECV_CP8".YS2A12_CTER_02; 
+      =     Q     37.4; //Posição Chave Terra  - SPARE;
+      A     "UNI_RECV_CP8".YS2A12_P27_02; 
+      =     Q     37.5; //Proteção Func. 27 - SPARE;
+      A     "UNI_RECV_CP8".YS2A12_P37_02; 
+      =     Q     37.6; //Proteção Func. 37 - SPARE;
+      A     "UNI_RECV_CP8".YS2A12_P59_02; 
+      =     Q     37.7; //Proteção Func. 38 - SPARE;
+      A     "UNI_RECV_CP8".YS2A12_P46_02; 
+      =     Q     36.0; //Proteção Func. 46 - SPARE;
+      A     "UNI_RECV_CP8".YS2A12_P47_02; 
+      =     Q     36.1; //Proteção Func. 47 - SPARE;
+      A     "UNI_RECV_CP8".YS2A12_P48_02; 
+      =     Q     36.2; //Proteção Func. 48 - SPARE;
+      A     "UNI_RECV_CP8".YS2A12_P49_02; 
+      =     Q     36.3; //Proteção Func. 49 - SPARE;
+      A     "UNI_RECV_CP8".YS2A12_P50_02; 
+      =     Q     36.4; //Proteção Func. 50 - SPARE;
+      A     "UNI_RECV_CP8".YS2A12_P50G_02; 
+      =     Q     36.5; //Proteção Func. 50GS - SPARE;
+      A     "UNI_RECV_CP8".YS2A12_P87_02; 
+      =     Q     36.6; //Proteção Func. 51 - SPARE;
+      A     "UNI_RECV_CP8".YS2A12_P66_02; 
+      =     Q     36.7; //Proteção Func. 66 - SPARE;
+      A     "UNI_RECV_CP8".YSHL2A7_02; 
+      =     Q     39.0; //Posição DJ - M-B-512401C;
+      A     "UNI_RECV_CP8".YS2A7_RD_02; 
+      =     Q     39.1; //DJ  Ready - M-B-512401C;
+      A     "UNI_RECV_CP8".YS2A7_TEST_02; 
+      =     Q     39.2; //DJ  Teste - M-B-512401C;
+      A     "UNI_RECV_CP8".YS2A7_P86_02; 
+      =     Q     39.3; //Proteção Func. 86 - M-B-512401C;
+      A     "UNI_RECV_CP8".YS2A7_CTER_02; 
+      =     Q     39.4; //Posição Chave Terra  - M-B-512401C;
+      A     "UNI_RECV_CP8".YS2A7_P27_02; 
+      =     Q     39.5; //Proteção Func. 27 - M-B-512401C;
+      A     "UNI_RECV_CP8".YS2A7_P37_02; 
+      =     Q     39.6; //Proteção Func. 37 - M-B-512401C;
+      A     "UNI_RECV_CP8".YS2A7_P59_02; 
+      =     Q     39.7; //Proteção Func. 38 - M-B-512401C;
+      A     "UNI_RECV_CP8".YS2A7_P46_02; 
+      =     Q     38.0; //Proteção Func. 46 - M-B-512401C;
+      A     "UNI_RECV_CP8".YS2A7_P47_02; 
+      =     Q     38.1; //Proteção Func. 47 - M-B-512401C;
+      A     "UNI_RECV_CP8".YS2A7_P48_02; 
+      =     Q     38.2; //Proteção Func. 48 - M-B-512401C;
+      A     "UNI_RECV_CP8".YS2A7_P49_02; 
+      =     Q     38.3; //Proteção Func. 49 - M-B-512401C;
+      A     "UNI_RECV_CP8".YS2A7_P50_02; 
+      =     Q     38.4; //Proteção Func. 50 - M-B-512401C;
+      A     "UNI_RECV_CP8".YS2A7_P50G_02; 
+      =     Q     38.5; //Proteção Func. 50GS - M-B-512401C;
+      A     "UNI_RECV_CP8".YS2A7_P87_02; 
+      =     Q     38.6; //Proteção Func. 51 - M-B-512401C;
+      A     "UNI_RECV_CP8".YS2A7_P66_02; 
+      =     Q     38.7; //Proteção Func. 66 - M-B-512401C;
+      A     "UNI_RECV_CP8".YSHL2A8_02; 
+      =     Q     41.0; //Posição DJ - M-B-533501A;
+      A     "UNI_RECV_CP8".YS2A8_RD_02; 
+      =     Q     41.1; //DJ  Ready - M-B-533501A;
+      A     "UNI_RECV_CP8".YS2A8_TEST_02; 
+      =     Q     41.2; //DJ  Teste - M-B-533501A;
+      A     "UNI_RECV_CP8".YS2A8_P86_02; 
+      =     Q     41.3; //Proteção Func. 86 - M-B-533501A;
+      A     "UNI_RECV_CP8".YS2A8_CTER_02; 
+      =     Q     41.4; //Posição Chave Terra  - M-B-533501A;
+      A     "UNI_RECV_CP8".YS2A8_P27_02; 
+      =     Q     41.5; //Proteção Func. 27 - M-B-533501A;
+      A     "UNI_RECV_CP8".YS2A8_P37_02; 
+      =     Q     41.6; //Proteção Func. 37 - M-B-533501A;
+      A     "UNI_RECV_CP8".YS2A8_P59_02; 
+      =     Q     41.7; //Proteção Func. 38 - M-B-533501A;
+      A     "UNI_RECV_CP8".YS2A8_P46_02; 
+      =     Q     40.0; //Proteção Func. 46 - M-B-533501A;
+      A     "UNI_RECV_CP8".YS2A8_P47_02; 
+      =     Q     40.1; //Proteção Func. 47 - M-B-533501A;
+      A     "UNI_RECV_CP8".YS2A8_P48_02; 
+      =     Q     40.2; //Proteção Func. 48 - M-B-533501A;
+      A     "UNI_RECV_CP8".YS2A8_P49_02; 
+      =     Q     40.3; //Proteção Func. 49 - M-B-533501A;
+      A     "UNI_RECV_CP8".YS2A8_P50_02; 
+      =     Q     40.4; //Proteção Func. 50 - M-B-533501A;
+      A     "UNI_RECV_CP8".YS2A8_P50G_02; 
+      =     Q     40.5; //Proteção Func. 50GS - M-B-533501A;
+      A     "UNI_RECV_CP8".YS2A8_P87_02; 
+      =     Q     40.6; //Proteção Func. 51 - M-B-533501A;
+      A     "UNI_RECV_CP8".YS2A8_P66_02; 
+      =     Q     40.7; //Proteção Func. 66 - M-B-533501A;
+      A     "UNI_RECV_CP8".YSHL2A10_02; 
+      =     Q     43.0; //Posição DJ - M-B-UT-125101-01C;
+      A     "UNI_RECV_CP8".YS2A10_RD_02; 
+      =     Q     43.1; //DJ  Ready - M-B-UT-125101-01C;
+      A     "UNI_RECV_CP8".YS2A10_TEST_02; 
+      =     Q     43.2; //DJ  Teste - M-B-UT-125101-01C;
+      A     "UNI_RECV_CP8".YS2A10_P86_02; 
+      =     Q     43.3; //Proteção Func. 86 - M-B-UT-125101-01C;
+      A     "UNI_RECV_CP8".YS2A10_CTER_02; 
+      =     Q     43.4; //Posição Chave Terra  - M-B-UT-125101-01C;
+      A     "UNI_RECV_CP8".YS2A10_P27_02; 
+      =     Q     43.5; //Proteção Func. 27 - M-B-UT-125101-01C;
+      A     "UNI_RECV_CP8".YS2A10_P37_02; 
+      =     Q     43.6; //Proteção Func. 37 - M-B-UT-125101-01C;
+      A     "UNI_RECV_CP8".YS2A10_P59_02; 
+      =     Q     43.7; //Proteção Func. 38 - M-B-UT-125101-01C;
+      A     "UNI_RECV_CP8".YS2A10_P46_02; 
+      =     Q     42.0; //Proteção Func. 46 - M-B-UT-125101-01C;
+      A     "UNI_RECV_CP8".YS2A10_P47_02; 
+      =     Q     42.1; //Proteção Func. 47 - M-B-UT-125101-01C;
+      A     "UNI_RECV_CP8".YS2A10_P48_02; 
+      =     Q     42.2; //Proteção Func. 48 - M-B-UT-125101-01C;
+      A     "UNI_RECV_CP8".YS2A10_P49_02; 
+      =     Q     42.3; //Proteção Func. 49 - M-B-UT-125101-01C;
+      A     "UNI_RECV_CP8".YS2A10_P50_02; 
+      =     Q     42.4; //Proteção Func. 50 - M-B-UT-125101-01C;
+      A     "UNI_RECV_CP8".YS2A10_P50G_02; 
+      =     Q     42.5; //Proteção Func. 50GS - M-B-UT-125101-01C;
+      A     "UNI_RECV_CP8".YS2A10_P87_02; 
+      =     Q     42.6; //Proteção Func. 51 - M-B-UT-125101-01C;
+      A     "UNI_RECV_CP8".YS2A10_P66_02; 
+      =     Q     42.7; //Proteção Func. 66 - M-B-UT-125101-01C;
+      A     "UNI_RECV_CP8".YSHL2A9_02; 
+      =     Q     45.0; //Posição DJ - M-B-UT-125101-01A;
+      A     "UNI_RECV_CP8".YS2A9_RD_02; 
+      =     Q     45.1; //DJ  Ready - M-B-UT-125101-01A;
+      A     "UNI_RECV_CP8".YS2A9_TEST_02; 
+      =     Q     45.2; //DJ  Teste - M-B-UT-125101-01A;
+      A     "UNI_RECV_CP8".YS2A9_P86_02; 
+      =     Q     45.3; //Proteção Func. 86 - M-B-UT-125101-01A;
+      A     "UNI_RECV_CP8".YS2A9_CTER_02; 
+      =     Q     45.4; //Posição Chave Terra  - M-B-UT-125101-01A;
+      A     "UNI_RECV_CP8".YS2A9_P27_02; 
+      =     Q     45.5; //Proteção Func. 27 - M-B-UT-125101-01A;
+      A     "UNI_RECV_CP8".YS2A9_P37_02; 
+      =     Q     45.6; //Proteção Func. 37 - M-B-UT-125101-01A;
+      A     "UNI_RECV_CP8".YS2A9_P59_02; 
+      =     Q     45.7; //Proteção Func. 38 - M-B-UT-125101-01A;
+      A     "UNI_RECV_CP8".YS2A9_P46_02; 
+      =     Q     44.0; //Proteção Func. 46 - M-B-UT-125101-01A;
+      A     "UNI_RECV_CP8".YS2A9_P47_02; 
+      =     Q     44.1; //Proteção Func. 47 - M-B-UT-125101-01A;
+      A     "UNI_RECV_CP8".YS2A9_P48_02; 
+      =     Q     44.2; //Proteção Func. 48 - M-B-UT-125101-01A;
+      A     "UNI_RECV_CP8".YS2A9_P49_02; 
+      =     Q     44.3; //Proteção Func. 49 - M-B-UT-125101-01A;
+      A     "UNI_RECV_CP8".YS2A9_P50_02; 
+      =     Q     44.4; //Proteção Func. 50 - M-B-UT-125101-01A;
+      A     "UNI_RECV_CP8".YS2A9_P50G_02; 
+      =     Q     44.5; //Proteção Func. 50GS - M-B-UT-125101-01A;
+      A     "UNI_RECV_CP8".YS2A9_P87_02; 
+      =     Q     44.6; //Proteção Func. 51 - M-B-UT-125101-01A;
+      A     "UNI_RECV_CP8".YS2A9_P66_02; 
+      =     Q     44.7; //Proteção Func. 66 - M-B-UT-125101-01A;
+      A     "UNI_RECV_CP8".YS2A12_STUS_02; 
+      =     Q     47.0; //STATUS RELE 19;
+      A     "UNI_RECV_CP8".YS2A7_STUS_02; 
+      =     Q     47.1; //STATUS RELE 20;
+      A     "UNI_RECV_CP8".YS2A8_STUS_02; 
+      =     Q     47.2; //STATUS RELE 21;
+      A     "UNI_RECV_CP8".YS2A10_STUS_02; 
+      =     Q     47.3; //STATUS RELE 22;
+      A     "UNI_RECV_CP8".YS2A9_STUS_02; 
+      =     Q     47.4; //STATUS RELE 23;
+      A     "UNI_RECV_CP8".YS2A12_COM_02; 
+      =     Q     47.5; //COMUNIC RELE 19;
+      A     "UNI_RECV_CP8".YS2A7_COM_02; 
+      =     Q     47.6; //COMUNIC RELE 20;
+      A     "UNI_RECV_CP8".YS2A8_COM_02; 
+      =     Q     47.7; //COMUNIC RELE 21;
+      A     "UNI_RECV_CP8".YS2A10_COM_02; 
+      =     Q     46.0; //COMUNIC RELE 22;
+      A     "UNI_RECV_CP8".YS2A9_COM_02; 
+      =     Q     46.1; //COMUNIC RELE 23;
+      A     "UNI_RECV_CP8".YSNO12_COM_02; 
+      =     Q     46.2; //COMUNIC NÓ 12;
+      A     "UNI_RECV_CP8".YSNO12_STUS_02; 
+      =     Q     46.3; //STATUS NÓ 12;
+      A     "UNI_RECV_CP8".SPARE738_10_4; 
+      =     Q     46.4; //;
+      A     "UNI_RECV_CP8".SPARE738_10_5; 
+      =     Q     46.5; //;
+      A     "UNI_RECV_CP8".SPARE738_10_6; 
+      =     Q     46.6; //;
+      A     "UNI_RECV_CP8".SPARE738_10_7; 
+      =     Q     46.7; //;
+      A     "UNI_RECV_CP8".SPARE741_13_0; 
+      =     Q     49.0; //;
+      A     "UNI_RECV_CP8".SPARE741_13_1; 
+      =     Q     49.1; //;
+      A     "UNI_RECV_CP8".SPARE741_13_2; 
+      =     Q     49.2; //;
+      A     "UNI_RECV_CP8".SPARE741_13_3; 
+      =     Q     49.3; //;
+      A     "UNI_RECV_CP8".SPARE741_13_4; 
+      =     Q     49.4; //;
+      A     "UNI_RECV_CP8".SPARE741_13_5; 
+      =     Q     49.5; //;
+      A     "UNI_RECV_CP8".SPARE741_13_6; 
+      =     Q     49.6; //;
+      A     "UNI_RECV_CP8".SPARE741_13_7; 
+      =     Q     49.7; //;
+      A     "UNI_RECV_CP8".SPARE740_12_0; 
+      =     Q     48.0; //;
+      A     "UNI_RECV_CP8".SPARE740_12_1; 
+      =     Q     48.1; //;
+      A     "UNI_RECV_CP8".SPARE740_12_2; 
+      =     Q     48.2; //;
+      A     "UNI_RECV_CP8".SPARE740_12_3; 
+      =     Q     48.3; //;
+      A     "UNI_RECV_CP8".SPARE740_12_4; 
+      =     Q     48.4; //;
+      A     "UNI_RECV_CP8".SPARE740_12_5; 
+      =     Q     48.5; //;
+      A     "UNI_RECV_CP8".SPARE740_12_6; 
+      =     Q     48.6; //;
+      A     "UNI_RECV_CP8".SPARE740_12_7; 
+      =     Q     48.7; //;
+      L     "UNI_RECV_CP8".JT2A12_PA_R_02; 
+      T     QW    52; //Analógicas - Potencia Ativa - SPARE
+      L     "UNI_RECV_CP8".JT2A12_PR_S_02; 
+      T     QW    54; //Analógicas - Potencia Reativa  - SPARE
+      L     "UNI_RECV_CP8".JT2A7_PA_02; 
+      T     QW    58; //Analógicas - Potencia Ativa - M-B-512401C
+      L     "UNI_RECV_CP8".JT2A7_PR_02; 
+      T     QW    60; //Analógicas - Potencia Reativa  - M-B-512401C
+      L     "UNI_RECV_CP8".JT2A8_PA_02; 
+      T     QW    64; //Analógicas - Potencia Ativa - M-B-533501A
+      L     "UNI_RECV_CP8".JT2A8_PR_02; 
+      T     QW    66; //Analógicas - Potencia Reativa  - M-B-533501A
+      L     "UNI_RECV_CP8".JT2A10_PA_02; 
+      T     QW    70; //Analógicas - Potencia Ativa - M-B-UT-125101-01C
+      L     "UNI_RECV_CP8".JT2A10_PR_02; 
+      T     QW    72; //Analógicas - Potencia Reativa  - M-B-UT-125101-01C
+      L     "UNI_RECV_CP8".JT2A9_PA_02; 
+      T     QW    76; //Analógicas - Potencia Ativa - M-B-UT-125101-01A
+      L     "UNI_RECV_CP8".JT2A9_PR_02; 
+      T     QW    78; //Analógicas - Potencia Reativa  - M-B-UT-125101-01A
+
+// E021C6-CP-ELE26
+
+      A     "UNI_RECV_CP6".YSHL2B10_02; 
+      =     Q     81.0; //Posição DJ - CF-M-B-513303;
+      A     "UNI_RECV_CP6".YS2B10_RD_02; 
+      =     Q     81.1; //DJ  Ready - CF-M-B-513303;
+      A     "UNI_RECV_CP6".YS2B10_TEST_02; 
+      =     Q     81.2; //DJ  Teste - CF-M-B-513303;
+      A     "UNI_RECV_CP6".YS2B10_P86_02; 
+      =     Q     81.3; //Proteção Func. 86 - CF-M-B-513303;
+      A     "UNI_RECV_CP6".YS2B10_P46_02; 
+      =     Q     81.4; //Proteção Func. 50 - CF-M-B-513303;
+      A     "UNI_RECV_CP6".YS2B10_P37_02; 
+      =     Q     81.5; //Proteção Func. 50GS - CF-M-B-513303;
+      A     "UNI_RECV_CP6".YS2B10_P50_02; 
+      =     Q     81.6; //Proteção Func. 51 - CF-M-B-513303;
+      A     "UNI_RECV_CP6".YS2B10_P49_02; 
+      =     Q     81.7; //Proteção Func. 67 - CF-M-B-513303;
+      A     "UNI_RECV_CP6".YS2B10_P67N_02; 
+      =     Q     80.0; //Proteção Func. 67N - CF-M-B-513303;
+      A     "UNI_RECV_CP6".YSHL02B_02; 
+      =     Q     80.1; //Posição DJ - TF-514201B;
+      A     "UNI_RECV_CP6".YS02B_RD_02; 
+      =     Q     80.2; //DJ  Ready - TF-514201B;
+      A     "UNI_RECV_CP6".YS02B_TEST_02; 
+      =     Q     80.3; //DJ  Teste - TF-514201B;
+      A     "UNI_RECV_CP6".YS02B_P86_02; 
+      =     Q     80.4; //Proteção Func. 86 - TF-514201B;
+      A     "UNI_RECV_CP6".YS02B_P271_02; 
+      =     Q     80.5; //Proteção Func. 50 - TF-514201B;
+      A     "UNI_RECV_CP6".YS02B_P272_02; 
+      =     Q     80.6; //Proteção Func. 50GS - TF-514201B;
+      A     "UNI_RECV_CP6".YS02B_P51_02; 
+      =     Q     80.7; //Proteção Func. 51 - TF-514201B;
+      A     "UNI_RECV_CP6".YS02B_P67_02; 
+      =     Q     83.0; //Proteção Func. 67 - TF-514201B;
+      A     "UNI_RECV_CP6".YS02B_P67N_02; 
+      =     Q     83.1; //Proteção Func. 67N - TF-514201B;
+      A     "UNI_RECV_CP6".YSHL02CA_02; 
+      =     Q     83.2; //Posição DJ - TIE BREAKER A;
+      A     "UNI_RECV_CP6".YS02CA_RD_02; 
+      =     Q     83.3; //DJ  Ready - TIE BREAKER A;
+      A     "UNI_RECV_CP6".YS02CA_TEST_02; 
+      =     Q     83.4; //DJ  Teste - TIE BREAKER A;
+      A     "UNI_RECV_CP6".YS02CA_P86_02; 
+      =     Q     83.5; //Proteção Func. 86 - TIE BREAKER A;
+      A     "UNI_RECV_CP6".YS02CA_P271_02; 
+      =     Q     83.6; //Proteção Func. 50 - TIE BREAKER A;
+      A     "UNI_RECV_CP6".YS02CA_P272_02; 
+      =     Q     83.7; //Proteção Func. 50GS - TIE BREAKER A;
+      A     "UNI_RECV_CP6".YS02CA_P51_02; 
+      =     Q     82.0; //Proteção Func. 51 - TIE BREAKER A;
+      A     "UNI_RECV_CP6".YS02CA_P59_02; 
+      =     Q     82.1; //Proteção Func. 67 - TIE BREAKER A;
+      A     "UNI_RECV_CP6".YS02CA_P67F_02; 
+      =     Q     82.2; //Proteção Func. 67N - TIE BREAKER A;
+      A     "UNI_RECV_CP6".YSHL02CB_02; 
+      =     Q     82.3; //Posição DJ - TIE BREAKER B;
+      A     "UNI_RECV_CP6".YS02CB_RD_02; 
+      =     Q     82.4; //DJ  Ready - TIE BREAKER B;
+      A     "UNI_RECV_CP6".YS02CB_TEST_02; 
+      =     Q     82.5; //DJ  Teste - TIE BREAKER B;
+      A     "UNI_RECV_CP6".YS02CB_P86_02; 
+      =     Q     82.6; //Proteção Func. 86 - TIE BREAKER B;
+      A     "UNI_RECV_CP6".YS02CB_P271_02; 
+      =     Q     82.7; //Proteção Func. 50 - TIE BREAKER B;
+      A     "UNI_RECV_CP6".YS02CB_P272_02; 
+      =     Q     85.0; //Proteção Func. 50GS - TIE BREAKER B;
+      A     "UNI_RECV_CP6".YS02CB_P51_02; 
+      =     Q     85.1; //Proteção Func. 51 - TIE BREAKER B;
+      A     "UNI_RECV_CP6".YS02CB_P59_02; 
+      =     Q     85.2; //Proteção Func. 67 - TIE BREAKER B;
+      A     "UNI_RECV_CP6".YS02CB_P67F_02; 
+      =     Q     85.3; //Proteção Func. 67N - TIE BREAKER B;
+      A     "UNI_RECV_CP6".YSHL02A_02; 
+      =     Q     85.4; //Posição DJ;
+      A     "UNI_RECV_CP6".YS02A_RD_02; 
+      =     Q     85.5; //DJ  Ready;
+      A     "UNI_RECV_CP6".YS02A_TEST_02; 
+      =     Q     85.6; //DJ  Teste;
+      A     "UNI_RECV_CP6".YS02A_P86_02; 
+      =     Q     85.7; //Proteção Func. 86;
+      A     "UNI_RECV_CP6".YS02A_P271_02; 
+      =     Q     84.0; //Proteção Func. 50;
+      A     "UNI_RECV_CP6".YS02A_P272_02; 
+      =     Q     84.1; //Proteção Func. 50GS;
+      A     "UNI_RECV_CP6".YS02A_P51_02; 
+      =     Q     84.2; //Proteção Func. 51;
+      A     "UNI_RECV_CP6".YS02A_P59_02; 
+      =     Q     84.3; //Proteção Func. 67;
+      A     "UNI_RECV_CP6".YS02A_P67F_02; 
+      =     Q     84.4; //Proteção Func. 67N;
+      A     "UNI_RECV_CP6".YS2B10_STUS_02; 
+      =     Q     84.5; //STATUS RELE 24;
+      A     "UNI_RECV_CP6".YS02B_STUS_02; 
+      =     Q     84.6; //STATUS RELE 25;
+      A     "UNI_RECV_CP6".YS02CA_STUS_02; 
+      =     Q     84.7; //STATUS RELE 26;
+      A     "UNI_RECV_CP6".YS02CB_STUS_02; 
+      =     Q     87.0; //STATUS RELE 27;
+      A     "UNI_RECV_CP6".YS05A_STUS_02; 
+      =     Q     87.1; //STATUS RELE 28;
+      A     "UNI_RECV_CP6".YS2B10_COM_02; 
+      =     Q     87.2; //COMUNIC RELE 24;
+      A     "UNI_RECV_CP6".YS02B_COM_02; 
+      =     Q     87.3; //COMUNIC RELE 25;
+      A     "UNI_RECV_CP6".YS02CA_COM_02; 
+      =     Q     87.4; //COMUNIC RELE 26;
+      A     "UNI_RECV_CP6".YS02CB_COM_02; 
+      =     Q     87.5; //COMUNIC RELE 27;
+      A     "UNI_RECV_CP6".YS02A_COM_02; 
+      =     Q     87.6; //COMUNIC RELE 28;
+      A     "UNI_RECV_CP6".YSNO13_COM_02; 
+      =     Q     87.7; //COMUNIC NÓ 13;
+      A     "UNI_RECV_CP6".YSNO13_STUS_02; 
+      =     Q     86.0; //STATUS NÓ 13;
+      A     "UNI_RECV_CP6".YS_D_ARC_A_02; 
+      =     Q     86.1; //;
+      A     "UNI_RECV_CP6".YS_D_ARC_B_02; 
+      =     Q     86.2; //;
+      A     "UNI_RECV_CP6".YS5520014B; 
+      =     Q     86.3; //;
+      A     "UNI_RECV_CP6".YS5520014A; 
+      =     Q     86.4; //;
+      A     "UNI_RECV_CP6".SPARE796_6_5; 
+      =     Q     86.5; //;
+      A     "UNI_RECV_CP6".SPARE796_6_6; 
+      =     Q     86.6; //;
+      A     "UNI_RECV_CP6".SPARE796_6_7; 
+      =     Q     86.7; //;
+      L     "UNI_RECV_CP6".IT2B10_R_02; 
+      T     QW    88; //Analógicas - Tensão Fase R - CF-M-B-513303
+      L     "UNI_RECV_CP6".IT2B10_S_02; 
+      T     QW    90; //Analógicas - Tensão Fase S - CF-M-B-513303
+      L     "UNI_RECV_CP6".IT2B10_T_02; 
+      T     QW    92; //Analógicas - Tensão Fase T - CF-M-B-513303
+      L     "UNI_RECV_CP6".JT2B10_PA_02; 
+      T     QW    94; //Analógicas - Tensão Fase R - TF-514201B
+      L     "UNI_RECV_CP6".JT2B10_PR_02; 
+      T     QW    96; //Analógicas - Tensão Fase S - TF-514201B
+      L     "UNI_RECV_CP6".IT02B_R_02; 
+      T     QW    98; //Analógicas - Tensão Fase T - TF-514201B
+      L     "UNI_RECV_CP6".IT02B_S_02; 
+      T     QW   100; //Analógicas - Tensão Fase R - TIE BREAKER A
+      L     "UNI_RECV_CP6".IT02B_T_02; 
+      T     QW   102; //Analógicas - Tensão Fase S - TIE BREAKER A
+      L     "UNI_RECV_CP6".JT02B_PA_02; 
+      T     QW   104; //Analógicas - Tensão Fase T - TIE BREAKER A
+      L     "UNI_RECV_CP6".JT02B_PR_02; 
+      T     QW   106; //Analógicas - Tensão Fase R - TIE BREAKER B
+      L     "UNI_RECV_CP6".JT02B_FP_02; 
+      T     QW   108; //Analógicas - Tensão Fase S - TIE BREAKER B
+      L     "UNI_RECV_CP6".ET02B_02; 
+      T     QW   110; //Analógicas - Tensão Fase T - TIE BREAKER B
+      L     "UNI_RECV_CP6".ET02CA_R_02; 
+      T     QW   112; //Analógicas - Tensão Fase R
+      L     "UNI_RECV_CP6".ET02CB_R_02; 
+      T     QW   114; //Analógicas - Tensão Fase S
+      L     "UNI_RECV_CP6".IT02A_R_02; 
+      T     QW   116; //Analógicas - Tensão Fase T
+NETWORK
+TITLE = MÉDIA
+
+      L     "UNI_RECV_CP5".IT2A11_R_02; 
+      L     "UNI_RECV_CP5".IT2A11_S_02; 
+      +I    ; 
+      L     "UNI_RECV_CP5".IT2A11_T_02; 
+      +I    ; 
+      L     3; 
+      /I    ; 
+      T     QW     0; //  Analógicas - Corrente Média entre Fases - SPARE
+      L     "UNI_RECV_CP5".IT2A2_R_02; 
+      L     "UNI_RECV_CP5".IT2A2_S_02; 
+      +I    ; 
+      L     "UNI_RECV_CP5".IT2A2_T_02; 
+      +I    ; 
+      L     3; 
+      /I    ; 
+      T     QW     6; //  Analógicas - Corrente Média entre Fases - M-B-511101C
+      L     "UNI_RECV_CP5".IT2A3_R_02; 
+      L     "UNI_RECV_CP5".IT2A3_S_02; 
+      +I    ; 
+      L     "UNI_RECV_CP5".IT2A3_T_02; 
+      +I    ; 
+      L     3; 
+      /I    ; 
+      T     QW    12; //  Analógicas - Corrente Média entre Fases - M-B-511101E
+      L     "UNI_RECV_CP5".IT2A4_R_02; 
+      L     "UNI_RECV_CP5".IT2A4_S_02; 
+      +I    ; 
+      L     "UNI_RECV_CP5".IT2A4_T_02; 
+      +I    ; 
+      L     3; 
+      /I    ; 
+      T     QW    18; //  Analógicas - Corrente Média entre Fases - M-B-511104B
+      L     "UNI_RECV_CP5".IT2A5_R_02; 
+      L     "UNI_RECV_CP5".IT2A5_S_02; 
+      +I    ; 
+      L     "UNI_RECV_CP5".IT2A5_T_02; 
+      +I    ; 
+      L     3; 
+      /I    ; 
+      T     QW    24; //  Analógicas - Corrente Média entre Fases - M-B-511104A
+      L     "UNI_RECV_CP5".IT2A6_R_02; 
+      L     "UNI_RECV_CP5".IT2A6_S_02; 
+      +I    ; 
+      L     "UNI_RECV_CP5".IT2A6_T_02; 
+      +I    ; 
+      L     3; 
+      /I    ; 
+      T     QW    30; //  Analógicas - Corrente Média entre Fases - M-B-512401A
+      L     "UNI_RECV_CP8".IT2A12_R_02; 
+      L     "UNI_RECV_CP8".IT2A12_S_02; 
+      +I    ; 
+      L     "UNI_RECV_CP8".IT2A12_T_02; 
+      +I    ; 
+      L     3; 
+      /I    ; 
+      T     QW    50; //  Analógicas - Corrente Média entre Fases - SPARE
+      L     "UNI_RECV_CP8".IT2A7_R_02; 
+      L     "UNI_RECV_CP8".IT2A7_S_02; 
+      +I    ; 
+      L     "UNI_RECV_CP8".IT2A7_T_02; 
+      +I    ; 
+      L     3; 
+      /I    ; 
+      T     QW    56; //  Analógicas - Corrente Média entre Fases - M-B-512401C
+      L     "UNI_RECV_CP8".IT2A8_R_02; 
+      L     "UNI_RECV_CP8".IT2A8_S_02; 
+      +I    ; 
+      L     "UNI_RECV_CP8".IT2A8_T_02; 
+      +I    ; 
+      L     3; 
+      /I    ; 
+      T     QW    62; //  Analógicas - Corrente Média entre Fases - M-B-533501A
+      L     "UNI_RECV_CP8".IT2A10_R_02; 
+      L     "UNI_RECV_CP8".IT2A10_S_02; 
+      +I    ; 
+      L     "UNI_RECV_CP8".IT2A10_T_02; 
+      +I    ; 
+      L     3; 
+      /I    ; 
+      T     QW    68; //  Analógicas - Corrente Média entre Fases - M-B-UT-125101-01C
+      L     "UNI_RECV_CP8".IT2A9_R_02; 
+      L     "UNI_RECV_CP8".IT2A9_S_02; 
+      +I    ; 
+      L     "UNI_RECV_CP8".IT2A9_T_02; 
+      +I    ; 
+      L     3; 
+      /I    ; 
+      T     QW    74; //  Analógicas - Corrente Média entre Fases - M-B-UT-125101-01A
+
+
+NETWORK
+TITLE =
+
+      L     "UNI_RECV_CP6".JT02A_PA_02; //Analógicas
+      T     QW   122; //Analógicas
+      L     "UNI_RECV_CP6".JT02A_PR_02; //Analógicas
+      T     QW   124; //Analógicas
+
+      L     "UNI_RECV_CP6".JT02A_FP_02; //Analógicas
+      T     QW   118; //Analógicas
+      L     "UNI_RECV_CP6".ET02A_02; //Analógicas
+      T     QW   120; //Analógicas
+
+
+
+END_FUNCTION
+

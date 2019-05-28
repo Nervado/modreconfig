@@ -1,0 +1,160 @@
+FUNCTION "CONCENTRADOR1" : VOID
+TITLE =Concentrador
+//CONCENTRADOR 99
+AUTHOR : 'EVANDRO'
+VERSION : 0.2
+
+BEGIN
+NETWORK
+TITLE =Rearranjo
+
+// E011C4-CP-ELE025
+
+      	A     "UNI_RECV_CP4".FRQP241;
+      	=     Q     11.0;//Posi��o DJ - M-B-512401B
+      	A     "UNI_RECV_CP4".FRQP242
+      	=     Q     11.1;//DJ  Ready - M-B-512401B
+      	A     "UNI_RECV_CP4".FRQP244;
+      	=     Q     11.2;//DJ  Teste - M-B-512401B;
+      	A     "UNI_RECV_CP4".FRQP243;
+      	=     Q     11.3;                  //Prote��o Func. 86 - M-B-512401B;
+      	A     "UNI_RECV_CP4".YS2B5_CTER_02;
+      	=     Q     11.4;                  //Posi��o Chave Terra  - M-B-512401B;
+      	A     "UNI_RECV_CP4".YS2B5_P27_02;
+      	=     Q     11.5;                  //Prote��o Func. 27 - M-B-512401B;
+      	A     "UNI_RECV_CP4".YS2B5_P37_02;
+      	=     Q     11.6;                  //Prote��o Func. 37 - M-B-512401B;
+      	A     "UNI_RECV_CP4".YS2B5_P59_02;
+      	=     Q     11.7;                  //Prote��o Func. 59 - M-B-512401B;
+      	A     "UNI_RECV_CP4".YS2B5_P46_02;
+      	=     Q     10.0;                  //Prote��o Func. 46 - M-B-512401B;
+      	A     "UNI_RECV_CP4".YS2B5_P47_02;
+      	=     Q     10.1;                  //Prote��o Func. 47 - M-B-512401B;
+      	A     "UNI_RECV_CP4".YS2B5_P48_02;
+      	=     Q     10.2;                  //Prote��o Func. 48 - M-B-512401B;
+      	A     "UNI_RECV_CP4".YS2B5_P49_02;
+      	=     Q     10.3;                  //Prote��o Func. 49 - M-B-512401B;
+      	A     "UNI_RECV_CP4".YS2B5_P50_02;
+      	=     Q     10.4;                  //Prote��o Func. 50 - M-B-512401B;
+      	A     "UNI_RECV_CP4".YS2B5_P50G_02;
+      	=     Q     10.5;                  //Prote��o Func. 50GS - M-B-512401B;
+      	A     "UNI_RECV_CP4".YS2B5_P51_02;
+      	=     Q     10.6;                  //Prote��o Func. 51 - M-B-512401B;
+      	A     "UNI_RECV_CP4".YS2B5_P66_02;
+	=     Q     10.7;                  //Prote��o Func. 66 - M-B-512401B;
+      
+
+      	L     "UNI_RECV_CP4".JT2B7_PA_02;
+      	T     QW    36;                    //Anal�gicas - Potencia Ativa - M-B-533501B
+      	L     "UNI_RECV_CP4".JT2B7_PR_02
+      	T     QW    38;                    //Anal�gicas - Potencia Reativa  - M-B-533501B
+      	L     "UNI_RECV_CP4".JT2B6_PA_02
+      	T     QW    42;                    //Anal�gicas - Potencia Ativa - M-B-512401D
+      	L     "UNI_RECV_CP4".JT2B6_PR_02;
+      	T     QW    44;                    //Anal�gicas - Potencia Reativa  - M-B-512401D
+      	L     "UNI_RECV_CP4".JT2B5_PA_02;
+      	T     QW    48;                    //Anal�gicas - Potencia Ativa - M-B-512401B
+      	L     "UNI_RECV_CP4".JT2B5_PR_02;
+	T     QW    50;                    //Anal�gicas - Potencia Reativa  - M-B-512401B
+
+        L     "UNI_RECV_CP4".IT2B5_R_02;
+      	L     "UNI_RECV_CP4".IT2B5_S_02;
+      	+I;    
+      	L     "UNI_RECV_CP4".IT2B5_T_02;
+      	+I;    
+      	L     3;
+      	/I;    
+      	T     QW    46;                    //  Anal�gicas - M�dia entre fases -  M-B-512401
+
+
+
+//TF-512201A PN03 C
+
+
+ 	A     "UNI_RECV_CP4".YSHLC2B_03;
+      	=     Q      3.7;                  //Posi��o DJ 52-03 - TF-514401A;
+      	A     "UNI_RECV_CP4".YSC2B_RD_03;
+      	=     Q      2.0;                  //DJ 52-03 Ready - TF-514401A;
+      	A     "UNI_RECV_CP4".YSC2B_TEST_03;
+      	=     Q      2.1;                  //DJ 52-03 Teste - TF-514401A;
+      	A     "UNI_RECV_CP4".YSC2B_P86_03;
+      	=     Q      2.2;                  //Prote��o Func. 86 - TF-514401A;
+      	A     "UNI_RECV_CP4".YSC2B_P50_03;
+      	=     Q      2.3;                  //Prote��o Func. 50 - TF-514401A;
+      	A     "UNI_RECV_CP4".YSC2B_P37_03;
+      	=     Q      2.4;                  //Prote��o Func. 37 - TF-514401A;
+      	A     "UNI_RECV_CP4".YSC2B_P51_03;
+      	=     Q      2.5;                  //Prote��o Func. 51  - TF-514401A;
+      	A     "UNI_RECV_CP4".YSC2B_P46_03;
+      	=     Q      2.6;                  //Prote��o Func. 46 - TF-514401A;
+      	A     "UNI_RECV_CP4".YSC2B_P48_03;
+      	=     Q      2.7;                  //Prote��o Func  48 - TF-514401A;
+      	A     "UNI_RECV_CP4".YSC2B_50BF_03;
+      	=     Q      5.0;                  //Prote��o Func  49 - TF-514401A;
+      	A     "UNI_RECV_CP4".YSC2B_P51N_03;
+	=     Q      5.1;                  //Prote��o Func  51N - TF-514401A;
+
+
+	L     "UNI_RECV_CP4".ITC2B_R_03;
+      	L     "UNI_RECV_CP4".ITC2B_S_03;
+      	+I;    
+      	L     "UNI_RECV_CP4".ITC2B_T_03;
+      	+I;    
+      	L     3;
+      	/I;    
+      	T	     QW    16;                    //  Anal�gicas - Corrente m�dia entre fases - TF-514401A
+
+
+//TF-514203A carga p122 pn 01 // modificadas saidas discretas de 3.2 a 3.7 para 1.
+
+	
+      	A     "UNI_RECV_CP4".YSHLA8_01; 
+      	=     Q      1.2; //Posicao DJ - TF-514203A;
+      	A     "UNI_RECV_CP4".YSA8_RD_01; 
+      	=     Q      1.3; //DJ  Ready - TF-514203A;
+      	A     "UNI_RECV_CP4".YSA8_TEST_01; 
+      	=     Q      1.4; //DJ  Teste - TF-514203A;
+      	A     "UNI_RECV_CP4".YSA8_P86_01; 
+      	=     Q      1.5; //Protecao Func. 86 - TF-514203A;
+      	A     "UNI_RECV_CP4".YS1A8_CTER_01; 
+      	=     Q      1.6; //Chave Terra - TF-514203A;
+      	A     "UNI_RECV_CP4".YSA8_P27_01; 
+      	=     Q      1.7; //Protecao Func. 27 - TF-514203A;
+      	A    "UNI_RECV_CP4".YSA8_P67T_01; 
+      	=     Q      0.1; //Protecao Func. 67-T - TF-514203A;
+      	A     "UNI_RECV_CP4".YSA8_P67F_01; 
+      	=     Q      0.2; //Protecao Func. 67-F - TF-514203A;
+      	A     "UNI_RECV_CP4".YSA8_P67NT_01; 
+      	=     Q      0.3; //Protecao Func. 67N-T - TF-514203A;
+	=     Q      5.2; //Protecao Func. 67N-F - TF-514203A;
+      	A     "UNI_RECV_CP4".YSA9_P67NF_01;
+	
+
+	L     "UNI_RECV_CP4".JTA8_PA_01; 
+      	T     QW    12; //Analogicas - Potencia Ativa - TF-514203A
+      	L     "UNI_RECV_CP4".JTA8_PR_01; 
+      	T     QW    14; //Analogicas - Potencia Reativa - TF-514203A
+      	L     "UNI_RECV_CP4".ETA8_S_01; 
+      	T     QW    18; //Analogicas - Tensco Fase S - TF-514203A
+      	L     "UNI_RECV_CP4".JTA9_PA_01;
+
+	L     "UNI_RECV_CP4".ITA8_R_01; 
+      	L     "UNI_RECV_CP4".ITA8_S_01; 
+      	+I    ; 
+      	L     "UNI_RECV_CP4".ITA8_T_01; 
+      	+I    ; 
+      	L     3; 
+      	/I    ; 
+      	T     QW    22; //  Analogicas - Corrente m?dia entre fases - TF-514203A
+
+		L	"UNI_RECV_CP4".YSSLVIDA8;
+		T	QW		34;//Slave Id do Rele
+
+   
+
+
+
+
+
+END_FUNCTION
+

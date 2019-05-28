@@ -1,0 +1,45 @@
+
+
+FUNCTION FC30 : VOID //FC de rearranjo para envio ao CLP de Elétrica
+VAR
+    tmp1: DINT;
+    tmp2: DINT;
+    tmp3: DINT;
+END_VAR
+
+
+BEGIN //code section           
+
+
+   Q11.0 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[1,0]; //Prote��o Func. 86 - M-B-512401B; sinal: FRQP241;
+   Q11.1 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[3,0]; //DJ  Teste - M-B-512401B; sinal: FRQP242;
+   Q11.3 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[5,0]; //undefined sinal: FRQP243;
+   Q11.2 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[7,0]; //undefined sinal: FRQP244;
+   Q1.3 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[13,0]; //Protecao Func. 86 - TF-514203A; sinal: YSA8_RD_01;
+   Q1.4 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[15,0]; //Chave Terra - TF-514203A; sinal: YSA8_TEST_01;
+   Q1.5 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[35,0]; //Protecao Func. 27 - TF-514203A; sinal: YSA8_P86_01;
+   Q1.6 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[37,0]; //Protecao Func. 67-T - TF-514203A; sinal: YS1A8_CTER_01;
+   Q1.7 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[39,0]; //Protecao Func. 67-F - TF-514203A; sinal: YSA8_P27_01;
+   Q0.1 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[41,0]; //undefined sinal: YSA8_P67T_01;
+   Q0.2 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[41,1]; //undefined sinal: YSA8_P67F_01;
+   Q3.7 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[43,0]; //DJ 52-03 Teste - TF-514401A; sinal: YSHLC2B_03;
+   Q2.0 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[43,1]; //Prote��o Func. 86 - TF-514401A; sinal: YSC2B_RD_03;
+   Q2.1 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[43,2]; //Prote��o Func. 50 - TF-514401A; sinal: YSC2B_TEST_03;
+   Q2.2 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[49,2]; //Prote��o Func. 37 - TF-514401A; sinal: YSC2B_P86_03;
+   Q2.3 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[55,6]; //Prote��o Func. 51  - TF-514401A; sinal: YSC2B_P50_03;
+   Q2.4 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[77,6]; //Prote��o Func. 46 - TF-514401A; sinal: YSC2B_P37_03;
+   Q2.5 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[51,6]; //Prote��o Func  48 - TF-514401A; sinal: YSC2B_P51_03;
+   Q2.6 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[79,6]; //Prote��o Func  51N - TF-514401A; sinal: YSC2B_P46_03;
+   Q2.7 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[48,1]; //undefined sinal: YSC2B_P48_03;
+   Q5.1 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[57,6]; //undefined sinal: YSC2B_P51N_03;
+
+
+   tmp1 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DD[106])/100;
+   tmp2 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DD[110])/100;
+   tmp3 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DD[114])/100;
+   QW16 := DINT_TO_WORD((tmp1 + tmp2 + tmp3 )/3);//  Anal�gicas - Corrente m�dia entre fases - TF-514401A
+
+
+
+   
+END_FUNCTION

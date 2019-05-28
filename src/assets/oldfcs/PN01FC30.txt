@@ -1,0 +1,575 @@
+FUNCTION "CONCENTRADOR1" : VOID
+TITLE =Concentrador
+//CONCENTRADOR 01
+AUTHOR : 'UNI-RJ'
+VERSION : 0.1
+
+BEGIN
+NETWORK
+TITLE =Rearranjo
+
+// E011C4-CP-ELE025
+
+      A     "UNI_RECV_CP4".YSHLA1_01; 
+      =     Q      1.0; //Posi��o DJ - SPARE;
+      A     "UNI_RECV_CP4".YSA1_RD_01; 
+      =     Q      1.1; //DJ  Ready - SPARE;
+      A     "UNI_RECV_CP4".YSA1_TEST_01; 
+      =     Q      1.2; //DJ  Teste - SPARE;
+      A     "UNI_RECV_CP4".YSA1_P86_01; 
+      =     Q      1.3; //Prote��o Func. 86 - SPARE;
+      A     "UNI_RECV_CP4".YS1A1_CTER_01; 
+      =     Q      1.4; //Chave Terra - SPARE;
+      A     "UNI_RECV_CP4".YSA1_P27_01; 
+      =     Q      1.5; //Prote��o Func. 27 - SPARE;
+      A     "UNI_RECV_CP4".YSA1_P50_01; 
+      =     Q      1.6; //Prote��o Func. 50 - SPARE;
+      A     "UNI_RECV_CP4".YSA1_P50GS_01; 
+      =     Q      1.7; //Prote��o Func. 50GS - SPARE;
+      A     "UNI_RECV_CP4".YSA1_P51_01; 
+      =     Q      0.0; //Prote��o Func. 51 - SPARE;
+      A     "UNI_RECV_CP4".YSHLA4_01; 
+      =     Q      0.1; //Posi��o DJ - CF-M-UC-123101A;
+      A     "UNI_RECV_CP4".YSA4_RD_01; 
+      =     Q      0.2; //DJ  Ready - CF-M-UC-123101A;
+      A     "UNI_RECV_CP4".YSA4_TEST_01; 
+      =     Q      0.3; //DJ  Teste - CF-M-UC-123101A;
+      A     "UNI_RECV_CP4".YSA4_P86_01; 
+      =     Q      0.4; //Prote��o Func. 86 - CF-M-UC-123101A;
+      A     "UNI_RECV_CP4".YS1A4_CTER_01; 
+      =     Q      0.5; //Chave Terra - CF-M-UC-123101A;
+      A     "UNI_RECV_CP4".YSA4_P27_01; 
+      =     Q      0.6; //Prote��o Func. 27 - CF-M-UC-123101A;
+      A     "UNI_RECV_CP4".YSA4_P67T_01; 
+      =     Q      0.7; //Prote��o Func. 67-T - CF-M-UC-123101A;
+      A     "UNI_RECV_CP4".YSA4_P67F_01; 
+      =     Q      3.0; //Prote��o Func. 67-F - CF-M-UC-123101A;
+      A     "UNI_RECV_CP4".YSA4_P67NF_01; 
+      =     Q      3.1; //Prote��o Func. 67N-F - CF-M-UC-123101A;
+      A     "UNI_RECV_CP4".YSHLA8_01; 
+      =     Q      3.2; //Posi��o DJ - TF-514203A;
+      A     "UNI_RECV_CP4".YSA8_RD_01; 
+      =     Q      3.3; //DJ  Ready - TF-514203A;
+      A     "UNI_RECV_CP4".YSA8_TEST_01; 
+      =     Q      3.4; //DJ  Teste - TF-514203A;
+      A     "UNI_RECV_CP4".YSA8_P86_01; 
+      =     Q      3.5; //Prote��o Func. 86 - TF-514203A;
+      A     "UNI_RECV_CP4".YS1A8_CTER_01; 
+      =     Q      3.6; //Chave Terra - TF-514203A;
+      A     "UNI_RECV_CP4".YSA8_P27_01; 
+      =     Q      3.7; //Prote��o Func. 27 - TF-514203A;
+      A     "UNI_RECV_CP4".YSA8_P67T_01; 
+      =     Q      2.0; //Prote��o Func. 67-T - TF-514203A;
+      A     "UNI_RECV_CP4".YSA8_P67F_01; 
+      =     Q      2.1; //Prote��o Func. 67-F - TF-514203A;
+      A     "UNI_RECV_CP4".YSA8_P67NT_01; 
+      =     Q      2.2; //Prote��o Func. 67N-T - TF-514203A;
+      A     "UNI_RECV_CP4".YSHLA_01; 
+      =     Q      2.3; //Posi��o DJ - GE-514001A;
+      A     "UNI_RECV_CP4".YSA_RD_01; 
+      =     Q      2.4; //DJ  Ready - GE-514001A;
+      A     "UNI_RECV_CP4".YSA_TEST_01; 
+      =     Q      2.5; //DJ  Teste - GE-514001A;
+      A     "UNI_RECV_CP4".YSA_P86_01; 
+      =     Q      2.6; //Prote��o Func. 86 - GE-514001A;
+      A     "UNI_RECV_CP4".YSA_P51_01; 
+      =     Q      2.7; //Prote��o Func. 51 - GE-514001A;
+      A     "UNI_RECV_CP4".YSA_P67R_01; 
+      =     Q      5.0; //Prote��o Func. 67R - GE-514001A;
+      A     "UNI_RECV_CP4".YSA_P67F_01; 
+      =     Q      5.1; //Prote��o Func. 67F - GE-514001A;
+      A     "UNI_RECV_CP4".YSA8_P67NF_01; 
+      =     Q      5.2; //Prote��o Func. 67N-F - TF-514203A;
+      A     "UNI_RECV_CP4".YSA9_P67NF_01; 
+      =     Q      5.3; //Prote��o Func. 67N-F - TF-514202A;
+      A     "UNI_RECV_CP4".YSA_P67N_01; 
+      =     Q      5.4; //Prote��o Func. 67N - GE-514001A;
+      A     "UNI_RECV_CP4".YSA10_P67NF_01; 
+      =     Q      5.5; //Prote��o Func. 79 - GE-514001A;
+      A     "UNI_RECV_CP4".YSHLA9_01; 
+      =     Q      5.6; //Posi��o DJ - TF-514202A;
+      A     "UNI_RECV_CP4".YSA9_RD_01; 
+      =     Q      5.7; //DJ  Ready - TF-514202A;
+      A     "UNI_RECV_CP4".YSA9_TEST_01; 
+      =     Q      4.0; //DJ  Teste - TF-514202A;
+      A     "UNI_RECV_CP4".YSA9_P86_01; 
+      =     Q      4.1; //Prote��o Func. 86 - TF-514202A;
+      A     "UNI_RECV_CP4".YS1A9_CTER_01; 
+      =     Q      4.2; //Chave Terra - TF-514202A;
+      A     "UNI_RECV_CP4".YSA9_P27_01; 
+      =     Q      4.3; //Prote��o Func. 27 - TF-514202A;
+      A     "UNI_RECV_CP4".YSA9_P67T_01; 
+      =     Q      4.4; //Prote��o Func. 67-T - TF-514202A;
+      A     "UNI_RECV_CP4".YSA9_P67F_01; 
+      =     Q      4.5; //Prote��o Func. 67-F - TF-514202A;
+      A     "UNI_RECV_CP4".YSA9_P67NT_01; 
+      =     Q      4.6; //Prote��o Func. 51 - TF-514202A;
+      A     "UNI_RECV_CP4".YSHL1A10_01; 
+      =     Q      4.7; //Posi��o DJ - TF-514201A;
+      A     "UNI_RECV_CP4".YS1A10_RD_01; 
+      =     Q      7.0; //DJ  Ready - TF-514201A;
+      A     "UNI_RECV_CP4".YS1A10_TEST_01; 
+      =     Q      7.1; //DJ  Teste - TF-514201A;
+      A     "UNI_RECV_CP4".YS1A10_P86_01; 
+      =     Q      7.2; //Prote��o Func. 86 - TF-514201A;
+      A     "UNI_RECV_CP4".YS1A10_CTER_01; 
+      =     Q      7.3; //Posi��o Chave Terra - TF-514201A;
+      A     "UNI_RECV_CP4".YS1A10_P27_01; 
+      =     Q      7.4; //Prote��o Func.27 - TF-514201A;
+      A     "UNI_RECV_CP4".YSA10_P67T_01; 
+      =     Q      7.5; //Prote��o Func. 67-T - TF-514201A;
+      A     "UNI_RECV_CP4".YSA10_P67F_01; 
+      =     Q      7.6; //Prote��o Func. 67-F - TF-514201A;
+      A     "UNI_RECV_CP4".YSA10_P67NT_01; 
+      =     Q      7.7; //Prote��o Func. 51 - TF-514201A;
+      A     "UNI_RECV_CP4".YSA1_STUS_01; 
+      =     Q      6.0; //STATUS RELE 01 ;
+      A     "UNI_RECV_CP4".YSA4_STUS_01; 
+      =     Q      6.1; //STATUS RELE 02;
+      A     "UNI_RECV_CP4".YSA8_STUS_01; 
+      =     Q      6.2; //STATUS RELE 03;
+      A     "UNI_RECV_CP4".YSA_STUS_01; 
+      =     Q      6.3; //STATUS RELE 04;
+      A     "UNI_RECV_CP4".YSA9_STUS_01; 
+      =     Q      6.4; //STATUS RELE 05;
+      A     "UNI_RECV_CP4".YS1A10_STUS_01; 
+      =     Q      6.5; //STATUS RELE 06;
+      A     "UNI_RECV_CP4".YSA1_COM_01; 
+      =     Q      6.6; //COMUNIC RELE 01 ;
+      A     "UNI_RECV_CP4".YSA4_COM_01; 
+      =     Q      6.7; //COMUNIC RELE 02;
+      A     "UNI_RECV_CP4".YSA8_COM_01; 
+      =     Q      9.0; //COMUNIC RELE 03;
+      A     "UNI_RECV_CP4".YSA_COM_01; 
+      =     Q      9.1; //COMUNIC RELE 04;
+      A     "UNI_RECV_CP4".YSA9_COM_01; 
+      =     Q      9.2; //COMUNIC RELE 05;
+      A     "UNI_RECV_CP4".YS10_COM_01; 
+      =     Q      9.3; //COMUNIC RELE 06;
+      A     "UNI_RECV_CP4".YSNO1_COM_01; 
+      =     Q      9.4; //COMUNIC N� 1;
+      A     "UNI_RECV_CP4".YSNO1_STUS_01; 
+      =     Q      9.5; //STATUS N� 1;
+      A     "UNI_RECV_CP4".YSA4_P67NT_01; 
+      =     Q      9.6; //Prote��o Func. 67N-T - CF-M-UC-123101A;
+      A     "UNI_RECV_CP4".SPR_303_9_7; 
+      =     Q      9.7; //;
+      A     "UNI_RECV_CP4".SPR_303_8_0; 
+      =     Q      8.0; //;
+      A     "UNI_RECV_CP4".SPR_303_8_1; 
+      =     Q      8.1; //;
+      A     "UNI_RECV_CP4".SPR_303_8_2; 
+      =     Q      8.2; //;
+      A     "UNI_RECV_CP4".SPR_303_8_3; 
+      =     Q      8.3; //;
+      A     "UNI_RECV_CP4".SPR_303_8_4; 
+      =     Q      8.4; //;
+      A     "UNI_RECV_CP4".SPR_303_8_5; 
+      =     Q      8.5; //;
+      A     "UNI_RECV_CP4".SPR_303_8_6; 
+      =     Q      8.6; //;
+      A     "UNI_RECV_CP4".SPR_303_8_7; 
+      =     Q      8.7; //;
+      L     "UNI_RECV_CP4".JTA8_PA_01; 
+      T     QW    12; //Anal�gicas - Potencia Ativa - TF-514203A
+      L     "UNI_RECV_CP4".JTA8_PR_01; 
+      T     QW    14; //Anal�gicas - Potencia Reativa - TF-514203A
+      L     "UNI_RECV_CP4".ETA8_S_01; 
+      T     QW    18; //Anal�gicas - Tens�o Fase S - TF-514203A
+      L     "UNI_RECV_CP4".JTA9_PA_01; 
+      T     QW    20; //Anal�gicas - Potencia Ativa - TF-514202A
+      L     "UNI_RECV_CP4".JTA1_PA_01; 
+      T     QW    24; //Anal�gicas - Potencia Ativa - SPARE
+      L     "UNI_RECV_CP4".JTA1_PR_01; 
+      T     QW    26; //Anal�gicas - Potencia Reativa - SPARE
+      L     "UNI_RECV_CP4".ETA1_S_01; 
+      T     QW    28; //Anal�gicas - Tens�o Fase S - SPARE
+      L     "UNI_RECV_CP4".JTA9_PR_01; 
+      T     QW    30; //Anal�gicas - Potencia Reativa - TF-514202A
+      L     "UNI_RECV_CP4".ETA9_S_01; 
+      T     QW    32; //Anal�gicas - Tens�o Fase S - TF-514202A
+      L     "UNI_RECV_CP4".ETA10_S_01; 
+      T     QW    36; //Anal�gicas - Tens�o Fase S - TF-514201A
+      L     "UNI_RECV_CP4".JTA4_PA_01; 
+      T     QW    38; //Anal�gicas - Potencia Ativa - CF-M-UC-123101A
+      L     "UNI_RECV_CP4".JT1A10_PA_R_01; 
+      T     QW    42; //Anal�gicas - Potencia Ativa - TF-514201A
+      L     "UNI_RECV_CP4".JT1A10_PR_S_01; 
+      T     QW    44; //Anal�gicas - Potencia Reativa - TF-514201A
+
+//E011C8-CP-ELE025
+
+      A     "UNI_RECV_CP8".YSHLA2_01; 
+      =     Q     47.0; //Posi��o DJ - SPARE;
+      A     "UNI_RECV_CP8".YSA2_RD_01; 
+      =     Q     47.1; //DJ  Ready - SPARE;
+      A     "UNI_RECV_CP8".YSA2_TEST_01; 
+      =     Q     47.2; //DJ  Teste - SPARE;
+      A     "UNI_RECV_CP8".YSA2_P86_01; 
+      =     Q     47.3; //Prote��o Func. 86 - SPARE;
+      A     "UNI_RECV_CP8".YSA2_CTER_01; 
+      =     Q     47.4; //Chave Terra - SPARE;
+      A     "UNI_RECV_CP8".YSA2_P27_01; 
+      =     Q     47.5; //Prote��o Func. 27 - SPARE;
+      A     "UNI_RECV_CP8".YSA2_P50_01; 
+      =     Q     47.6; //Prote��o Func. 50 - SPARE;
+      A     "UNI_RECV_CP8".YS1A2_P50GS_01; 
+      =     Q     47.7; //Prote��o Func. 50GS - SPARE;
+      A     "UNI_RECV_CP8".YS1A2_P51_01; 
+      =     Q     46.0; //Prote��o Func. 51 - SPARE;
+      A     "UNI_RECV_CP8".YSHLF1_01; 
+      =     Q     46.1; //Posi��o DJ - 52.01-F1;
+      A     "UNI_RECV_CP8".YSF1_RD_01; 
+      =     Q     46.2; //DJ  Ready - 52.01-F1;
+      A     "UNI_RECV_CP8".YSF1_TEST_01; 
+      =     Q     46.3; //DJ  Teste - 52.01-F1;
+      A     "UNI_RECV_CP8".YSF1_P27_01; 
+      =     Q     46.4; //Prote��o Func. 27 - 52.01-F1;
+      A     "UNI_RECV_CP8".YSF1_P50_01; 
+      =     Q     46.5; //Prote��o Func. 50 - 52.01-F1;
+      A     "UNI_RECV_CP8".YSF1_P50GS_01; 
+      =     Q     46.6; //Prote��o Func. 50GS - 52.01-F1;
+      A     "UNI_RECV_CP8".YSF1_P51_01; 
+      =     Q     46.7; //Prote��o Func. 51 - 52.01-F1;
+      A     "UNI_RECV_CP8".YSF1_P67_01; 
+      =     Q     49.0; //Prote��o Func. 67 - 52.01-F1;
+      A     "UNI_RECV_CP8".YSF1_P67N_01; 
+      =     Q     49.1; //Prote��o Func. 67N - 52.01-F1;
+      A     "UNI_RECV_CP8".YSHLF2_01; 
+      =     Q     49.2; //Posi��o DJ - 52.01-F2;
+      A     "UNI_RECV_CP8".YSF2_RD_01; 
+      =     Q     49.3; //DJ  Ready - 52.01-F2;
+      A     "UNI_RECV_CP8".YSF2_TEST_01; 
+      =     Q     49.4; //DJ  Teste - 52.01-F2;
+      A     "UNI_RECV_CP8".YS_D_ARC_A_01; 
+      =     Q     49.5; //;
+      A     "UNI_RECV_CP8".YS_D_ARC_C1_01; 
+      =     Q     49.6; //Prote��o Func. 50 - 52.01-F2;
+      A     "UNI_RECV_CP8".YS5520013A; 
+      =     Q     49.7; //Prote��o Func. 50GS - 52.01-F2;
+      A     "UNI_RECV_CP8".YSF2_P51_01; 
+      =     Q     48.0; //Prote��o Func. 51 - 52.01-F2;
+      A     "UNI_RECV_CP8".YSF2_P67_01; 
+      =     Q     48.1; //Prote��o Func. 67 - 52.01-F2;
+      A     "UNI_RECV_CP8".YSF2_P67N_01; 
+      =     Q     48.2; //Prote��o Func. 67N - 52.01-F2;
+      A     "UNI_RECV_CP8".YSHLC_01; 
+      =     Q     48.3; //Posi��o DJ - GE-514001C;
+      A     "UNI_RECV_CP8".YSC_RD_01; 
+      =     Q     48.4; //DJ  Ready - GE-514001C;
+      A     "UNI_RECV_CP8".YSC_TEST_01; 
+      =     Q     48.5; //DJ  Teste - GE-514001C;
+      A     "UNI_RECV_CP8".YSC_P86_01; 
+      =     Q     48.6; //Prote��o Func. 86 - GE-514001C;
+      A     "UNI_RECV_CP8".YSC1_P67NF_01; 
+      =     Q     48.7; //Prote��o Func. 67N-F - TF-514204A;
+      A     "UNI_RECV_CP8".YS5520013B; 
+      =     Q     51.0; //Prote��o Func. 50 - GE-514001C;
+      A     "UNI_RECV_CP8".YSC_P50GS_01; 
+      =     Q     51.1; //Prote��o Func. 50GS - GE-514001C;
+      A     "UNI_RECV_CP8".YSC_P51_01; 
+      =     Q     51.2; //Prote��o Func. 51 - GE-514001C;
+      A     "UNI_RECV_CP8".YSC_P67R_01; 
+      =     Q     51.3; //Prote��o Func. 67-R - GE-514001C;
+      A     "UNI_RECV_CP8".YSC_P67F_01; 
+      =     Q     51.4; //Prote��o Func. 67-F - GE-514001C;
+      A     "UNI_RECV_CP8".YSC_P67N_01; 
+      =     Q     51.5; //Prote��o Func. 67-N - GE-514001C;
+      A     "UNI_RECV_CP8".YSHLC1_01; 
+      =     Q     51.6; //Posi��o DJ - TF-514204A;
+      A     "UNI_RECV_CP8".YSC1_RD_01; 
+      =     Q     51.7; //DJ  Ready - TF-514204A;
+      A     "UNI_RECV_CP8".YSC1_TEST_01; 
+      =     Q     50.0; //DJ  Teste - TF-514204A;
+      A     "UNI_RECV_CP8".YSC1_P86_01; 
+      =     Q     50.1; //Prote��o Func. 86 - TF-514204A;
+      A     "UNI_RECV_CP8".YSC1_CTER_01; 
+      =     Q     50.2; //Chave Terra - TF-514204A;
+      A     "UNI_RECV_CP8".YSC1_P27_01; 
+      =     Q     50.3; //Prote��o Func. 27 - TF-514204A;
+      A     "UNI_RECV_CP8".YSC1_P67T_01; 
+      =     Q     50.4; //Prote��o Func. 67-T - TF-514204A;
+      A     "UNI_RECV_CP8".YSC1_P67F_01; 
+      =     Q     50.5; //Prote��o Func. 67-T - TF-514204A;
+      A     "UNI_RECV_CP8".YSC1_P67NT_01; 
+      =     Q     50.6; //Prote��o Func. 67N-T - TF-514204A;
+      A     "UNI_RECV_CP8".YSA2_STUS_01; 
+      =     Q     50.7; //STATUS RELE 07;
+      A     "UNI_RECV_CP8".YSF1_STUS_01; 
+      =     Q     53.0; //STATUS RELE 08;
+      A     "UNI_RECV_CP8".YSF2_STUS_01; 
+      =     Q     53.1; //STATUS RELE 09;
+      A     "UNI_RECV_CP8".YSC_STUS_01; 
+      =     Q     53.2; //STATUS RELE 10;
+      A     "UNI_RECV_CP8".YSC1_STUS_01; 
+      =     Q     53.3; //STATUS RELE 11;
+      A     "UNI_RECV_CP8".YSA2_COM_01; 
+      =     Q     53.4; //COMUNIC RELE 07;
+      A     "UNI_RECV_CP8".YSF1_COM_01; 
+      =     Q     53.5; //COMUNIC RELE 08;
+      A     "UNI_RECV_CP8".YSF2_COM_01; 
+      =     Q     53.6; //COMUNIC RELE 09;
+      A     "UNI_RECV_CP8".YSC_COM_01; 
+      =     Q     53.7; //COMUNIC RELE 10;
+      A     "UNI_RECV_CP8".YSC1_COM_01; 
+      =     Q     52.0; //COMUNIC RELE 11;
+      A     "UNI_RECV_CP8".YSNO2_COM_01; 
+      =     Q     52.1; //COMUNIC N� 2;
+      A     "UNI_RECV_CP8".YSNO2_STUS_01; 
+      =     Q     52.2; //STATUS N� 2;
+      A     "UNI_RECV_CP8".SPR_304_6_3; 
+      =     Q     52.3; //;
+      A     "UNI_RECV_CP8".SPR_304_6_4; 
+      =     Q     52.4; //;
+      A     "UNI_RECV_CP8".SPR_304_6_5; 
+      =     Q     52.5; //;
+      A     "UNI_RECV_CP8".SPR_304_6_6; 
+      =     Q     52.6; //;
+      A     "UNI_RECV_CP8".SPR_304_6_7; 
+      =     Q     52.7; //;
+      L     "UNI_RECV_CP8".ETF1_S_01; 
+      T     QW    60; //Anal�gicas - Tens�o Fase S - 52.01-F1
+      L     "UNI_RECV_CP8".JT1A2_PA_01; 
+      T     QW    62; //Anal�gicas - Potencia Ativa - SPARE
+      L     "UNI_RECV_CP8".JT1A2_PR_01; 
+      T     QW    64; //Anal�gicas - Potencia Reativa - SPARE
+      L     "UNI_RECV_CP8".ETF2_S_01; 
+      T     QW    66; //Anal�gicas - Tens�o Fase S - 52.01-F2
+      L     "UNI_RECV_CP8".ETA2_S_01; 
+      T     QW    68; //Anal�gicas - Tens�o Fase S - SPARE
+      L     "UNI_RECV_CP8".JT1C1_PA_01; 
+      T     QW    70; //Anal�gicas - Potencia Ativa - TF-514204A
+      L     "UNI_RECV_CP8".JT1C1_PR_01; 
+      T     QW    72; //Anal�gicas - Potencia Reativa - TF-514204A
+      L     "UNI_RECV_CP8".ETC1_S_01; 
+      T     QW    74; //Anal�gicas - Tens�o Fase S - TF-514204A
+
+//E011C5-CP-ELE025 
+
+      A     "UNI_RECV_CP5".YSHLC5_01; 
+      =     Q     85.0; //Posi��o DJ - CF-M-UC-123101C;
+      A     "UNI_RECV_CP5".YSC5_RD_01; 
+      =     Q     85.1; //DJ  Ready - CF-M-UC-123101C;
+      A     "UNI_RECV_CP5".YSC5_TEST_01; 
+      =     Q     85.2; //DJ  Teste - CF-M-UC-123101C;
+      A     "UNI_RECV_CP5".YSC5_P86_01; 
+      =     Q     85.3; //Prote��o Func. 86 - CF-M-UC-123101C;
+      A     "UNI_RECV_CP5".YSC5_CTER_01; 
+      =     Q     85.4; //Chave Terra - CF-M-UC-123101C;
+      A     "UNI_RECV_CP5".YSC5_P27_01; 
+      =     Q     85.5; //Prote��o Func. 27 - CF-M-UC-123101C;
+      A     "UNI_RECV_CP5".YSC5_P67T_01; 
+      =     Q     85.6; //Prote��o Func. 67-T - CF-M-UC-123101C;
+      A     "UNI_RECV_CP5".YSC5_P67F_01; 
+      =     Q     85.7; //Prote��o Func. 50GS - CF-M-UC-123101C;
+      A     "UNI_RECV_CP5".YSC5_P67NT_01; 
+      =     Q     84.0; //Prote��o Func. 67N-T - CF-M-UC-123101C;
+      A     "UNI_RECV_CP5".YSHLC2_01; 
+      =     Q     84.1; //Posi��o DJ - TF-514203C;
+      A     "UNI_RECV_CP5".YSC2_RD_01; 
+      =     Q     84.2; //DJ  Ready - TF-514203C;
+      A     "UNI_RECV_CP5".YSC2_TEST_01; 
+      =     Q     84.3; //DJ  Teste - TF-514203C;
+      A     "UNI_RECV_CP5".YSC2_P86_01; 
+      =     Q     84.4; //Prote��o Func. 86 - TF-514203C;
+      A     "UNI_RECV_CP5".YSC2_CTER_01; 
+      =     Q     84.5; //Chave Terra - TF-514203C;
+      A     "UNI_RECV_CP5".YSC2_P27_01; 
+      =     Q     84.6; //Prote��o Func. 27 - TF-514203C;
+      A     "UNI_RECV_CP5".YSC2_P67T_01; 
+      =     Q     84.7; //Prote��o Func. 67-T - TF-514203C;
+      A     "UNI_RECV_CP5".YSC2_P67F_01; 
+      =     Q     87.0; //Prote��o Func. 67-F - TF-514203C;
+      A     "UNI_RECV_CP5".YSC2_P67NT_01; 
+      =     Q     87.1; //Prote��o Func. 67N-T - TF-514203C;
+      A     "UNI_RECV_CP5".YSHLG1_01; 
+      =     Q     87.2; //Posi��o DJ - 52.01G1;
+      A     "UNI_RECV_CP5".YSG1_RD_01; 
+      =     Q     87.3; //DJ  Ready - 52.01G1;
+      A     "UNI_RECV_CP5".YSG1_TEST_01; 
+      =     Q     87.4; //DJ  Teste - 52.01G1;
+      A     "UNI_RECV_CP5".YSC5_P67NF_01; 
+      =     Q     87.5; //Prote��o Func. 67N-F - CF-M-UC-123101C;
+      A     "UNI_RECV_CP5".YSC2_P67NF_01; 
+      =     Q     87.6; //Prote��o Func. 67N-F - TF-514203C;
+      A     "UNI_RECV_CP5".YSG1_P50GS_01; 
+      =     Q     87.7; //Prote��o Func. 50GS - 52.01G1;
+      A     "UNI_RECV_CP5".YSG1_P51_01; 
+      =     Q     86.0; //Prote��o Func. 51 - 52.01G1;
+      A     "UNI_RECV_CP5".YSG1_P67_01; 
+      =     Q     86.1; //Prote��o Func. 67 - 52.01G1;
+      A     "UNI_RECV_CP5".YSG1_P67N_01; 
+      =     Q     86.2; //Prote��o Func. 67N - 52.01G1;
+      A     "UNI_RECV_CP5".YSHLG2_01; 
+      =     Q     86.3; //Posi��o DJ - 52.01G2;
+      A     "UNI_RECV_CP5".YSG2_RD_01; 
+      =     Q     86.4; //DJ  Ready - 52.01G2;
+      A     "UNI_RECV_CP5".YSG2_TEST_01; 
+      =     Q     86.5; //DJ  Teste - 52.01G2;
+      A     "UNI_RECV_CP5".YSG2_P27_01; 
+      =     Q     86.6; //Prote��o Func. 27 - 52.01G2;
+      A     "UNI_RECV_CP5".YSG2_P50_01; 
+      =     Q     86.7; //Prote��o Func. 50 - 52.01G2;
+      A     "UNI_RECV_CP5".YSG2_P51_01; 
+      =     Q     89.0; //Prote��o Func. 50GS - 52.01G2;
+      A     "UNI_RECV_CP5".SPR_303_5_1; 
+      =     Q     89.1; //;
+      A     "UNI_RECV_CP5".YSG2_P67_01; 
+      =     Q     89.2; //Prote��o Func. 67 - 52.01G2;
+      A     "UNI_RECV_CP5".YSG2_P67N_01; 
+      =     Q     89.3; //Prote��o Func. 67N - 52.01G2;
+      A     "UNI_RECV_CP5".YSHLE_01; 
+      =     Q     89.4; //Posi��o DJ - GE-526201;
+      A     "UNI_RECV_CP5".YSE_RD_01; 
+      =     Q     89.5; //DJ  Ready - GE-526201;
+      A     "UNI_RECV_CP5".YSE_TEST_01; 
+      =     Q     89.6; //DJ  Teste - GE-526201;
+      A     "UNI_RECV_CP5".YSE_P86_01; 
+      =     Q     89.7; //Prote��o Func. 86 - GE-526201;
+      A     "UNI_RECV_CP5".YS_D_ARC_C2_01; 
+      =     Q     88.0; //Prote��o Func. 27 - GE-526201;
+      A     "UNI_RECV_CP5".YS_D_ARC_D1_01; 
+      =     Q     88.1; //Prote��o Func. 50 - GE-526201;
+      A     "UNI_RECV_CP5".YSE_P50GS_01; 
+      =     Q     88.2; //Prote��o Func. 50GS - GE-526201;
+      A     "UNI_RECV_CP5".YSE_P51_01; 
+      =     Q     88.3; //Prote��o Func. 51 - GE-526201;
+      A     "UNI_RECV_CP5".YSE_P67R_01; 
+      =     Q     88.4; //Prote��o Func. 67-R - GE-526201;
+      A     "UNI_RECV_CP5".YSE_P67F_01; 
+      =     Q     88.5; //Prote��o Func. 67-F - GE-526201;
+      A     "UNI_RECV_CP5".YSE_P67N_01; 
+      =     Q     88.6; //Prote��o Func. 67-N - GE-526201;
+      A     "UNI_RECV_CP5".YSC5_STUS_01; 
+      =     Q     88.7; //STATUS RELE 12 ;
+      A     "UNI_RECV_CP5".YSC2_STUS_01; 
+      =     Q     91.0; //STATUS RELE 13;
+      A     "UNI_RECV_CP5".YSG1_STUS_01; 
+      =     Q     91.1; //STATUS RELE 14;
+      A     "UNI_RECV_CP5".YSG2_STUS_01; 
+      =     Q     91.2; //STATUS RELE 15;
+      A     "UNI_RECV_CP5".YSE_STUS_01; 
+      =     Q     91.3; //STATUS RELE 16;
+      A     "UNI_RECV_CP5".YSC5_COM_01; 
+      =     Q     91.4; //COMUNIC RELE 12 ;
+      A     "UNI_RECV_CP5".YSC2_COM_01; 
+      =     Q     91.5; //COMUNIC RELE 13;
+      A     "UNI_RECV_CP5".YSG1_COM_01; 
+      =     Q     91.6; //COMUNIC RELE 14;
+      A     "UNI_RECV_CP5".YSG2_COM_01; 
+      =     Q     91.7; //COMUNIC RELE 15;
+      A     "UNI_RECV_CP5".YSE_COM_01; 
+      =     Q     90.0; //COMUNIC RELE 16;
+      A     "UNI_RECV_CP5".YSNO3_COM_01; 
+      =     Q     90.1; //COMUNIC N� 3;
+      A     "UNI_RECV_CP5".YSNO3_STUS_01; 
+      =     Q     90.2; //STATUS N� 3;
+      A     "UNI_RECV_CP5".SPR_303_6_3; 
+      =     Q     90.3; //;
+      A     "UNI_RECV_CP5".SPR_303_6_4; 
+      =     Q     90.4; //;
+      A     "UNI_RECV_CP5".SPR_303_6_5; 
+      =     Q     90.5; //;
+      A     "UNI_RECV_CP5".SPR_303_6_6; 
+      =     Q     90.6; //;
+      A     "UNI_RECV_CP5".SPR_303_6_7; 
+      =     Q     90.7; //;
+      L     "UNI_RECV_CP5".JT1C5_PA_01; 
+      T     QW   100; //Anal�gicas - Potencia Ativa - CF-M-UC-123101C
+      L     "UNI_RECV_CP5".JT1C5_PR_01; 
+      T     QW   102; //Anal�gicas - Potencia Reativa - CF-M-UC-123101C
+      L     "UNI_RECV_CP5".ETC5_S_01; 
+      T     QW   104; //Anal�gicas - Tens�o Fase S - CF-M-UC-123101C
+      L     "UNI_RECV_CP5".JT1C2_PA_01; 
+      T     QW   106; //Anal�gicas - Potencia Ativa - TF-514203C
+      L     "UNI_RECV_CP5".JT1C2_PR_01; 
+      T     QW   108; //Anal�gicas - Potencia Reativa - TF-514203C
+      L     "UNI_RECV_CP5".ETC2_S_01; 
+      T     QW   110; //Anal�gicas - Tens�o Fase S - TF-514203C
+
+
+NETWORK
+TITLE = M�DIAS
+
+// E011C4-CP-ELE025
+
+      L     "UNI_RECV_CP4".ITA1_R_01; 
+      L     "UNI_RECV_CP4".ITA1_S_01; 
+      +I    ; 
+      L     "UNI_RECV_CP4".ITA1_T_01; 
+      +I    ; 
+      L     3; 
+      /I    ; 
+      T     QW    10; //  Anal�gicas - Corrente m�dia entre fases - SPARE
+      L     "UNI_RECV_CP4".ITA4_R_01; 
+      L     "UNI_RECV_CP4".ITA4_S_01; 
+      +I    ; 
+      L     "UNI_RECV_CP4".ITA4_T_01; 
+      +I    ; 
+      L     3; 
+      /I    ; 
+      T     QW    16; //  Anal�gicas - Corrente m�dia entre fases - CF-M-UC-123101A
+      L     "UNI_RECV_CP4".ITA8_R_01; 
+      L     "UNI_RECV_CP4".ITA8_S_01; 
+      +I    ; 
+      L     "UNI_RECV_CP4".ITA8_T_01; 
+      +I    ; 
+      L     3; 
+      /I    ; 
+      T     QW    22; //  Anal�gicas - Corrente m�dia entre fases - TF-514203A
+      L     "UNI_RECV_CP4".ITA9_R_01; 
+      L     "UNI_RECV_CP4".ITA9_S_01; 
+      +I    ; 
+      L     "UNI_RECV_CP4".ITA9_T_01; 
+      +I    ; 
+      L     3; 
+      /I    ; 
+      T     QW    34; //  Anal�gicas - Corrente m�dia entre fases - TF-514202A
+      L     "UNI_RECV_CP4".IT1A10_R_01; 
+      L     "UNI_RECV_CP4".IT1A10_S_01; 
+      +I    ; 
+      L     "UNI_RECV_CP4".IT1A10_T_01; 
+      +I    ; 
+      L     3; 
+      /I    ; 
+      T     QW    40; //  Anal�gicas - Corrente m�dia entre fases - TF-514201A
+
+// E011C8-CP-ELE025
+
+      L     "UNI_RECV_CP8".ITA2_R_01; 
+      L     "UNI_RECV_CP8".ITA2_S_01; 
+      +I    ; 
+      L     "UNI_RECV_CP8".ITA2_T_01; 
+      +I    ; 
+      L     3; 
+      /I    ; 
+      T     QW    54; //  Anal�gicas - Corrente m�dia entre fases - SPARE
+      L     "UNI_RECV_CP8".ITC1_R_01; 
+      L     "UNI_RECV_CP8".ITC1_S_01; 
+      +I    ; 
+      L     "UNI_RECV_CP8".ITC1_T_01; 
+      +I    ; 
+      L     3; 
+      /I    ; 
+      T     QW    78; //  Anal�gicas - Corrente m�dia entre fases - TF-514204A
+
+// E011C5-CP-ELE025
+
+      L     "UNI_RECV_CP5".ITC5_R_01; 
+      L     "UNI_RECV_CP5".ITC5_S_01; 
+      +I    ; 
+      L     "UNI_RECV_CP5".ITC5_T_01; 
+      +I    ; 
+      L     3; 
+      /I    ; 
+      T     QW    92; //  Anal�gicas - Corrente m�dia entre fases - CF-M-UC-123101C
+      L     "UNI_RECV_CP5".ITC2_R_01; 
+      L     "UNI_RECV_CP5".ITC2_S_01; 
+      +I    ; 
+      L     "UNI_RECV_CP5".ITC2_T_01; 
+      +I    ; 
+      L     3; 
+      /I    ; 
+      T     QW    98; //  Anal�gicas - Corrente m�dia entre fases - TF-514203C
+
+END_FUNCTION

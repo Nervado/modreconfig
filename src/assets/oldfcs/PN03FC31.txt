@@ -1,0 +1,467 @@
+// E031C4-CP-ELE27
+
+      A     "UNI_RECV_CP4".YSHLC1A_03
+      =     Q      1.0                  //Posicao DJ 52-01 - SPARE;
+      A     "UNI_RECV_CP4".YSC1A_RD_03
+      =     Q      1.1                  //DJ 52-01 Ready - SPARE;
+      A     "UNI_RECV_CP4".YSC1A_TEST_03
+      =     Q      1.2                  //DJ 52-01 Teste - SPARE;
+      A     "UNI_RECV_CP4".YSC1A_P86_03
+      =     Q      1.3                  //Protecao Func. 86 - SPARE;
+      A     "UNI_RECV_CP4".YSC1A_P27_03
+      =     Q      1.4                  //Protecao Func. 27 - SPARE;
+      A     "UNI_RECV_CP4".YSC1A_P37_03
+      =     Q      1.5                  //Protecao Func. 37 - SPARE;
+      A     "UNI_RECV_CP4".YSC1A_P46_03
+      =     Q      1.6                  //Protecao Func. 46 - SPARE;
+      A     "UNI_RECV_CP4".YSC1A_P48_03
+      =     Q      1.7                  //Protecao Func. 48 - SPARE;
+      A     "UNI_RECV_CP4".YSC1A_50BF_03
+      =     Q      0.0                  //Protecao Func. 49 - SPARE;
+      A     "UNI_RECV_CP4".YSC1A_P50_03
+      =     Q      0.1                  //Protecao Func. 50 - SPARE;
+      A     "UNI_RECV_CP4".YSC1A_P51_03
+      =     Q      0.2                  //Protecao Func. 51 - SPARE;
+      A     "UNI_RECV_CP4".YSC1A_P51N_03
+      =     Q      0.3                  //Protecao Func. 51N - SPARE;
+      A     "UNI_RECV_CP4".YSHLC2A_03
+      =     Q      0.4                  //Posicao DJ 52-02 - SPARE;
+      A     "UNI_RECV_CP4".YSC2A_RD_03
+      =     Q      0.5                  //DJ 52-02 Ready - SPARE;
+      A     "UNI_RECV_CP4".YSC2A_TEST_03
+      =     Q      0.6                  //DJ 52-02 Teste - SPARE;
+      A     "UNI_RECV_CP4".YSC2A_P86_03
+      =     Q      0.7                  //Protecao Func. 86 - SPARE;
+      A     "UNI_RECV_CP4".YSC2A_P50_03
+      =     Q      3.0                  //Protecao Func. 50 - SPARE;
+      A     "UNI_RECV_CP4".YSC2A_P37_03
+      =     Q      3.1                  //Protecao Func. 37 - SPARE;
+      A     "UNI_RECV_CP4".YSC2A_P51_03
+      =     Q      3.2                  //Protecao Func. 51  - SPARE;
+      A     "UNI_RECV_CP4".YSC2A_P46_03
+      =     Q      3.3                  //Protecao Func. 46 - SPARE;
+      A     "UNI_RECV_CP4".YSC2A_P48_03
+      =     Q      3.4                  //Protecao Func  48 - SPARE;
+      A     "UNI_RECV_CP4".YSC2A_50BF_03
+      =     Q      3.5                  //Protecao Func  49 - SPARE;
+      A     "UNI_RECV_CP4".YSC2A_P51N_03
+      =     Q      3.6                  //Protecao Func  51N - SPARE;
+      A     "UNI_RECV_CP4".YSHLC2B_03
+      =     Q      3.7                  //Posicao DJ 52-03 - TF-514401A;
+      A     "UNI_RECV_CP4".YSC2B_RD_03
+      =     Q      2.0                  //DJ 52-03 Ready - TF-514401A;
+      A     "UNI_RECV_CP4".YSC2B_TEST_03
+      =     Q      2.1                  //DJ 52-03 Teste - TF-514401A;
+      A     "UNI_RECV_CP4".YSC2B_P86_03
+      =     Q      2.2                  //Protecao Func. 86 - TF-514401A;
+      A     "UNI_RECV_CP4".YSC2B_P50_03
+      =     Q      2.3                  //Protecao Func. 50 - TF-514401A;
+      A     "UNI_RECV_CP4".YSC2B_P37_03
+      =     Q      2.4                  //Protecao Func. 37 - TF-514401A;
+      A     "UNI_RECV_CP4".YSC2B_P51_03
+      =     Q      2.5                  //Protecao Func. 51  - TF-514401A;
+      A     "UNI_RECV_CP4".YSC2B_P46_03
+      =     Q      2.6                  //Protecao Func. 46 - TF-514401A;
+      A     "UNI_RECV_CP4".YSC2B_P48_03
+      =     Q      2.7                  //Protecao Func  48 - TF-514401A;
+      A     "UNI_RECV_CP4".YSC2B_50BF_03
+      =     Q      5.0                  //Protecao Func  49 - TF-514401A;
+      A     "UNI_RECV_CP4".YSC2B_P51N_03
+      =     Q      5.1                  //Protecao Func  51N - TF-514401A;
+      A     "UNI_RECV_CP4".YSHLC2C_03
+      =     Q      5.2                  //Posicao DJ 52-04 - GD-526002A;
+      A     "UNI_RECV_CP4".YSC2C_RD_03
+      =     Q      5.3                  //DJ 52-04 Ready - GD-526002A;
+      A     "UNI_RECV_CP4".YSC2C_TEST_03
+      =     Q      5.4                  //DJ 52-04 Teste - GD-526002A;
+      A     "UNI_RECV_CP4".YSC2C_P86_03
+      =     Q      5.5                  //Protecao Func. 86 - GD-526002A;
+      A     "UNI_RECV_CP4".YSC2C_P50_03
+      =     Q      5.6                  //Protecao Func. 50 - GD-526002A;
+      A     "UNI_RECV_CP4".YSC2C_P37_03
+      =     Q      5.7                  //Protecao Func. 37 - GD-526002A;
+      A     "UNI_RECV_CP4".YSC2C_P51_03
+      =     Q      4.0                  //Protecao Func. 51  - GD-526002A;
+      A     "UNI_RECV_CP4".YSC2C_P46_03
+      =     Q      4.1                  //Protecao Func. 46 - GD-526002A;
+      A     "UNI_RECV_CP4".YSC2C_P48_03
+      =     Q      4.2                  //Protecao Func  48 - GD-526002A;
+      A     "UNI_RECV_CP4".YSC2C_50BF_03
+      =     Q      4.3                  //Protecao Func  49 - GD-526002A;
+      A     "UNI_RECV_CP4".YSC2C_P51N_03
+      =     Q      4.4                  //Protecao Func  51N - GD-526002A;
+      A     "UNI_RECV_CP4".YSHLC3A_03
+      =     Q      4.5                  //Posicao DJ 52-05 - GD-526001A;
+      A     "UNI_RECV_CP4".YSC3A_RD_03
+      =     Q      4.6                  //DJ 52-05 Ready - GD-526001A;
+      A     "UNI_RECV_CP4".YSC3A_TEST_03
+      =     Q      4.7                  //DJ 52-05 Teste - GD-526001A;
+      A     "UNI_RECV_CP4".YSC3A_P86_03
+      =     Q      7.0                  //Protecao Func. 86 - GD-526001A;
+      A     "UNI_RECV_CP4".YSC3A_P50_03
+      =     Q      7.1                  //Protecao Func. 50 - GD-526001A;
+      A     "UNI_RECV_CP4".YSC3A_P37_03
+      =     Q      7.2                  //Protecao Func. 37 - GD-526001A;
+      A     "UNI_RECV_CP4".YSC3A_P51_03
+      =     Q      7.3                  //Protecao Func. 51  - GD-526001A;
+      A     "UNI_RECV_CP4".YSC3A_P46_03
+      =     Q      7.4                  //Protecao Func. 46 - GD-526001A;
+      A     "UNI_RECV_CP4".YSC3A_P48_03
+      =     Q      7.5                  //Protecao Func  48 - GD-526001A;
+      A     "UNI_RECV_CP4".YSC3A_50BF_03
+      =     Q      7.6                  //Protecao Func  49 - GD-526001A;
+      A     "UNI_RECV_CP4".YSC3A_P51N_03
+      =     Q      7.7                  //Protecao Func  51N - GD-526001A;
+      A     "UNI_RECV_CP4".YSHLC3B_03
+      =     Q      6.0                  //Posicao DJ 52-06 -  UH-520001;
+      A     "UNI_RECV_CP4".YSC3B_RD_03
+      =     Q      6.1                  //DJ 52-06 Ready -  UH-520001;
+      A     "UNI_RECV_CP4".YSC3B_TEST_03
+      =     Q      6.2                  //DJ 52-06 Teste -  UH-520001;
+      A     "UNI_RECV_CP4".YSC3B_P86_03
+      =     Q      6.3                  //Protecao Func. 86 -  UH-520001;
+      A     "UNI_RECV_CP4".YSC3B_P50_03
+      =     Q      6.4                  //Protecao Func. 50 -  UH-520001;
+      A     "UNI_RECV_CP4".YSC3B_P37_03
+      =     Q      6.5                  //Protecao Func. 37 -  UH-520001;
+      A     "UNI_RECV_CP4".YSC3B_P51_03
+      =     Q      6.6                  //Protecao Func. 51  -  UH-520001;
+      A     "UNI_RECV_CP4".YSC3B_P46_03
+      =     Q      6.7                  //Protecao Func. 46 -  UH-520001;
+      A     "UNI_RECV_CP4".YSC3B_P48_03
+      =     Q      9.0                  //Protecao Func  48 -  UH-520001;
+      A     "UNI_RECV_CP4".YSC3B_50BF_03
+      =     Q      9.1                  //Protecao Func  49 -  UH-520001;
+      A     "UNI_RECV_CP4".YSC3B_P51N_03
+      =     Q      9.2                  //Protecao Func  51N -  UH-520001;
+      A     "UNI_RECV_CP4".YSC1A_STUS_03
+      =     Q      9.3                  //STATUS RELE 01 ;
+      A     "UNI_RECV_CP4".YSC2A_STUS_03
+      =     Q      9.4                  //STATUS RELE 02;
+      A     "UNI_RECV_CP4".YSC2B_STUS_03
+      =     Q      9.5                  //STATUS RELE 03;
+      A     "UNI_RECV_CP4".YSC2C_STUS_03
+      =     Q      9.6                  //STATUS RELE 04;
+      A     "UNI_RECV_CP4".YSC3A_STUS_03
+      =     Q      9.7                  //STATUS RELE 05;
+      A     "UNI_RECV_CP4".YSC3B_STUS_03
+      =     Q      8.0                  //STATUS RELE 06;
+      A     "UNI_RECV_CP4".YSC1A_CoM_03
+      =     Q      8.1                  //CoMUNIC RELE 01 ;
+      A     "UNI_RECV_CP4".YSC2A_CoM_03
+      =     Q      8.2                  //CoMUNIC RELE 02;
+      A     "UNI_RECV_CP4".YSC2B_CoM_03
+      =     Q      8.3                  //CoMUNIC RELE 03;
+      A     "UNI_RECV_CP4".YSC2C_CoM_03
+      =     Q      8.4                  //CoMUNIC RELE 04;
+      A     "UNI_RECV_CP4".YSC3A_CoM_03
+      =     Q      8.5                  //CoMUNIC RELE 05;
+      A     "UNI_RECV_CP4".YSC3B_CoM_03
+      =     Q      8.6                  //CoMUNIC RELE 06;
+      A     "UNI_RECV_CP4".YSNo14_STUS_03
+      =     Q      8.7                  //CoMUNIC No 14;
+      A     "UNI_RECV_CP4".YSNo14_CoM_03
+      =     Q     11.0                  //STATUS No 14;
+      A     "UNI_RECV_CP4".SPARE_11_1
+      =     Q     11.1                  //;
+      A     "UNI_RECV_CP4".SPARE_11_2
+      =     Q     11.2                  //;
+      A     "UNI_RECV_CP4".SPARE_11_3
+      =     Q     11.3                  //;
+      A     "UNI_RECV_CP4".SPARE_11_4
+      =     Q     11.4                  //;
+      A     "UNI_RECV_CP4".SPARE_11_5
+      =     Q     11.5                  //;
+      A     "UNI_RECV_CP4".SPARE_11_6
+      =     Q     11.6                  //;
+      A     "UNI_RECV_CP4".SPARE_11_7
+      =     Q     11.7                  //;
+      A     "UNI_RECV_CP4".SPARE_10_0
+      =     Q     10.0                  //;
+      A     "UNI_RECV_CP4".SPARE_10_1
+      =     Q     10.1                  //;
+      A     "UNI_RECV_CP4".SPARE_10_2
+      =     Q     10.2                  //;
+      A     "UNI_RECV_CP4".SPARE_10_3
+      =     Q     10.3                  //;
+      A     "UNI_RECV_CP4".SPARE_10_4
+      =     Q     10.4                  //;
+      A     "UNI_RECV_CP4".SPARE_10_5
+      =     Q     10.5                  //;
+      A     "UNI_RECV_CP4".SPARE_10_6
+      =     Q     10.6                  //;
+      A     "UNI_RECV_CP4".SPARE_10_7
+      =     Q     10.7                  //;
+
+// E031C6-CP-ELE27
+
+      A     "UNI_RECV_CP6".YSHLC3C_03
+      =     Q     25.0                  //Posicao DJ 52-07 -  PN-514007;
+      A     "UNI_RECV_CP6".YSC3C_RD_03
+      =     Q     25.1                  //DJ 52-07 Ready -  PN-514007;
+      A     "UNI_RECV_CP6".YSC3C_TEST_03
+      =     Q     25.2                  //DJ 52-07 Teste -  PN-514007;
+      A     "UNI_RECV_CP6".YSC3C_P86_03
+      =     Q     25.3                  //Protecao Func. 86 -  PN-514007;
+      A     "UNI_RECV_CP6".YSC3C_P50_03
+      =     Q     25.4                  //Protecao Func. 50 -  PN-514007;
+      A     "UNI_RECV_CP6".YSC3C_P37_03
+      =     Q     25.5                  //Protecao Func. 37 -  PN-514007;
+      A     "UNI_RECV_CP6".YSC3C_P51_03
+      =     Q     25.6                  //Protecao Func. 51  -  PN-514007;
+      A     "UNI_RECV_CP6".YSC3C_P46_03
+      =     Q     25.7                  //Protecao Func. 46 -  PN-514007;
+      A     "UNI_RECV_CP6".YSC3C_P48_03
+      =     Q     24.0                  //Protecao Func  48 -  PN-514007;
+      A     "UNI_RECV_CP6".YSC3C_50BF_03
+      =     Q     24.1                  //Protecao Func  49 -  PN-514007;
+      A     "UNI_RECV_CP6".YSC3C_P51N_03
+      =     Q     24.2                  //Protecao Func  51N -  PN-514007;
+      A     "UNI_RECV_CP6".YSHLC4A_03
+      =     Q     24.3                  //Posicao DJ 52-08 -  PN-514005;
+      A     "UNI_RECV_CP6".YSC4A_RD_03
+      =     Q     24.4                  //DJ 52-08 Ready -  PN-514005;
+      A     "UNI_RECV_CP6".YSC4A_TEST_03
+      =     Q     24.5                  //DJ 52-08 Teste -  PN-514005;
+      A     "UNI_RECV_CP6".YSC4A_P86_03
+      =     Q     24.6                  //Protecao Func. 86 -  PN-514005;
+      A     "UNI_RECV_CP6".YSC4A_P50_03
+      =     Q     24.7                  //Protecao Func. 50 -  PN-514005;
+      A     "UNI_RECV_CP6".YSC4A_P37_03
+      =     Q     27.0                  //Protecao Func. 37 -  PN-514005;
+      A     "UNI_RECV_CP6".YSC4A_P51_03
+      =     Q     27.1                  //Protecao Func. 51  -  PN-514005;
+      A     "UNI_RECV_CP6".YSC4A_P46_03
+      =     Q     27.2                  //Protecao Func. 46 -  PN-514005;
+      A     "UNI_RECV_CP6".YSC4A_P48_03
+      =     Q     27.3                  //Protecao Func  48 -  PN-514005;
+      A     "UNI_RECV_CP6".YSC4A_50BF_03
+      =     Q     27.4                  //Protecao Func  49 -  PN-514005;
+      A     "UNI_RECV_CP6".YSC4A_P51N_03
+      =     Q     27.5                  //Protecao Func  51N -  PN-514005;
+      A     "UNI_RECV_CP6".YSHLC6A_03
+      =     Q     27.6                  //Posicao DJ 52-03.A -  52-03.A;
+      A     "UNI_RECV_CP6".YSC6A_RD_03
+      =     Q     27.7                  //Contator DJ 52-03.A Ready -  52-03.A;
+      A     "UNI_RECV_CP6".YSC6A_TEST_03
+      =     Q     26.0                  //Contator DJ 52-03.A Teste -  52-03.A;
+      A     "UNI_RECV_CP6".YSC6A_P86_03
+      =     Q     26.1                  //Protecao Func. 86 -  52-03.A;
+      A     "UNI_RECV_CP6".YSC6A_P50_03
+      =     Q     26.2                  //Protecao Func. 50 -  52-03.A;
+      A     "UNI_RECV_CP6".YSC6A_P50GS_03
+      =     Q     26.3                  //Protecao Func. 50GS  -  52-03.A;
+      A     "UNI_RECV_CP6".YSC6A_P51_03
+      =     Q     26.4                  //Protecao Func. 51 -  52-03.A;
+      A     "UNI_RECV_CP6".YSC6A_P67_03
+      =     Q     26.5                  //Protecao Func. 67 -  52-03.A;
+      A     "UNI_RECV_CP6".YSC6A_P67N_03
+      =     Q     26.6                  //Protecao Func. 67N -  52-03.A;
+      A     "UNI_RECV_CP6".YSC6A_P27_03
+      =     Q     26.7                  //Protecao Func. 27 -  52-03.A;
+      A     "UNI_RECV_CP6".YSC6A_PARCo_03
+      =     Q     29.0                  //Protecao Arco -  52-03.A;
+      A     "UNI_RECV_CP6".YSHLC7A_03
+      =     Q     29.1                  //Posicao DJ 52-03.C-A - 52-03.C-A;
+      A     "UNI_RECV_CP6".YSC7A_RD_03
+      =     Q     29.2                  //Contator DJ 52-03.C-A Ready - 52-03.C-A;
+      A     "UNI_RECV_CP6".YSC7A_TEST_03
+      =     Q     29.3                  //Contator DJ 52-03.C-A Teste - 52-03.C-A;
+      A     "UNI_RECV_CP6".YSC7A_P86_03
+      =     Q     29.4                  //Protecao Func. 86 - 52-03.C-A;
+      A     "UNI_RECV_CP6".YSC7A_P50_03
+      =     Q     29.5                  //Protecao Func. 50 - 52-03.C-A;
+      A     "UNI_RECV_CP6".YSC7A_50BF_03
+      =     Q     29.6                  //Protecao Func. 50GS  - 52-03.C-A;
+      A     "UNI_RECV_CP6".YSC7A_P51_03
+      =     Q     29.7                  //Protecao Func. 51 - 52-03.C-A;
+      A     "UNI_RECV_CP6".YSC7A_P67_03
+      =     Q     28.0                  //Protecao Func. 67 - 52-03.C-A;
+      A     "UNI_RECV_CP6".YSC7A_P67N_03
+      =     Q     28.1                  //Protecao Func. 67N - 52-03.C-A;
+      A     "UNI_RECV_CP6".YSC7A_P27_03
+      =     Q     28.2                  //Protecao Func. 27 - 52-03.C-A;
+      A     "UNI_RECV_CP6".YSC7A_PARCo_03
+      =     Q     28.3                  //Protecao Arco - 52-03.C-A;
+      A     "UNI_RECV_CP6".YSHLC7B_03
+      =     Q     28.4                  //Posicao DJ 52-03.C-B - CoMUNIC RELE 01 ;
+      A     "UNI_RECV_CP6".YSC7B_RD_03
+      =     Q     28.5                  //Contator DJ 52-03.C-B Ready - CoMUNIC RELE 01 ;
+      A     "UNI_RECV_CP6".YSC7B_TEST_03
+      =     Q     28.6                  //Contator DJ 52-03.C-B Teste - CoMUNIC RELE 01 ;
+      A     "UNI_RECV_CP6".YSC7B_P86_03
+      =     Q     28.7                  //Protecao Func. 86 - CoMUNIC RELE 01 ;
+      A     "UNI_RECV_CP6".YS5520015B
+      =     Q     31.0                  //Protecao Func. 50 - CoMUNIC RELE 01 ;
+      A     "UNI_RECV_CP6".YS5520015A
+      =     Q     31.1                  //Protecao Func. 50GS  - CoMUNIC RELE 01 ;
+      A     "UNI_RECV_CP6".YSC7B_P51_03
+      =     Q     31.2                  //Protecao Func. 51 - CoMUNIC RELE 01 ;
+      A     "UNI_RECV_CP6".YSC7B_P67_03
+      =     Q     31.3                  //Protecao Func. 67 - CoMUNIC RELE 01 ;
+      A     "UNI_RECV_CP6".YS_F_TER_A_03
+      =     Q     31.4                  //Protecao Func. 67N - CoMUNIC RELE 01 ;
+      A     "UNI_RECV_CP6".YSC7B_50BF_03
+      =     Q     31.5                  //Protecao Func. 27 - CoMUNIC RELE 01 ;
+      A     "UNI_RECV_CP6".YS_F_TER_B_03
+      =     Q     31.6                  //Protecao Arco - CoMUNIC RELE 01 ;
+      A     "UNI_RECV_CP6".YSHLC9A_03
+      =     Q     31.7                  //Posicao DJ 52-03.B -  52-03.B;
+      A     "UNI_RECV_CP6".YSC9A_RD_03
+      =     Q     30.0                  //Contator DJ 52-03.B Ready -  52-03.B;
+      A     "UNI_RECV_CP6".YSC9A_TEST_03
+      =     Q     30.1                  //Contator DJ 52-03.B Teste -  52-03.B;
+      A     "UNI_RECV_CP6".YSC9A_P86_03
+      =     Q     30.2                  //Protecao Func. 86 -  52-03.B;
+      A     "UNI_RECV_CP6".YS_R_BEND_03
+      =     Q     30.3                  //Protecao Func. 50 -  52-03.B;
+      A     "UNI_RECV_CP6".YSC9A_50BF_03
+      =     Q     30.4                  //Protecao Func. 50GS  -  52-03.B;
+      A     "UNI_RECV_CP6".YSC9A_P51_03
+      =     Q     30.5                  //Protecao Func. 51 -  52-03.B;
+      A     "UNI_RECV_CP6".YSC9A_P67_03
+      =     Q     30.6                  //Protecao Func. 67 -  52-03.B;
+      A     "UNI_RECV_CP6".YS_D_ARC_A_03
+      =     Q     30.7                  //Protecao Func. 67N -  52-03.B;
+      A     "UNI_RECV_CP6".YSC9A_P27_03
+      =     Q     33.0                  //Protecao Func. 27 -  52-03.B;
+      A     "UNI_RECV_CP6".YS_D_ARC_B_03
+      =     Q     33.1                  //Protecao Arco -  52-03.B;
+      A     "UNI_RECV_CP6".YSC3C_STUS_03
+      =     Q     33.2                  //STATUS RELE 01 ;
+      A     "UNI_RECV_CP6".YSC4A_STUS_03
+      =     Q     33.3                  //STATUS RELE 02;
+      A     "UNI_RECV_CP6".YSC6A_STUS_03
+      =     Q     33.4                  //STATUS RELE 03;
+      A     "UNI_RECV_CP6".YSC7A_STUS_03
+      =     Q     33.5                  //STATUS RELE 04;
+      A     "UNI_RECV_CP6".YSC7B_STUS_03
+      =     Q     33.6                  //STATUS RELE 05;
+      A     "UNI_RECV_CP6".YSC9A_STUS_03
+      =     Q     33.7                  //STATUS RELE 06;
+      A     "UNI_RECV_CP6".YSC3C_CoM_03
+      =     Q     32.0                  //CoMUNIC RELE 01 ;
+      A     "UNI_RECV_CP6".YSC4A_CoM_03
+      =     Q     32.1                  //CoMUNIC RELE 02;
+      A     "UNI_RECV_CP6".YSC6C_CoM_03
+      =     Q     32.2                  //CoMUNIC RELE 03;
+      A     "UNI_RECV_CP6".YSC7A_CoM_03
+      =     Q     32.3                  //CoMUNIC RELE 04;
+      A     "UNI_RECV_CP6".YSC7B_CoM_03
+      =     Q     32.4                  //CoMUNIC RELE 05;
+      A     "UNI_RECV_CP6".YSC9A_CoM_03
+      =     Q     32.5                  //CoMUNIC RELE 06;
+      A     "UNI_RECV_CP6".YSNo15_STUS_03
+      =     Q     32.6                  //CoMUNIC No 15;
+      A     "UNI_RECV_CP6".YSNo15_CoM_03
+      =     Q     32.7                  //STATUS No 15;
+      L     "UNI_RECV_CP6".ETC6A_R_03
+      T     QW    38                    //Analogicas - Tensao Fase R Barra 1 -  52-03.A
+      L     "UNI_RECV_CP6".ETC6A_S_03
+      T     QW    40                    //Analogicas - Tensao Fase S Barra 1 -  52-03.A
+      L     "UNI_RECV_CP6".ETC6A_T_03
+      T     QW    42                    //Analogicas - Tensao Fase T Barra 1 -  52-03.A
+      L     "UNI_RECV_CP6".JTC6A_PA_R_03
+      T     QW    46                    //Analogicas - Potencia Ativa -  52-03.A
+      L     "UNI_RECV_CP6".JTC6A_PR_S_03
+      T     QW    48                    //Analogicas - Potencia Reativa -  52-03.A
+      L     "UNI_RECV_CP6".JTC6A_FP_T_03
+      T     QW    50                    //Analogicas - Fator de Potencia -  52-03.A
+      L     "UNI_RECV_CP6".ETC7A_R_03
+      T     QW    52                    //Analogicas - Tensao Fase R Barra 1 - 52-03.C-A
+      L     "UNI_RECV_CP6".ETC7A_S_03
+      T     QW    54                    //Analogicas - Tensao Fase S Barra 1 - 52-03.C-A
+      L     "UNI_RECV_CP6".ETC7A_T_03
+      T     QW    56                    //Analogicas - Tensao Fase T Barra 1 - 52-03.C-A
+      L     "UNI_RECV_CP6".JTC7A_PA_R_03
+      T     QW    60                    //Analogicas - Potencia Ativa - 52-03.C-A
+      L     "UNI_RECV_CP6".JTC7A_PR_S_03
+      T     QW    62                    //Analogicas - Potencia Reativa - 52-03.C-A
+      L     "UNI_RECV_CP6".JTC7A_FP_T_03
+      T     QW    64                    //Analogicas - Fator de Potencia - 52-03.C-A
+
+//MEDIAS
+
+      L     "UNI_RECV_CP4".ITC1A_R_03
+      L     "UNI_RECV_CP4".ITC1A_S_03
+      +I    
+      L     "UNI_RECV_CP4".ITC1A_T_03
+      +I    
+      L     3
+      /I    
+      T     QW    12                    //  Analogicas - Corrente media entre fases - SPARE
+      L     "UNI_RECV_CP4".ITC2A_R_03
+      L     "UNI_RECV_CP4".ITC2A_S_03
+      +I    
+      L     "UNI_RECV_CP4".ITC2A_T_03
+      +I    
+      L     3
+      /I    
+      T     QW    14                    //  Analogicas - Corrente media entre fases - SPARE
+      L     "UNI_RECV_CP4".ITC2B_R_03
+      L     "UNI_RECV_CP4".ITC2B_S_03
+      +I    
+      L     "UNI_RECV_CP4".ITC2B_T_03
+      +I    
+      L     3
+      /I    
+      T     QW    16                    //  Analogicas - Corrente media entre fases - TF-514401A
+      L     "UNI_RECV_CP4".ITC2C_R_03
+      L     "UNI_RECV_CP4".ITC2C_S_03
+      +I    
+      L     "UNI_RECV_CP4".ITC2C_T_03
+      +I    
+      L     3
+      /I    
+      T     QW    18                    //  Analogicas - Corrente media entre fases - GD-526002A
+      L     "UNI_RECV_CP4".ITC3A_R_03
+      L     "UNI_RECV_CP4".ITC3A_S_03
+      +I    
+      L     "UNI_RECV_CP4".ITC3A_T_03
+      +I    
+      L     3
+      /I    
+      T     QW    20                    //  Analogicas - Corrente media entre fases - GD-526001A
+      L     "UNI_RECV_CP4".ITC3B_R_03
+      L     "UNI_RECV_CP4".ITC3B_S_03
+      +I    
+      L     "UNI_RECV_CP4".ITC3B_T_03
+      +I    
+      L     3
+      /I    
+      T     QW    22                    //  Analogicas - Corrente media entre fases -  UH-520001
+
+
+      L     "UNI_RECV_CP6".ITC3C_R_03
+      L     "UNI_RECV_CP6".ITC3C_S_03
+      +I    
+      L     "UNI_RECV_CP6".ITC3C_T_03
+      +I    
+      L     3
+      /I    
+      T     QW    34                    //  Analogicas - Corrente media entre fases -  PN-514007
+      L     "UNI_RECV_CP6".ITC4A_R_03
+      L     "UNI_RECV_CP6".ITC4A_S_03
+      +I    
+      L     "UNI_RECV_CP6".ITC4A_T_03
+      +I    
+      L     3
+      /I    
+      T     QW    36                    //  Analogicas - Corrente media entre fases -  PN-514005
+      L     "UNI_RECV_CP6".ITC6A_R_03
+      L     "UNI_RECV_CP6".ITC6A_S_03
+      +I    
+      L     "UNI_RECV_CP6".ITC6A_T_03
+      +I    
+      L     3
+      /I    
+      T     QW    44                    //  Analogicas - Corrente media entre fasesBarra 1 -  52-03.A
+      L     "UNI_RECV_CP6".ITC7A_R_03
+      L     "UNI_RECV_CP6".ITC7A_S_03
+      +I    
+      L     "UNI_RECV_CP6".ITC7A_T_03
+      +I    
+      L     3
+      /I    
+      T     QW    58                    //  Analogicas - Corrente media entre fasesBarra 1 - 52-03.C-A
+

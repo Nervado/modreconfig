@@ -132,8 +132,8 @@ BEGIN
 CASE newState OF
     0:        
         OldState := NewState;//atualiza o estado               
-        ERROR := false;                
-        watchdg(IN:= false,PT:= WATCHDOG);   
+        ERROR := FALSE;                
+        watchdg(IN:= FALSE,PT:= WATCHDOG);   
         //Incrementa contador de erro
         IF contaErro > 0 THEN   
             contaScan := contaScan + 1;
@@ -153,7 +153,7 @@ CASE newState OF
                 slvActvList[i] := i; //retoma o slave 1 para a rede apos 1 segundo                
             END_FOR;
             FOR j := 1 TO  SLVCOUNT DO
-                slvComErrorList[j] := false;                  
+                slvComErrorList[j] := FALSE;                  
             END_FOR;
             FOR k := 1 TO  MAXRWT  DO
                 slvNonRspdngWrtList[k] := 0;                  
@@ -177,7 +177,7 @@ CASE newState OF
         //calcula numero de leituras pendentes para o estado E2
         reqRead := NBROFREADREQS - slvCrlNumRead + 1;//verificar limites se funcionar
         //fim do estado de reset       
-        endReset := true;        
+        endReset := TRUE;        
                        
     1: (**Acoes no estado E1 - Escrita de comandos de abertura ou fechamento de disjuntor**)
         
@@ -188,7 +188,7 @@ CASE newState OF
         OldState := NewState;      
         
         //flag de estado para timeout
-        lostState := false;         
+        lostState := FALSE;         
         //Verifica se há requisição de escrita        
         IF reqWrite > 0 AND slvNonRspdngWrtList[slvCrlNumWrt] = 0  THEN
                                     
@@ -228,7 +228,7 @@ CASE newState OF
                     //leitura concluida     
                     req_Frame := 0;
                     //zera watchdg
-                    watchdg(IN:= false,PT:= WATCHDOG);                  
+                    watchdg(IN:= FALSE,PT:= WATCHDOG);                  
                     //Apaga comando
                     FC302(numBDCMd:=DBCOMANDOS, indice:=slvCrlNumWrt);                             
                     //Fim da escrita
@@ -238,7 +238,7 @@ CASE newState OF
         ELSE
             //Apaga comando de slave em falha 
             FC302(numBDCMd:=DBCOMANDOS, indice:=slvCrlNumWrt);  
-            endWrite := true; 
+            endWrite := TRUE; 
         END_IF; 
                        
   2:  (**Ações no Estado 2: Execução de leituras**)      
@@ -247,7 +247,7 @@ CASE newState OF
         //Atualiza estado atual
         OldState := NewState; 
         reqWrite := 0;        
-        lostState:= true;              
+        lostState:= TRUE;              
         //Verifica se há requisição de leitura        
         IF reqRead > 0  AND slvActvList[slvCrlNumRead] > 0 THEN
             
@@ -269,7 +269,7 @@ CASE newState OF
             //control.ndr :=  P_RCV_RK.NDR;                                
             STATUS := STATUS OR (W#16#0B00);                 
             //inicia Watchdog
-            watchdg(IN:= true,PT:= WATCHDOG);
+            watchdg(IN:= TRUE,PT:= WATCHDOG);
             //trata sinais de erro e done da funcao modbus
             IF done_master  OR err_master THEN                    
                 IF err_master THEN                                                                                                 
@@ -287,7 +287,7 @@ CASE newState OF
                 ELSE                                                 
                     
                     STATUS := STATUS OR (W#16#BBB0);                     
-                    watchdg(IN:= false,PT:= WATCHDOG);                                   
+                    watchdg(IN:= FALSE,PT:= WATCHDOG);                                   
                     //decrementa o numero de requisicoes de comando
                     reqRead := reqRead - 1;         
                     IF slvCrlNumRead = NBROFREADREQS THEN //apagado 1
@@ -374,7 +374,7 @@ CASE newState OF
         //Atualiza contagem de erros
         control.number := 0;
         FOR i:= 1 TO SLVCOUNT DO 
-            IF slvComErrorList[i] = true THEN
+            IF slvComErrorList[i] = TRUE THEN
                 control.number  := control.number  +  1;
             END_IF;
         END_FOR;   
@@ -474,7 +474,7 @@ VAR_TEMP
     value : BOOL;
 END_VAR
     //Apagar Requisicao da DB de comandos              
-    value := false;
+    value := FALSE;
     byt := indice / 8 ; //byte adress
     bit := indice - byt * 8 - 1;//bit adress
     IF(bit < 0) THEN

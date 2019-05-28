@@ -1,0 +1,75 @@
+(**Bloco Modificado para remoçãoo das concentradoras c264 da rede de comunica??o entre  relés areva  e 
+PLC de Elétrica, foi mantida a interface original  do bloco para garantia de compatibilidade com sinalizacao de erro atual**)
+FUNCTION_BLOCK FB 70
+TITLE =COMUNICAÇÃO MODBUS
+AUTHOR : 'U4LW'
+FAMILY : MULTILIN
+NAME : COM_MULT
+VERSION : 2.0
+
+
+VAR
+  Watchdog : TIME ;	
+  Ciclos : INT ;	
+  E021C4 : "MODCOMM";//Instância para MODBCOMM	
+  //E021C5 : "MODCOMM";	
+  //E021C6 : "MODCOMM";	
+  //E021C7 : "MODCOMM";	
+  //E021C8 : "MODCOMM";     
+END_VAR
+VAR_TEMP
+  ERRO_001 : BOOL ;
+END_VAR
+BEGIN
+NETWORK
+TITLE =
+//Parametrização para todas requisições Modbus
+      L     T#2S; 
+      T     #Watchdog; 
+      L     200; 
+      T     #Ciclos; 
+NETWORK
+TITLE = BLOCO DE COMUNICAÇÃO COM A CP E021C4-CP-ELE26
+//C264 9 - NÓ 09 - REDE 01
+   
+      CALL #E021C4(
+        //Interface Nova
+        LADDR           := 272,//Endereço mapeado da CP
+        SNDRD           := 401,//Número do DB onde estão as reqs. de Leitura
+        RCVRD           := 303,//Número do DB onde serão salvos os dados lidos    
+        SNDWR           := 21,//Número do DB onde estão as requisições de escrita
+        DBCOMANDOS      := 11, //Número da DB com o os comandos de abertura e fech.    
+        SLVCOUNT        := 5,//Numero de Slaves
+        NBROFREADREQS   := 9,//Numero de Requisicoes de leitura    
+        WATCHDOG        := #Watchdog,//Watchdog para a FB reportar falha geral
+        SL_FORA         := #Ciclos,//Número de ciclos considerar o slave em falha , 200 ms           
+        ERROR           := #ERRO_001
+          (**//Interface Antiga
+           LADDR                    := 256,
+           NOSL                     := 2,
+           SNDRD                    := 301,
+           SNDRD_OFF                := 0,
+           RCVRD                    := 303,
+           RCVRD_OFF                := 0,
+           SNDWR                    := 21,
+           SNDWR_OFF                := 0,
+           WATCHDOG                 := #Watchdog,
+           SL_FORA                  := #Ciclos,
+           ERRO_SL1                 := #E_01A,
+           ERRO_SL2                 := #E_01B,
+           **)
+        );
+
+      NOP   0; 
+      
+NETWORK
+TITLE = ATUALIZA FALHAS
+      CALL FC 303;
+      NOP 0;
+NETWORK
+TITLE =VERIFICA PONTO ORIUNDO DO NONO NÓ.
+//C264 09 - NÓ 09 - REDE 01
+      CALL FC 11 ;
+      NOP   0; 
+
+END_FUNCTION_BLOCK

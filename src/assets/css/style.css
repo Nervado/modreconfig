@@ -1,7 +1,5 @@
 @import 'buttons.css';
 @import 'select.css';
-
-
 * {
     margin: 0%;
     padding: 0%;
@@ -15,6 +13,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
 }
+
 .program {
     display: flex;
     height: 100%;
@@ -24,16 +23,18 @@ body {
     /*background-color: deepskyblue;*/
     background-color: transparent;
 }
+
 .controls {
     display: flex;
     flex-direction: column;
     height: 30%;
-    width: 25%;    
+    width: 25%;
     margin-left: 5%;
     margin-top: 1%;
     justify-content: space-between;
 }
-h1{
+
+h1 {
     border: 2px solid rgb(201, 187, 187);
     background-color: yellowgreen;
     font-size: 2em;
@@ -41,7 +42,8 @@ h1{
     text-align: center;
     color: azure;
 }
-.cabecalho{
+
+.cabecalho {
     height: 10%;
     width: 100%;
 }

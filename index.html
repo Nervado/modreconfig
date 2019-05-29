@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="./src/assets/css/style.css" rel="stylesheet" type="text/css">
-
+    <script type="text/javascript" language="javascript" src="src/js/lib/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" language="javascript" src="src/js/index.js"></script>
     <title>RecNetwork</title>
 </head>
 
 <body>
     <div class="cabecalho">
         <h1>Reconfigura Rede</h1>
-        
+
     </div>
     <div class="program">
         <div class="controls">
@@ -21,6 +22,16 @@
             <button id="aa" class="bt">Analisar Arquivos</button>
             <button id="ar" class="bt">Analisar Rede</button>
             <button id="es" class="bt">Exibir Pasta de Saída</button>
+            <div class="custom-select" style="width:200px;">
+                <select>
+                    <option value="01">Painel 01</option>
+                    <option value="02">Painel 02</option>
+                    <option value="03">Painel 03</option>
+                    <option value="08" selected>Painel 08</option>
+                    <option value="98">Painel 98</option>
+                    <option value="99">Painel 98</option>
+                </select>
+            </div>
         </div>
         <div class="outputarea">Testando log de Saida...</div>
     </div>

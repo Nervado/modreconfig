@@ -6,7 +6,7 @@
   "scripts": {
     "start": "electron .",
     "test": "electromon .",
-    "build": "electron-packager C:\\Users\\adm\\Desktop\\DEV\\modreconfig modreconfigApp"
+    "build": "rmdir /Q /S modreconfigApp-win32-x64 && electron-packager C:\\Users\\adm\\Desktop\\DEV\\modreconfig modreconfigApp"
   },
   "repository": {
     "type": "git",

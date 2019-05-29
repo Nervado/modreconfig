@@ -15,7 +15,6 @@
 }
 
 /* Style the arrow inside the select element: */
-
 .select-selected:after {
     position: absolute;
     content: "";

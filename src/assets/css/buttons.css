@@ -44,8 +44,3 @@
 .bt:focus {
     outline: 0;
 }
-
-.pnselect {
-    margin-top: 5%;
-    border: #2f6627 solid 2px;
-}

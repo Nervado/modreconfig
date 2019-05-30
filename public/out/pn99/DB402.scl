@@ -44,12 +44,7 @@ BEGIN
                 _A8_TF_514203A.LT5.slave_Id := B#16#1c;//BYTE; //endereço do slave 1
                 _A8_TF_514203A.LT5.function_Code := B#16#04;//BYTE; //função modbus 1 B#16#03;
                 _A8_TF_514203A.LT5.reg_Inicial := W#16#013c;//WORD; //endereço modbus do registrador inicial 2 W#16#0015;//21
-                _A8_TF_514203A.LT5.numero_Registradores := 5 ;//INT;//numero de registradores de 16 bits a ser lido 2 //6
-            
-                _A8_TF_514203A.LT6.slave_Id := B#16#1c;//BYTE; //endereço do slave 1
-                _A8_TF_514203A.LT6.function_Code := B#16#04;//BYTE; //função modbus 1 B#16#03;
-                _A8_TF_514203A.LT6.reg_Inicial := W#16#0141;//WORD; //endereço modbus do registrador inicial 2 W#16#0015;//21
-                _A8_TF_514203A.LT6.numero_Registradores := 1 ;//INT;//numero de registradores de 16 bits a ser lido 2 //6
+                _A8_TF_514203A.LT5.numero_Registradores := 6 ;//INT;//numero de registradores de 16 bits a ser lido 2 //6
             
 
     END_DATA_BLOCK
@@ -70,7 +65,6 @@ TYPE FRAME
             LT3: FRAME_LEITURA;//comando de leitura 1 relé p22x
             LT4: FRAME_LEITURA;//comando de leitura 1 relé p22x
             LT5: FRAME_LEITURA;//comando de leitura 1 relé p22x
-            LT6: FRAME_LEITURA;//comando de leitura 1 relé p22x
                     
         END_STRUCT; //...        
                     

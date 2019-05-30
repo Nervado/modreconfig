@@ -1,4 +1,5 @@
-const ipc = electron.ipcRenderer;
+const electron = require('electron');
+const {ipcRenderer} = electron;
 
 //var $ = require('node_modules/jQuery');
 var x, i, j, selElmnt, a, b, c;
@@ -76,15 +77,10 @@ function closeAllSelect(elmnt) {
 then close all select boxes: */
 document.addEventListener("click", closeAllSelect);
 
-$('.bt').click((e)=>{$('.outputarea').html(e.target.textContent);})
-
-
-const updateBtn = document.getElementById('updateBtn')
-
-updateBtn.addEventListener('click', function () {
-  ipc.send('update-notify-value', document.getElementById('notifyVal').value)
-
-  // Close this window
-  var window = remote.getCurrentWindow();
-  window.close();
+$('.bt').click((e)=>{
+    $('.outputarea').html(e.target.textContent);
+    // manda informação para o backend
+    const msg = 'testando...';
+    // the key is here!!!!
+    ipcRenderer.send('msg',msg);
 })

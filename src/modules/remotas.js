@@ -2,8 +2,6 @@
 //Informar numero de CPs
 //Informar numero do painel 
 
-
-
 let remotaPn01=
 {
         noCPs: 4, 

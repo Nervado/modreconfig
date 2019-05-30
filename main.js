@@ -1,5 +1,6 @@
 const path = require('path');
-const getData = require(path.join(__dirname,'src/modules/testeCriaFc'));
+const getData = require(path.resolve(__dirname,'src/modules/testeCriaFc'));
+path.resolve('src/assets/lists', arquivoCP)
 const {app, BrowserWindow, Menu, ipcMain} = require('electron');
 
 function createWindow(){
@@ -18,7 +19,7 @@ function createWindow(){
         // Envia a parada para o conteudo da janela principal 
         // mainWindow.webContent.send()
         if(msg === 'lf'){
-            let painel = 02;
+            let painel = '02';
             console.log(msg,'vou fazer as paradas entao..');
             getData.fetchFiles(painel);
         }          

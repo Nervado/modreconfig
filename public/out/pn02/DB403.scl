@@ -1,0 +1,196 @@
+ 
+DATA_BLOCK DB403
+     FRAME   
+BEGIN
+
+//Novo trecho de codigo para parametros modbus
+
+    
+                _A12_SPARE.LT1.slave_Id := B#16#13;//BYTE; //endereço do slave 1
+                _A12_SPARE.LT1.function_Code := B#16#04;//BYTE; //função modbus 1 B#16#03;
+                _A12_SPARE.LT1.reg_Inicial := W#16#0013;//WORD; //endereço modbus do registrador inicial 2 W#16#0015;//21
+                _A12_SPARE.LT1.numero_Registradores := 1 ;//INT;//numero de registradores de 16 bits a ser lido 2 //6
+            
+                _A12_SPARE.LT2.slave_Id := B#16#13;//BYTE; //endereço do slave 1
+                _A12_SPARE.LT2.function_Code := B#16#04;//BYTE; //função modbus 1 B#16#03;
+                _A12_SPARE.LT2.reg_Inicial := W#16#00d9;//WORD; //endereço modbus do registrador inicial 2 W#16#0015;//21
+                _A12_SPARE.LT2.numero_Registradores := 6 ;//INT;//numero de registradores de 16 bits a ser lido 2 //6
+            
+                _A12_SPARE.LT3.slave_Id := B#16#13;//BYTE; //endereço do slave 1
+                _A12_SPARE.LT3.function_Code := B#16#04;//BYTE; //função modbus 1 B#16#03;
+                _A12_SPARE.LT3.reg_Inicial := W#16#012b;//WORD; //endereço modbus do registrador inicial 2 W#16#0015;//21
+                _A12_SPARE.LT3.numero_Registradores := 2 ;//INT;//numero de registradores de 16 bits a ser lido 2 //6
+            
+                _A12_SPARE.LT4.slave_Id := B#16#13;//BYTE; //endereço do slave 1
+                _A12_SPARE.LT4.function_Code := B#16#04;//BYTE; //função modbus 1 B#16#03;
+                _A12_SPARE.LT4.reg_Inicial := W#16#012e;//WORD; //endereço modbus do registrador inicial 2 W#16#0015;//21
+                _A12_SPARE.LT4.numero_Registradores := 2 ;//INT;//numero de registradores de 16 bits a ser lido 2 //6
+            
+                _A12_SPARE.LT5.slave_Id := B#16#13;//BYTE; //endereço do slave 1
+                _A12_SPARE.LT5.function_Code := B#16#04;//BYTE; //função modbus 1 B#16#03;
+                _A12_SPARE.LT5.reg_Inicial := W#16#02d3;//WORD; //endereço modbus do registrador inicial 2 W#16#0015;//21
+                _A12_SPARE.LT5.numero_Registradores := 1 ;//INT;//numero de registradores de 16 bits a ser lido 2 //6
+            
+                _A12_SPARE.LT6.slave_Id := B#16#13;//BYTE; //endereço do slave 1
+                _A12_SPARE.LT6.function_Code := B#16#04;//BYTE; //função modbus 1 B#16#03;
+                _A12_SPARE.LT6.reg_Inicial := W#16#02d5;//WORD; //endereço modbus do registrador inicial 2 W#16#0015;//21
+                _A12_SPARE.LT6.numero_Registradores := 1 ;//INT;//numero de registradores de 16 bits a ser lido 2 //6
+            
+                _A12_SPARE.LT7.slave_Id := B#16#13;//BYTE; //endereço do slave 1
+                _A12_SPARE.LT7.function_Code := B#16#04;//BYTE; //função modbus 1 B#16#03;
+                _A12_SPARE.LT7.reg_Inicial := W#16#02da;//WORD; //endereço modbus do registrador inicial 2 W#16#0015;//21
+                _A12_SPARE.LT7.numero_Registradores := 8 ;//INT;//numero de registradores de 16 bits a ser lido 2 //6
+            
+                _A7_M_B512401C.LT1.slave_Id := B#16#14;//BYTE; //endereço do slave 1
+                _A7_M_B512401C.LT1.function_Code := B#16#04;//BYTE; //função modbus 1 B#16#03;
+                _A7_M_B512401C.LT1.reg_Inicial := W#16#0013;//WORD; //endereço modbus do registrador inicial 2 W#16#0015;//21
+                _A7_M_B512401C.LT1.numero_Registradores := 1 ;//INT;//numero de registradores de 16 bits a ser lido 2 //6
+            
+                _A7_M_B512401C.LT2.slave_Id := B#16#14;//BYTE; //endereço do slave 1
+                _A7_M_B512401C.LT2.function_Code := B#16#04;//BYTE; //função modbus 1 B#16#03;
+                _A7_M_B512401C.LT2.reg_Inicial := W#16#00d9;//WORD; //endereço modbus do registrador inicial 2 W#16#0015;//21
+                _A7_M_B512401C.LT2.numero_Registradores := 3 ;//INT;//numero de registradores de 16 bits a ser lido 2 //6
+            
+                _A7_M_B512401C.LT3.slave_Id := B#16#14;//BYTE; //endereço do slave 1
+                _A7_M_B512401C.LT3.function_Code := B#16#04;//BYTE; //função modbus 1 B#16#03;
+                _A7_M_B512401C.LT3.reg_Inicial := W#16#00dc;//WORD; //endereço modbus do registrador inicial 2 W#16#0015;//21
+                _A7_M_B512401C.LT3.numero_Registradores := 3 ;//INT;//numero de registradores de 16 bits a ser lido 2 //6
+            
+                _A7_M_B512401C.LT4.slave_Id := B#16#14;//BYTE; //endereço do slave 1
+                _A7_M_B512401C.LT4.function_Code := B#16#04;//BYTE; //função modbus 1 B#16#03;
+                _A7_M_B512401C.LT4.reg_Inicial := W#16#012b;//WORD; //endereço modbus do registrador inicial 2 W#16#0015;//21
+                _A7_M_B512401C.LT4.numero_Registradores := 5 ;//INT;//numero de registradores de 16 bits a ser lido 2 //6
+            
+                _A7_M_B512401C.LT5.slave_Id := B#16#14;//BYTE; //endereço do slave 1
+                _A7_M_B512401C.LT5.function_Code := B#16#04;//BYTE; //função modbus 1 B#16#03;
+                _A7_M_B512401C.LT5.reg_Inicial := W#16#02d3;//WORD; //endereço modbus do registrador inicial 2 W#16#0015;//21
+                _A7_M_B512401C.LT5.numero_Registradores := 15 ;//INT;//numero de registradores de 16 bits a ser lido 2 //6
+            
+                _A8_M_B533501A.LT1.slave_Id := B#16#15;//BYTE; //endereço do slave 1
+                _A8_M_B533501A.LT1.function_Code := B#16#04;//BYTE; //função modbus 1 B#16#03;
+                _A8_M_B533501A.LT1.reg_Inicial := W#16#0013;//WORD; //endereço modbus do registrador inicial 2 W#16#0015;//21
+                _A8_M_B533501A.LT1.numero_Registradores := 1 ;//INT;//numero de registradores de 16 bits a ser lido 2 //6
+            
+                _A8_M_B533501A.LT2.slave_Id := B#16#15;//BYTE; //endereço do slave 1
+                _A8_M_B533501A.LT2.function_Code := B#16#04;//BYTE; //função modbus 1 B#16#03;
+                _A8_M_B533501A.LT2.reg_Inicial := W#16#00d9;//WORD; //endereço modbus do registrador inicial 2 W#16#0015;//21
+                _A8_M_B533501A.LT2.numero_Registradores := 6 ;//INT;//numero de registradores de 16 bits a ser lido 2 //6
+            
+                _A8_M_B533501A.LT3.slave_Id := B#16#15;//BYTE; //endereço do slave 1
+                _A8_M_B533501A.LT3.function_Code := B#16#04;//BYTE; //função modbus 1 B#16#03;
+                _A8_M_B533501A.LT3.reg_Inicial := W#16#012b;//WORD; //endereço modbus do registrador inicial 2 W#16#0015;//21
+                _A8_M_B533501A.LT3.numero_Registradores := 5 ;//INT;//numero de registradores de 16 bits a ser lido 2 //6
+            
+                _A8_M_B533501A.LT4.slave_Id := B#16#15;//BYTE; //endereço do slave 1
+                _A8_M_B533501A.LT4.function_Code := B#16#04;//BYTE; //função modbus 1 B#16#03;
+                _A8_M_B533501A.LT4.reg_Inicial := W#16#02d3;//WORD; //endereço modbus do registrador inicial 2 W#16#0015;//21
+                _A8_M_B533501A.LT4.numero_Registradores := 15 ;//INT;//numero de registradores de 16 bits a ser lido 2 //6
+            
+                _A10_M_BUT-125101-01C.LT1.slave_Id := B#16#16;//BYTE; //endereço do slave 1
+                _A10_M_BUT-125101-01C.LT1.function_Code := B#16#04;//BYTE; //função modbus 1 B#16#03;
+                _A10_M_BUT-125101-01C.LT1.reg_Inicial := W#16#0013;//WORD; //endereço modbus do registrador inicial 2 W#16#0015;//21
+                _A10_M_BUT-125101-01C.LT1.numero_Registradores := 1 ;//INT;//numero de registradores de 16 bits a ser lido 2 //6
+            
+                _A10_M_BUT-125101-01C.LT2.slave_Id := B#16#16;//BYTE; //endereço do slave 1
+                _A10_M_BUT-125101-01C.LT2.function_Code := B#16#04;//BYTE; //função modbus 1 B#16#03;
+                _A10_M_BUT-125101-01C.LT2.reg_Inicial := W#16#00d9;//WORD; //endereço modbus do registrador inicial 2 W#16#0015;//21
+                _A10_M_BUT-125101-01C.LT2.numero_Registradores := 6 ;//INT;//numero de registradores de 16 bits a ser lido 2 //6
+            
+                _A10_M_BUT-125101-01C.LT3.slave_Id := B#16#16;//BYTE; //endereço do slave 1
+                _A10_M_BUT-125101-01C.LT3.function_Code := B#16#04;//BYTE; //função modbus 1 B#16#03;
+                _A10_M_BUT-125101-01C.LT3.reg_Inicial := W#16#012b;//WORD; //endereço modbus do registrador inicial 2 W#16#0015;//21
+                _A10_M_BUT-125101-01C.LT3.numero_Registradores := 5 ;//INT;//numero de registradores de 16 bits a ser lido 2 //6
+            
+                _A10_M_BUT-125101-01C.LT4.slave_Id := B#16#16;//BYTE; //endereço do slave 1
+                _A10_M_BUT-125101-01C.LT4.function_Code := B#16#04;//BYTE; //função modbus 1 B#16#03;
+                _A10_M_BUT-125101-01C.LT4.reg_Inicial := W#16#02d3;//WORD; //endereço modbus do registrador inicial 2 W#16#0015;//21
+                _A10_M_BUT-125101-01C.LT4.numero_Registradores := 1 ;//INT;//numero de registradores de 16 bits a ser lido 2 //6
+            
+                _A10_M_BUT-125101-01C.LT5.slave_Id := B#16#16;//BYTE; //endereço do slave 1
+                _A10_M_BUT-125101-01C.LT5.function_Code := B#16#04;//BYTE; //função modbus 1 B#16#03;
+                _A10_M_BUT-125101-01C.LT5.reg_Inicial := W#16#02d5;//WORD; //endereço modbus do registrador inicial 2 W#16#0015;//21
+                _A10_M_BUT-125101-01C.LT5.numero_Registradores := 13 ;//INT;//numero de registradores de 16 bits a ser lido 2 //6
+            
+                _A9_M_BUT-125101-01A.LT1.slave_Id := B#16#17;//BYTE; //endereço do slave 1
+                _A9_M_BUT-125101-01A.LT1.function_Code := B#16#04;//BYTE; //função modbus 1 B#16#03;
+                _A9_M_BUT-125101-01A.LT1.reg_Inicial := W#16#0013;//WORD; //endereço modbus do registrador inicial 2 W#16#0015;//21
+                _A9_M_BUT-125101-01A.LT1.numero_Registradores := 1 ;//INT;//numero de registradores de 16 bits a ser lido 2 //6
+            
+                _A9_M_BUT-125101-01A.LT2.slave_Id := B#16#17;//BYTE; //endereço do slave 1
+                _A9_M_BUT-125101-01A.LT2.function_Code := B#16#04;//BYTE; //função modbus 1 B#16#03;
+                _A9_M_BUT-125101-01A.LT2.reg_Inicial := W#16#00d9;//WORD; //endereço modbus do registrador inicial 2 W#16#0015;//21
+                _A9_M_BUT-125101-01A.LT2.numero_Registradores := 6 ;//INT;//numero de registradores de 16 bits a ser lido 2 //6
+            
+                _A9_M_BUT-125101-01A.LT3.slave_Id := B#16#17;//BYTE; //endereço do slave 1
+                _A9_M_BUT-125101-01A.LT3.function_Code := B#16#04;//BYTE; //função modbus 1 B#16#03;
+                _A9_M_BUT-125101-01A.LT3.reg_Inicial := W#16#012b;//WORD; //endereço modbus do registrador inicial 2 W#16#0015;//21
+                _A9_M_BUT-125101-01A.LT3.numero_Registradores := 5 ;//INT;//numero de registradores de 16 bits a ser lido 2 //6
+            
+                _A9_M_BUT-125101-01A.LT4.slave_Id := B#16#17;//BYTE; //endereço do slave 1
+                _A9_M_BUT-125101-01A.LT4.function_Code := B#16#04;//BYTE; //função modbus 1 B#16#03;
+                _A9_M_BUT-125101-01A.LT4.reg_Inicial := W#16#02d3;//WORD; //endereço modbus do registrador inicial 2 W#16#0015;//21
+                _A9_M_BUT-125101-01A.LT4.numero_Registradores := 15 ;//INT;//numero de registradores de 16 bits a ser lido 2 //6
+            
+
+    END_DATA_BLOCK
+
+TYPE FRAME
+    STRUCT
+        
+        _A12_SPARE:STRUCT    
+            LT1: FRAME_LEITURA;//comando de leitura 1 relé p22x
+            LT2: FRAME_LEITURA;//comando de leitura 1 relé p22x
+            LT3: FRAME_LEITURA;//comando de leitura 1 relé p22x
+            LT4: FRAME_LEITURA;//comando de leitura 1 relé p22x
+            LT5: FRAME_LEITURA;//comando de leitura 1 relé p22x
+            LT6: FRAME_LEITURA;//comando de leitura 1 relé p22x
+            LT7: FRAME_LEITURA;//comando de leitura 1 relé p22x
+                    
+        END_STRUCT; //...        
+        
+        _A7_M_B512401C:STRUCT    
+            LT1: FRAME_LEITURA;//comando de leitura 1 relé p22x
+            LT2: FRAME_LEITURA;//comando de leitura 1 relé p22x
+            LT3: FRAME_LEITURA;//comando de leitura 1 relé p22x
+            LT4: FRAME_LEITURA;//comando de leitura 1 relé p22x
+            LT5: FRAME_LEITURA;//comando de leitura 1 relé p22x
+                    
+        END_STRUCT; //...        
+        
+        _A8_M_B533501A:STRUCT    
+            LT1: FRAME_LEITURA;//comando de leitura 1 relé p22x
+            LT2: FRAME_LEITURA;//comando de leitura 1 relé p22x
+            LT3: FRAME_LEITURA;//comando de leitura 1 relé p22x
+            LT4: FRAME_LEITURA;//comando de leitura 1 relé p22x
+                    
+        END_STRUCT; //...        
+        
+        _A10_M_BUT-125101-01C:STRUCT    
+            LT1: FRAME_LEITURA;//comando de leitura 1 relé p22x
+            LT2: FRAME_LEITURA;//comando de leitura 1 relé p22x
+            LT3: FRAME_LEITURA;//comando de leitura 1 relé p22x
+            LT4: FRAME_LEITURA;//comando de leitura 1 relé p22x
+            LT5: FRAME_LEITURA;//comando de leitura 1 relé p22x
+                    
+        END_STRUCT; //...        
+        
+        _A9_M_BUT-125101-01A:STRUCT    
+            LT1: FRAME_LEITURA;//comando de leitura 1 relé p22x
+            LT2: FRAME_LEITURA;//comando de leitura 1 relé p22x
+            LT3: FRAME_LEITURA;//comando de leitura 1 relé p22x
+            LT4: FRAME_LEITURA;//comando de leitura 1 relé p22x
+                    
+        END_STRUCT; //...        
+                    
+    END_STRUCT;    
+END_TYPE
+
+TYPE FRAME_LEITURA //Frame Modbus para ler os registradores
+    STRUCT
+       slave_Id: BYTE; //endereço do slave 
+       function_Code: BYTE; //função modbus 
+       reg_Inicial: WORD; //endereço modbus do registrador inicial
+       numero_Registradores: INT;//numero de registradores de 16 bits a ser lido 
+    END_STRUCT
+END_TYPE 
+ 

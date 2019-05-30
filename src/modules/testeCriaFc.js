@@ -7,8 +7,10 @@ const dbW = require('./criaDBEscritas')
 const fcMake = require('./criaFC')
 const fs = require('fs')
 
+exports.fetchFiles = function(painel){
 //copiado para remota analisa rearranjo.js
-let remota = remotas.getRemota('RemotaPn99')
+let remota = remotas.getRemota(`RemotaPn${painel}`)
+console.log(remota)
 let diretorio = remota.nome.split('N')[1]
 
 //cria redes para cada cp
@@ -51,7 +53,6 @@ remota.numFCs.forEach(numFC => {
             //console.log(fc)
         })
 
-
     }
 })
 
@@ -71,8 +72,6 @@ if (remota.numDBsLeituras.length === vetorRedes.length) {//verificar se o numero
             //console.log(sclFonteDB)
         })
 
-
-
     })
 }
 
@@ -91,8 +90,6 @@ if (remota.numDBsEscritas.length === vetorRedes.length) {//verificar se o numero
             console.log(`Arquivo salvo em: `, _path)
             //console.log(sclFonteDB)
         })
-
-
     })
 }
 //Fim da criacao de DBS de comandos de escrita
@@ -169,6 +166,7 @@ vetorRedes.forEach(rede => {
 //console.log(vetorRedes[1][1].iniRange,vetorRedes[1][1].finRange, vetorRedes[1][1].sizeReq,vetorRedes[1][1].nReq)
 
 //console.log(vetorRedes[0])
+}
 
 const teste = 'testando comunicacao entre modulos...'
 

@@ -80,7 +80,7 @@ document.addEventListener("click", closeAllSelect);
 $('.bt').click((e)=>{
     $('.outputarea').html(e.target.textContent);
     // manda informação para o backend
-    const msg = 'testando...';
+    const msg = e.target.id;
     // the key is here!!!!
     ipcRenderer.send('msg',msg);
 })

@@ -1,10 +1,9 @@
 remotas = require('./remotas')
 let remotaPn03 = remotas.getRemota('RemotaPn02') 
-
+console.log(remotaPn03)
 //linhas de saidas discretas - copiado 
 
 //
-
 function getFatordeEscalaCorrente(tipo){
     const tipos = ['p122','p127','p225','p241','p243','p632']
     const escala_correntes = [100,100,100,1000,1000,0]

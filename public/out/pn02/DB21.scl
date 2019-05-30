@@ -1,0 +1,414 @@
+
+DATA_BLOCK DB 21
+TITLE =DADOS PARA ESCRITA NOS RELES
+AUTHOR : U4LW
+FAMILY : MULTILIN
+NAME : SND_FC
+VERSION : 2.0
+READ_ONLY
+  STRUCT
+  
+    ENDSL_FCH_CP1 : BYTE  := B#16#01;	//Endereço do Slave acessado #1
+    FC_FCH_CP1 : BYTE  := B#16#6;	//Function Code para execução
+    REG_FCH_CP1 : WORD  := W#16#0014;	//Endereço para escrita   
+    VAL_FCH_CP1 : WORD  := W#16#0002;	//Word para escrita   
+    
+    ENDSL_FCH_CP2 : BYTE  := B#16#02;	//Endereço do Slave acessado #2
+    FC_FCH_CP2 : BYTE  := B#16#6;	//Function Code para execução
+    REG_FCH_CP2 : WORD  := W#16#0014;	//Endereço para escrita   
+    VAL_FCH_CP2 : WORD  := W#16#0002;	//Word para escrita   
+    
+    ENDSL_FCH_CP3 : BYTE  := B#16#03;	//Endereço do Slave acessado #3
+    FC_FCH_CP3 : BYTE  := B#16#6;	//Function Code para execução
+    REG_FCH_CP3 : WORD  := W#16#0014;	//Endereço para escrita   
+    VAL_FCH_CP3 : WORD  := W#16#0002;	//Word para escrita   
+    
+    ENDSL_FCH_CP4 : BYTE  := B#16#04;	//Endereço do Slave acessado #4
+    FC_FCH_CP4 : BYTE  := B#16#6;	//Function Code para execução
+    REG_FCH_CP4 : WORD  := W#16#0014;	//Endereço para escrita   
+    VAL_FCH_CP4 : WORD  := W#16#0002;	//Word para escrita   
+    
+    ENDSL_FCH_CP5 : BYTE  := B#16#05;	//Endereço do Slave acessado #5
+    FC_FCH_CP5 : BYTE  := B#16#6;	//Function Code para execução
+    REG_FCH_CP5 : WORD  := W#16#0014;	//Endereço para escrita   
+    VAL_FCH_CP5 : WORD  := W#16#0002;	//Word para escrita   
+    
+    ENDSL_FCH_CP6 : BYTE  := B#16#06;	//Endereço do Slave acessado #6
+    FC_FCH_CP6 : BYTE  := B#16#6;	//Function Code para execução
+    REG_FCH_CP6 : WORD  := W#16#0014;	//Endereço para escrita   
+    VAL_FCH_CP6 : WORD  := W#16#0002;	//Word para escrita   
+    
+    ENDSL_FCH_CP7 : BYTE  := B#16#00;	//Endereço do Slave acessado spare #7
+    FC_FCH_CP7 : BYTE  := B#16#6;	//Function Code para execução
+    REG_FCH_CP7 : WORD  := W#16#0000;	//Endereço para escrita   
+    VAL_FCH_CP7 : WORD  := W#16#0000;	//Word para escrita   
+    
+    ENDSL_FCH_CP8 : BYTE  := B#16#00;	//Endereço do Slave acessado spare #8
+    FC_FCH_CP8 : BYTE  := B#16#6;	//Function Code para execução
+    REG_FCH_CP8 : WORD  := W#16#0000;	//Endereço para escrita   
+    VAL_FCH_CP8 : WORD  := W#16#0000;	//Word para escrita   
+    
+    ENDSL_FCH_CP9 : BYTE  := B#16#00;	//Endereço do Slave acessado spare #9
+    FC_FCH_CP9 : BYTE  := B#16#6;	//Function Code para execução
+    REG_FCH_CP9 : WORD  := W#16#0000;	//Endereço para escrita   
+    VAL_FCH_CP9 : WORD  := W#16#0000;	//Word para escrita   
+    
+    ENDSL_FCH_CP10 : BYTE  := B#16#00;	//Endereço do Slave acessado spare #10
+    FC_FCH_CP10 : BYTE  := B#16#6;	//Function Code para execução
+    REG_FCH_CP10 : WORD  := W#16#0000;	//Endereço para escrita   
+    VAL_FCH_CP10 : WORD  := W#16#0000;	//Word para escrita   
+    
+    ENDSL_FCH_CP11 : BYTE  := B#16#00;	//Endereço do Slave acessado spare #11
+    FC_FCH_CP11 : BYTE  := B#16#6;	//Function Code para execução
+    REG_FCH_CP11 : WORD  := W#16#0000;	//Endereço para escrita   
+    VAL_FCH_CP11 : WORD  := W#16#0000;	//Word para escrita   
+    
+    ENDSL_FCH_CP12 : BYTE  := B#16#00;	//Endereço do Slave acessado spare #12
+    FC_FCH_CP12 : BYTE  := B#16#6;	//Function Code para execução
+    REG_FCH_CP12 : WORD  := W#16#0000;	//Endereço para escrita   
+    VAL_FCH_CP12 : WORD  := W#16#0000;	//Word para escrita   
+    
+    ENDSL_FCH_CP13 : BYTE  := B#16#00;	//Endereço do Slave acessado spare #13
+    FC_FCH_CP13 : BYTE  := B#16#6;	//Function Code para execução
+    REG_FCH_CP13 : WORD  := W#16#0000;	//Endereço para escrita   
+    VAL_FCH_CP13 : WORD  := W#16#0000;	//Word para escrita   
+    
+    ENDSL_FCH_CP14 : BYTE  := B#16#00;	//Endereço do Slave acessado spare #14
+    FC_FCH_CP14 : BYTE  := B#16#6;	//Function Code para execução
+    REG_FCH_CP14 : WORD  := W#16#0000;	//Endereço para escrita   
+    VAL_FCH_CP14 : WORD  := W#16#0000;	//Word para escrita   
+    
+    ENDSL_FCH_CP15 : BYTE  := B#16#00;	//Endereço do Slave acessado spare #15
+    FC_FCH_CP15 : BYTE  := B#16#6;	//Function Code para execução
+    REG_FCH_CP15 : WORD  := W#16#0000;	//Endereço para escrita   
+    VAL_FCH_CP15 : WORD  := W#16#0000;	//Word para escrita   
+    
+    ENDSL_FCH_CP16 : BYTE  := B#16#00;	//Endereço do Slave acessado spare #16
+    FC_FCH_CP16 : BYTE  := B#16#6;	//Function Code para execução
+    REG_FCH_CP16 : WORD  := W#16#0000;	//Endereço para escrita   
+    VAL_FCH_CP16 : WORD  := W#16#0000;	//Word para escrita   
+    
+    ENDSL_FCH_CP17 : BYTE  := B#16#00;	//Endereço do Slave acessado spare #17
+    FC_FCH_CP17 : BYTE  := B#16#6;	//Function Code para execução
+    REG_FCH_CP17 : WORD  := W#16#0000;	//Endereço para escrita   
+    VAL_FCH_CP17 : WORD  := W#16#0000;	//Word para escrita   
+    
+    ENDSL_FCH_CP18 : BYTE  := B#16#00;	//Endereço do Slave acessado spare #18
+    FC_FCH_CP18 : BYTE  := B#16#6;	//Function Code para execução
+    REG_FCH_CP18 : WORD  := W#16#0000;	//Endereço para escrita   
+    VAL_FCH_CP18 : WORD  := W#16#0000;	//Word para escrita   
+    
+    ENDSL_FCH_CP19 : BYTE  := B#16#00;	//Endereço do Slave acessado spare #19
+    FC_FCH_CP19 : BYTE  := B#16#6;	//Function Code para execução
+    REG_FCH_CP19 : WORD  := W#16#0000;	//Endereço para escrita   
+    VAL_FCH_CP19 : WORD  := W#16#0000;	//Word para escrita   
+    
+    ENDSL_FCH_CP20 : BYTE  := B#16#00;	//Endereço do Slave acessado spare #20
+    FC_FCH_CP20 : BYTE  := B#16#6;	//Function Code para execução
+    REG_FCH_CP20 : WORD  := W#16#0000;	//Endereço para escrita   
+    VAL_FCH_CP20 : WORD  := W#16#0000;	//Word para escrita   
+    
+    ENDSL_ABR_CP1 : BYTE  := B#16#01;	//Endereço do Slave acessado #1
+    FC_ABR_CP1 : BYTE  := B#16#6;    //Function Code para execução
+    REG_ABR_CP1 : WORD  := W#16#0014;	//Endereço para escrita   
+    VAL_ABR_CP1 : WORD  := W#16#0001;	//Word para escrita   
+    
+    ENDSL_ABR_CP2 : BYTE  := B#16#02;	//Endereço do Slave acessado #2
+    FC_ABR_CP2 : BYTE  := B#16#6;    //Function Code para execução
+    REG_ABR_CP2 : WORD  := W#16#0014;	//Endereço para escrita   
+    VAL_ABR_CP2 : WORD  := W#16#0001;	//Word para escrita   
+    
+    ENDSL_ABR_CP3 : BYTE  := B#16#03;	//Endereço do Slave acessado #3
+    FC_ABR_CP3 : BYTE  := B#16#6;    //Function Code para execução
+    REG_ABR_CP3 : WORD  := W#16#0014;	//Endereço para escrita   
+    VAL_ABR_CP3 : WORD  := W#16#0001;	//Word para escrita   
+    
+    ENDSL_ABR_CP4 : BYTE  := B#16#04;	//Endereço do Slave acessado #4
+    FC_ABR_CP4 : BYTE  := B#16#6;    //Function Code para execução
+    REG_ABR_CP4 : WORD  := W#16#0014;	//Endereço para escrita   
+    VAL_ABR_CP4 : WORD  := W#16#0001;	//Word para escrita   
+    
+    ENDSL_ABR_CP5 : BYTE  := B#16#05;	//Endereço do Slave acessado #5
+    FC_ABR_CP5 : BYTE  := B#16#6;    //Function Code para execução
+    REG_ABR_CP5 : WORD  := W#16#0014;	//Endereço para escrita   
+    VAL_ABR_CP5 : WORD  := W#16#0001;	//Word para escrita   
+    
+    ENDSL_ABR_CP6 : BYTE  := B#16#06;	//Endereço do Slave acessado #6
+    FC_ABR_CP6 : BYTE  := B#16#6;    //Function Code para execução
+    REG_ABR_CP6 : WORD  := W#16#0014;	//Endereço para escrita   
+    VAL_ABR_CP6 : WORD  := W#16#0001;	//Word para escrita   
+    
+    ENDSL_ABR_CP7 : BYTE  := B#16#00;	//Endereço do Slave acessado spare #7
+    FC_ABR_CP7 : BYTE  := B#16#6;    //Function Code para execução
+    REG_ABR_CP7 : WORD  := W#16#0000;	//Endereço para escrita   
+    VAL_ABR_CP7 : WORD  := W#16#0000;	//Word para escrita   
+    
+    ENDSL_ABR_CP8 : BYTE  := B#16#00;	//Endereço do Slave acessado spare #8
+    FC_ABR_CP8 : BYTE  := B#16#6;    //Function Code para execução
+    REG_ABR_CP8 : WORD  := W#16#0000;	//Endereço para escrita   
+    VAL_ABR_CP8 : WORD  := W#16#0000;	//Word para escrita   
+    
+    ENDSL_ABR_CP9 : BYTE  := B#16#00;	//Endereço do Slave acessado spare #9
+    FC_ABR_CP9 : BYTE  := B#16#6;    //Function Code para execução
+    REG_ABR_CP9 : WORD  := W#16#0000;	//Endereço para escrita   
+    VAL_ABR_CP9 : WORD  := W#16#0000;	//Word para escrita   
+    
+    ENDSL_ABR_CP10 : BYTE  := B#16#00;	//Endereço do Slave acessado spare #10
+    FC_ABR_CP10 : BYTE  := B#16#6;    //Function Code para execução
+    REG_ABR_CP10 : WORD  := W#16#0000;	//Endereço para escrita   
+    VAL_ABR_CP10 : WORD  := W#16#0000;	//Word para escrita   
+    
+    ENDSL_ABR_CP11 : BYTE  := B#16#00;	//Endereço do Slave acessado spare #11
+    FC_ABR_CP11 : BYTE  := B#16#6;    //Function Code para execução
+    REG_ABR_CP11 : WORD  := W#16#0000;	//Endereço para escrita   
+    VAL_ABR_CP11 : WORD  := W#16#0000;	//Word para escrita   
+    
+    ENDSL_ABR_CP12 : BYTE  := B#16#00;	//Endereço do Slave acessado spare #12
+    FC_ABR_CP12 : BYTE  := B#16#6;    //Function Code para execução
+    REG_ABR_CP12 : WORD  := W#16#0000;	//Endereço para escrita   
+    VAL_ABR_CP12 : WORD  := W#16#0000;	//Word para escrita   
+    
+    ENDSL_ABR_CP13 : BYTE  := B#16#00;	//Endereço do Slave acessado spare #13
+    FC_ABR_CP13 : BYTE  := B#16#6;    //Function Code para execução
+    REG_ABR_CP13 : WORD  := W#16#0000;	//Endereço para escrita   
+    VAL_ABR_CP13 : WORD  := W#16#0000;	//Word para escrita   
+    
+    ENDSL_ABR_CP14 : BYTE  := B#16#00;	//Endereço do Slave acessado spare #14
+    FC_ABR_CP14 : BYTE  := B#16#6;    //Function Code para execução
+    REG_ABR_CP14 : WORD  := W#16#0000;	//Endereço para escrita   
+    VAL_ABR_CP14 : WORD  := W#16#0000;	//Word para escrita   
+    
+    ENDSL_ABR_CP15 : BYTE  := B#16#00;	//Endereço do Slave acessado spare #15
+    FC_ABR_CP15 : BYTE  := B#16#6;    //Function Code para execução
+    REG_ABR_CP15 : WORD  := W#16#0000;	//Endereço para escrita   
+    VAL_ABR_CP15 : WORD  := W#16#0000;	//Word para escrita   
+    
+    ENDSL_ABR_CP16 : BYTE  := B#16#00;	//Endereço do Slave acessado spare #16
+    FC_ABR_CP16 : BYTE  := B#16#6;    //Function Code para execução
+    REG_ABR_CP16 : WORD  := W#16#0000;	//Endereço para escrita   
+    VAL_ABR_CP16 : WORD  := W#16#0000;	//Word para escrita   
+    
+    ENDSL_ABR_CP17 : BYTE  := B#16#00;	//Endereço do Slave acessado spare #17
+    FC_ABR_CP17 : BYTE  := B#16#6;    //Function Code para execução
+    REG_ABR_CP17 : WORD  := W#16#0000;	//Endereço para escrita   
+    VAL_ABR_CP17 : WORD  := W#16#0000;	//Word para escrita   
+    
+    ENDSL_ABR_CP18 : BYTE  := B#16#00;	//Endereço do Slave acessado spare #18
+    FC_ABR_CP18 : BYTE  := B#16#6;    //Function Code para execução
+    REG_ABR_CP18 : WORD  := W#16#0000;	//Endereço para escrita   
+    VAL_ABR_CP18 : WORD  := W#16#0000;	//Word para escrita   
+    
+    ENDSL_ABR_CP19 : BYTE  := B#16#00;	//Endereço do Slave acessado spare #19
+    FC_ABR_CP19 : BYTE  := B#16#6;    //Function Code para execução
+    REG_ABR_CP19 : WORD  := W#16#0000;	//Endereço para escrita   
+    VAL_ABR_CP19 : WORD  := W#16#0000;	//Word para escrita   
+    
+    ENDSL_ABR_CP20 : BYTE  := B#16#00;	//Endereço do Slave acessado spare #20
+    FC_ABR_CP20 : BYTE  := B#16#6;    //Function Code para execução
+    REG_ABR_CP20 : WORD  := W#16#0000;	//Endereço para escrita   
+    VAL_ABR_CP20 : WORD  := W#16#0000;	//Word para escrita   
+       	  
+  END_STRUCT ;	
+BEGIN
+  
+    ENDSL_FCH_CP1 := B#16#01;	//Endereço do Slave acessado #1
+    FC_FCH_CP1    := B#16#6;	//Function Code para execução
+    REG_FCH_CP1   := W#16#0014;	//Endereço para escrita   
+    VAL_FCH_CP1   := W#16#0002;	//Word para escrita      
+    
+    ENDSL_FCH_CP2 := B#16#02;	//Endereço do Slave acessado #2
+    FC_FCH_CP2    := B#16#6;	//Function Code para execução
+    REG_FCH_CP2   := W#16#0014;	//Endereço para escrita   
+    VAL_FCH_CP2   := W#16#0002;	//Word para escrita      
+    
+    ENDSL_FCH_CP3 := B#16#03;	//Endereço do Slave acessado #3
+    FC_FCH_CP3    := B#16#6;	//Function Code para execução
+    REG_FCH_CP3   := W#16#0014;	//Endereço para escrita   
+    VAL_FCH_CP3   := W#16#0002;	//Word para escrita      
+    
+    ENDSL_FCH_CP4 := B#16#04;	//Endereço do Slave acessado #4
+    FC_FCH_CP4    := B#16#6;	//Function Code para execução
+    REG_FCH_CP4   := W#16#0014;	//Endereço para escrita   
+    VAL_FCH_CP4   := W#16#0002;	//Word para escrita      
+    
+    ENDSL_FCH_CP5 := B#16#05;	//Endereço do Slave acessado #5
+    FC_FCH_CP5    := B#16#6;	//Function Code para execução
+    REG_FCH_CP5   := W#16#0014;	//Endereço para escrita   
+    VAL_FCH_CP5   := W#16#0002;	//Word para escrita      
+    
+    ENDSL_FCH_CP6 := B#16#06;	//Endereço do Slave acessado #6
+    FC_FCH_CP6    := B#16#6;	//Function Code para execução
+    REG_FCH_CP6   := W#16#0014;	//Endereço para escrita   
+    VAL_FCH_CP6   := W#16#0002;	//Word para escrita      
+    
+    ENDSL_FCH_CP7 := B#16#00;	//Endereço do Slave acessado spare #7
+    FC_FCH_CP7    := B#16#6;	//Function Code para execução
+    REG_FCH_CP7   := W#16#0000;	//Endereço para escrita   
+    VAL_FCH_CP7   := W#16#0000;	//Word para escrita      
+    
+    ENDSL_FCH_CP8 := B#16#00;	//Endereço do Slave acessado spare #8
+    FC_FCH_CP8    := B#16#6;	//Function Code para execução
+    REG_FCH_CP8   := W#16#0000;	//Endereço para escrita   
+    VAL_FCH_CP8   := W#16#0000;	//Word para escrita      
+    
+    ENDSL_FCH_CP9 := B#16#00;	//Endereço do Slave acessado spare #9
+    FC_FCH_CP9    := B#16#6;	//Function Code para execução
+    REG_FCH_CP9   := W#16#0000;	//Endereço para escrita   
+    VAL_FCH_CP9   := W#16#0000;	//Word para escrita      
+    
+    ENDSL_FCH_CP10 := B#16#00;	//Endereço do Slave acessado spare #10
+    FC_FCH_CP10    := B#16#6;	//Function Code para execução
+    REG_FCH_CP10   := W#16#0000;	//Endereço para escrita   
+    VAL_FCH_CP10   := W#16#0000;	//Word para escrita      
+    
+    ENDSL_FCH_CP11 := B#16#00;	//Endereço do Slave acessado spare #11
+    FC_FCH_CP11    := B#16#6;	//Function Code para execução
+    REG_FCH_CP11   := W#16#0000;	//Endereço para escrita   
+    VAL_FCH_CP11   := W#16#0000;	//Word para escrita      
+    
+    ENDSL_FCH_CP12 := B#16#00;	//Endereço do Slave acessado spare #12
+    FC_FCH_CP12    := B#16#6;	//Function Code para execução
+    REG_FCH_CP12   := W#16#0000;	//Endereço para escrita   
+    VAL_FCH_CP12   := W#16#0000;	//Word para escrita      
+    
+    ENDSL_FCH_CP13 := B#16#00;	//Endereço do Slave acessado spare #13
+    FC_FCH_CP13    := B#16#6;	//Function Code para execução
+    REG_FCH_CP13   := W#16#0000;	//Endereço para escrita   
+    VAL_FCH_CP13   := W#16#0000;	//Word para escrita      
+    
+    ENDSL_FCH_CP14 := B#16#00;	//Endereço do Slave acessado spare #14
+    FC_FCH_CP14    := B#16#6;	//Function Code para execução
+    REG_FCH_CP14   := W#16#0000;	//Endereço para escrita   
+    VAL_FCH_CP14   := W#16#0000;	//Word para escrita      
+    
+    ENDSL_FCH_CP15 := B#16#00;	//Endereço do Slave acessado spare #15
+    FC_FCH_CP15    := B#16#6;	//Function Code para execução
+    REG_FCH_CP15   := W#16#0000;	//Endereço para escrita   
+    VAL_FCH_CP15   := W#16#0000;	//Word para escrita      
+    
+    ENDSL_FCH_CP16 := B#16#00;	//Endereço do Slave acessado spare #16
+    FC_FCH_CP16    := B#16#6;	//Function Code para execução
+    REG_FCH_CP16   := W#16#0000;	//Endereço para escrita   
+    VAL_FCH_CP16   := W#16#0000;	//Word para escrita      
+    
+    ENDSL_FCH_CP17 := B#16#00;	//Endereço do Slave acessado spare #17
+    FC_FCH_CP17    := B#16#6;	//Function Code para execução
+    REG_FCH_CP17   := W#16#0000;	//Endereço para escrita   
+    VAL_FCH_CP17   := W#16#0000;	//Word para escrita      
+    
+    ENDSL_FCH_CP18 := B#16#00;	//Endereço do Slave acessado spare #18
+    FC_FCH_CP18    := B#16#6;	//Function Code para execução
+    REG_FCH_CP18   := W#16#0000;	//Endereço para escrita   
+    VAL_FCH_CP18   := W#16#0000;	//Word para escrita      
+    
+    ENDSL_FCH_CP19 := B#16#00;	//Endereço do Slave acessado spare #19
+    FC_FCH_CP19    := B#16#6;	//Function Code para execução
+    REG_FCH_CP19   := W#16#0000;	//Endereço para escrita   
+    VAL_FCH_CP19   := W#16#0000;	//Word para escrita      
+    
+    ENDSL_FCH_CP20 := B#16#00;	//Endereço do Slave acessado spare #20
+    FC_FCH_CP20    := B#16#6;	//Function Code para execução
+    REG_FCH_CP20   := W#16#0000;	//Endereço para escrita   
+    VAL_FCH_CP20   := W#16#0000;	//Word para escrita      
+    
+    ENDSL_ABR_CP1 := B#16#01;	//Endereço do Slave acessado #1
+    FC_ABR_CP1    := B#16#6;    //Function Code para execução
+    REG_ABR_CP1   := W#16#0014;	//Endereço para escrita   
+    VAL_ABR_CP1   := W#16#0001;	//Word para escrita   
+    
+    ENDSL_ABR_CP2 := B#16#02;	//Endereço do Slave acessado #2
+    FC_ABR_CP2    := B#16#6;    //Function Code para execução
+    REG_ABR_CP2   := W#16#0014;	//Endereço para escrita   
+    VAL_ABR_CP2   := W#16#0001;	//Word para escrita   
+    
+    ENDSL_ABR_CP3 := B#16#03;	//Endereço do Slave acessado #3
+    FC_ABR_CP3    := B#16#6;    //Function Code para execução
+    REG_ABR_CP3   := W#16#0014;	//Endereço para escrita   
+    VAL_ABR_CP3   := W#16#0001;	//Word para escrita   
+    
+    ENDSL_ABR_CP4 := B#16#04;	//Endereço do Slave acessado #4
+    FC_ABR_CP4    := B#16#6;    //Function Code para execução
+    REG_ABR_CP4   := W#16#0014;	//Endereço para escrita   
+    VAL_ABR_CP4   := W#16#0001;	//Word para escrita   
+    
+    ENDSL_ABR_CP5 := B#16#05;	//Endereço do Slave acessado #5
+    FC_ABR_CP5    := B#16#6;    //Function Code para execução
+    REG_ABR_CP5   := W#16#0014;	//Endereço para escrita   
+    VAL_ABR_CP5   := W#16#0001;	//Word para escrita   
+    
+    ENDSL_ABR_CP6 := B#16#06;	//Endereço do Slave acessado #6
+    FC_ABR_CP6    := B#16#6;    //Function Code para execução
+    REG_ABR_CP6   := W#16#0014;	//Endereço para escrita   
+    VAL_ABR_CP6   := W#16#0001;	//Word para escrita   
+    
+    ENDSL_ABR_CP7 := B#16#00;	//Endereço do Slave acessado spare#7
+    FC_ABR_CP7    := B#16#6;    //Function Code para execução
+    REG_ABR_CP7   := W#16#0000;	//Endereço para escrita   
+    VAL_ABR_CP7   := W#16#0000;	//Word para escrita   
+    
+    ENDSL_ABR_CP8 := B#16#00;	//Endereço do Slave acessado spare#8
+    FC_ABR_CP8    := B#16#6;    //Function Code para execução
+    REG_ABR_CP8   := W#16#0000;	//Endereço para escrita   
+    VAL_ABR_CP8   := W#16#0000;	//Word para escrita   
+    
+    ENDSL_ABR_CP9 := B#16#00;	//Endereço do Slave acessado spare#9
+    FC_ABR_CP9    := B#16#6;    //Function Code para execução
+    REG_ABR_CP9   := W#16#0000;	//Endereço para escrita   
+    VAL_ABR_CP9   := W#16#0000;	//Word para escrita   
+    
+    ENDSL_ABR_CP10 := B#16#00;	//Endereço do Slave acessado spare#10
+    FC_ABR_CP10    := B#16#6;    //Function Code para execução
+    REG_ABR_CP10   := W#16#0000;	//Endereço para escrita   
+    VAL_ABR_CP10   := W#16#0000;	//Word para escrita   
+    
+    ENDSL_ABR_CP11 := B#16#00;	//Endereço do Slave acessado spare#11
+    FC_ABR_CP11    := B#16#6;    //Function Code para execução
+    REG_ABR_CP11   := W#16#0000;	//Endereço para escrita   
+    VAL_ABR_CP11   := W#16#0000;	//Word para escrita   
+    
+    ENDSL_ABR_CP12 := B#16#00;	//Endereço do Slave acessado spare#12
+    FC_ABR_CP12    := B#16#6;    //Function Code para execução
+    REG_ABR_CP12   := W#16#0000;	//Endereço para escrita   
+    VAL_ABR_CP12   := W#16#0000;	//Word para escrita   
+    
+    ENDSL_ABR_CP13 := B#16#00;	//Endereço do Slave acessado spare#13
+    FC_ABR_CP13    := B#16#6;    //Function Code para execução
+    REG_ABR_CP13   := W#16#0000;	//Endereço para escrita   
+    VAL_ABR_CP13   := W#16#0000;	//Word para escrita   
+    
+    ENDSL_ABR_CP14 := B#16#00;	//Endereço do Slave acessado spare#14
+    FC_ABR_CP14    := B#16#6;    //Function Code para execução
+    REG_ABR_CP14   := W#16#0000;	//Endereço para escrita   
+    VAL_ABR_CP14   := W#16#0000;	//Word para escrita   
+    
+    ENDSL_ABR_CP15 := B#16#00;	//Endereço do Slave acessado spare#15
+    FC_ABR_CP15    := B#16#6;    //Function Code para execução
+    REG_ABR_CP15   := W#16#0000;	//Endereço para escrita   
+    VAL_ABR_CP15   := W#16#0000;	//Word para escrita   
+    
+    ENDSL_ABR_CP16 := B#16#00;	//Endereço do Slave acessado spare#16
+    FC_ABR_CP16    := B#16#6;    //Function Code para execução
+    REG_ABR_CP16   := W#16#0000;	//Endereço para escrita   
+    VAL_ABR_CP16   := W#16#0000;	//Word para escrita   
+    
+    ENDSL_ABR_CP17 := B#16#00;	//Endereço do Slave acessado spare#17
+    FC_ABR_CP17    := B#16#6;    //Function Code para execução
+    REG_ABR_CP17   := W#16#0000;	//Endereço para escrita   
+    VAL_ABR_CP17   := W#16#0000;	//Word para escrita   
+    
+    ENDSL_ABR_CP18 := B#16#00;	//Endereço do Slave acessado spare#18
+    FC_ABR_CP18    := B#16#6;    //Function Code para execução
+    REG_ABR_CP18   := W#16#0000;	//Endereço para escrita   
+    VAL_ABR_CP18   := W#16#0000;	//Word para escrita   
+    
+    ENDSL_ABR_CP19 := B#16#00;	//Endereço do Slave acessado spare#19
+    FC_ABR_CP19    := B#16#6;    //Function Code para execução
+    REG_ABR_CP19   := W#16#0000;	//Endereço para escrita   
+    VAL_ABR_CP19   := W#16#0000;	//Word para escrita   
+    
+    ENDSL_ABR_CP20 := B#16#00;	//Endereço do Slave acessado spare#20
+    FC_ABR_CP20    := B#16#6;    //Function Code para execução
+    REG_ABR_CP20   := W#16#0000;	//Endereço para escrita   
+    VAL_ABR_CP20   := W#16#0000;	//Word para escrita   
+       
+END_DATA_BLOCK

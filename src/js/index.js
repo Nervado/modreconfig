@@ -1,4 +1,6 @@
-var $ = require('node_modules/jQuery');
+const ipc = electron.ipcRenderer;
+
+//var $ = require('node_modules/jQuery');
 var x, i, j, selElmnt, a, b, c;
 /* Look for any elements with the class "custom-select": */
 x = document.getElementsByClassName("custom-select");
@@ -74,17 +76,15 @@ function closeAllSelect(elmnt) {
 then close all select boxes: */
 document.addEventListener("click", closeAllSelect);
 
-/*
-$('.bt').each(function(index,botao){
-// my code...
-    botao.click( () =>{
-        //e.preventDefault();
-        $('.outputarea').HTML(this.innerHTML);
-        })
-    
-})
-*/
+$('.bt').click((e)=>{$('.outputarea').html(e.target.textContent);})
 
-$('.bt').click((e)=>{
-    $('.outputarea').html(console.log(e));
+
+const updateBtn = document.getElementById('updateBtn')
+
+updateBtn.addEventListener('click', function () {
+  ipc.send('update-notify-value', document.getElementById('notifyVal').value)
+
+  // Close this window
+  var window = remote.getCurrentWindow();
+  window.close();
 })

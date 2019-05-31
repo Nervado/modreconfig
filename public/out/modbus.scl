@@ -1,7 +1,7 @@
 //author: Evandro Abreu
 //Implemts modbus comunications for one CP 341 over RTU/RS485
 
-FUNCTION_BLOCK FB300
+FUNCTION_BLOCK FB60
 
 VAR_INPUT//variáveis de entrada    
     LADDR           : INT;//Endereço mapeado da CP

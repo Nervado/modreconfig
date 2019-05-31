@@ -22,9 +22,9 @@ let remotaPn02=
 {
         noCPs: 5, 
         modulo : 'E021C',
-        dataRecDbsNs: [303,304,306,307,309],//Parametro: RCVRD
+        dataRecDbsNs: [303,306,309,304,307],//Parametro: RCVRD
         dataSymblDbs:['UNI_RECV_CP4','UNI_RECV_CP5','UNI_RECV_CP6','UNI_RECV_CP7','UNI_RECV_CP8'], //Nome do data block do RCVRD
-        nomeCPs :['E011C4-CP-ELE025', 'E011C8-CP-ELE025'],
+        nomeCPs :['E021C4-CP-ELE26', 'E021C5-CP-ELE26','E021C6-CP-ELE26','E021C7-CP-ELE26','E021C8-CP-ELE26'],
         iAdress: [[256,271], [272,287], [288,303], [304,319], [320,335]],
         qAdress: [[256,271], [272,287], [288,303], [304,319], [320,335]],
         tipos: ['p122','p127','p225','p241','p243','p632'],//familias de Relés que efetivamente existem (reles esperados)

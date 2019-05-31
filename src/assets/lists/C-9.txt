@@ -1,13 +1,13 @@
 PN-514002-C264-9|||
-B9_M-B-125101-01D   -  1   -   p241|||
+B9_M-B-125101-01D   -  1   -   P-241|||
 Função no Relé a Ser Lida|Endereçamento Modbus||
 HSL2B9_02 - Comando Abrir DJ -M-B-UT-125101-01D|20.0||
 HSH2B9_02 - Comando Fechar DJ - M-B-UT-125101-01D|20.1||
-IT2B9_R_02 - Corrente Fase R - M-B-UT-125101-01D|217||
-IT2B9_S_02 - Corrente Fase S - M-B-UT-125101-01D|219||
-IT2B9_T_02 - Corrente Fase T - M-B-UT-125101-01D|221||
-JT2B9_PA_02  - Analógicas - Potencia Ativa - M-B-UT-125101-01D|299||
-JT2B9_PR_02  - Analógicas - Potencia Reativa - M-B-UT-125101-01D|302||
+IT2B9_R_02 - Corrente Fase R - M-B-UT-125101-01D|217|32 bits unsigned mv|
+IT2B9_S_02 - Corrente Fase S - M-B-UT-125101-01D|219|32 bits unsigned mv|
+IT2B9_T_02 - Corrente Fase T - M-B-UT-125101-01D|221|32 bits unsigned mv|
+JT2B9_PA_02  - Analógicas - Potencia Ativa - M-B-UT-125101-01D|299|real32_hw_hb|
+JT2B9_PR_02  - Analógicas - Potencia Reativa - M-B-UT-125101-01D|302|real32_hw_hb|
 YS2B9_P47_02  - Proteção Func. 47 - M-B-UT-125101-01D|723.1||
 YS2B9_P50_02  - Proteção Func. 50 - M-B-UT-125101-01D|723.3||
 YS2B9_P66_02  - Proteção Func. 66 - M-B-UT-125101-01D|723.5||
@@ -25,15 +25,15 @@ YS2B9_P48_02  - Proteção Func. 48 - M-B-UT-125101-01D|734.2||
 YS2B9_P59_02  - Proteção Func. 59 - M-B-UT-125101-01D|735.2||
 YS2B9_P87_02  - Proteção Func. 87 - M-B-UT-125101-01D|737.5||
 YS2B9_STUS_02  - STATUS RELE 01|19.4||
-B8_M-B-UT-125101-01B   -   2   -   p241|||
+B8_M-B-UT-125101-01B   -   2   -   P-241|||
 Função no Relé a Ser Lida|Endereçamento Modbus||
 HSL2B8_02 - Comando Abrir DJ -M-B-UT-125101-01B|20.0||
 HSH2B8_02 - Comando Fechar DJ -M-B-UT-125101-01B|20.1||
-IT2B8_R_02 - Corrente Fase R - M-B-UT-125101-01B|217||
-IT2B8_S_02 - Corrente Fase S - M-B-UT-125101-01B|219||
-IT2B8_T_02 - Corrente Fase T - M-B-UT-125101-01B|221||
-JT2B8_PA_02  - Analógicas - Potencia Ativa - M-B-UT-125101-01B|299||
-JT2B8_PR_02  - Analógicas - Potencia Reativa - M-B-UT-125101-01B|302||
+IT2B8_R_02 - Corrente Fase R - M-B-UT-125101-01B|217|32 bits unsigned mv|
+IT2B8_S_02 - Corrente Fase S - M-B-UT-125101-01B|219|32 bits unsigned mv|
+IT2B8_T_02 - Corrente Fase T - M-B-UT-125101-01B|221|32 bits unsigned mv|
+JT2B8_PA_02  - Analógicas - Potencia Ativa - M-B-UT-125101-01B|299|real32_hw_hb|
+JT2B8_PR_02  - Analógicas - Potencia Reativa - M-B-UT-125101-01B|302|real32_hw_hb|
 YS2B8_P47_02  - Proteção Func. 47 - M-B-UT-125101-01B|723.1||
 YS2B8_P50_02  - Proteção Func. 50 - M-B-UT-125101-01B|723.3||
 YS2B8_P66_02  - Proteção Func. 66 - M-B-UT-125101-01B|723.5||
@@ -51,7 +51,7 @@ YS2B8_P48_02  - Proteção Func. 48 - M-B-UT-125101-01B|734.2||
 YS2B8_P59_02  - Proteção Func. 59 - M-B-UT-125101-01B|735.2||
 YS2B8_P87_02  - Proteção Func. 87 - M-B-UT-125101-01B|737.5||
 YS2B8_STUS_02  - STATUS RELE 02|19.4||
-B12_SPARE   -   3   -   p241|||
+B12_SPARE   -   3   -   P-241|||
 Função no Relé a Ser Lida|Endereçamento Modbus||
 HSL2B12_02 - Comando Abrir DJ - SPARE|20.0||
 HSH2B12_02 - Comando Fechar DJ -  SPARE|20.1||
@@ -77,7 +77,7 @@ YS2B12_P48_02  - Proteção Func. 48 - SPARE|734.2||
 YS2B12_P59_02  - Proteção Func. 59 - SPARE|735.2||
 YS2B12_P87_02  - Proteção Func. 87 - SPARE|737.5||
 YS2B12_STUS_02  - STATUS RELE 03|19.4||
-B7_M-B-533501B   -   4   -   p241|||
+B7_M-B-533501B   -   4   -   P-241|||
 Função no Relé a Ser Lida|Endereçamento Modbus||
 HSL2B7_02 - Comando Abrir DJ - M-B-533501B|20.0||
 HSH2B7_02 - Comando Fechar DJ -  M-B-533501B|20.1||
@@ -103,7 +103,7 @@ YS2B7_P48_02  - Proteção Func. 48 - M-B-533501B|734.2||
 YS2B7_P59_02  - Proteção Func. 59 - M-B-533501B|735.2||
 YS2B7_P87_02  - Proteção Func. 87 - M-B-533501B|737.5||
 YS2B7_STUS_02  - STATUS RELE 04|19.4||
-B6_M-B-512401D  -   5   -   p241|||
+B6_M-B-512401D  -   5   -   P-241|||
 Função no Relé a Ser Lida|Endereçamento Modbus||
 HSL2B6_02 - Comando Abrir DJ - M-B-512401D|20.0||
 HSH2B6_02 - Comando Fechar DJ - M-B-512401D|20.1||

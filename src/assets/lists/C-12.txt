@@ -1,5 +1,5 @@
 PN-514002 - C264 - 12|||
-A12_SPARE   -   19   -   p241|||
+A12_SPARE   -   19   -   P241|||
 Função no Relé a Ser Lida|Endereçamento Modbus||
 HSL2A12_02 - Comando Abrir DJ -  SPARE|20.0||
 HSH2A12_02 - Comando Fechar DJ -  SPARE|20.1||
@@ -25,7 +25,7 @@ YS2A12_P48_02  - Proteção Func. 48 - SPARE|734.2||
 YS2A12_P59_02  - Proteção Func. 59 - SPARE|735.2||
 YS2A12_P87_02  - Proteção Func. 87 - SPARE|737.5||
 YS2A12_STUS_02  - STATUS RELE 19|19.4||
-A7_M-B-512401C   -   20   -   p241|||
+A7_M-B-512401C   -   20   -   P241|||
 Função no Relé a Ser Lida|Endereçamento Modbus||
 HSL2A7_02 - Comando Abrir DJ - M-B-512401C|20.0||
 HSH2A7_02 - Comando Fechar DJ - M-B-512401C|20.1||
@@ -51,7 +51,7 @@ YS2A7_P48_02  - Proteção Func. 48 - M-B-512401C|734.2||
 YS2A7_P59_02  - Proteção Func. 59 - M-B-512401C|735.2||
 YS2A7_P87_02  - Proteção Func. 87 - M-B-512401C|737.5||
 YS2A7_STUS_02  - STATUS RELE 20|19.4||
-A8_M-B-533501A   -   21   -   p241|||
+A8_M-B-533501A   -   21   -   P241|||
 Função no Relé a Ser Lida|Endereçamento Modbus||
 HSL2A8_02 - Comando Abrir DJ - M-B-533501A|20.0||
 HSH2A8_02 - Comando Fechar DJ - M-B-533501A|20.1||
@@ -77,7 +77,7 @@ YS2A8_P48_02  - Proteção Func. 48 - M-B-533501A|734.2||
 YS2A8_P59_02  - Proteção Func. 59 - M-B-533501A|735.2||
 YS2A8_P87_02  - Proteção Func. 87 - M-B-533501A|737.5||
 YS2A8_STUS_02  - STATUS RELE 21|19.4||
-A10_M-B-UT-125101-01C   -   22   -   p241|||
+A10_M-B-UT-125101-01C   -   22   -   P241|||
 Função no Relé a Ser Lida|Endereçamento Modbus||
 HSL2A10_02 - Comando Abrir DJ -   M-B-UT-125101-01C|20.0||
 HSH2A10_02 - Comando Fechar DJ -   M-B-UT-125101-01C|20.1||
@@ -103,7 +103,7 @@ YS2A10_P48_02  - Proteção Func. 48 - M-B-UT-125101-01C|734.2||
 YS2A10_P59_02  - Proteção Func. 59 - M-B-UT-125101-01C|735.2||
 YS2A10_P87_02  - Proteção Func. 87 - M-B-UT-125101-01C|737.5||
 YS2A10_STUS_02  - STATUS RELE 22|19.4||
-A9_M-B-UT-125101-01A   -   23   -   p241|||
+A9_M-B-UT-125101-01A   -   23   -   P241|||
 Função no Relé a Ser Lida|Endereçamento Modbus||
 HSL2A9_02 - Comando Abrir DJ -  M-B-UT-125101-01A|20.0||
 HSH2A9_02 - Comando Fechar DJ -  M-B-UT-125101-01A|20.1||

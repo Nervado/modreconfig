@@ -1,0 +1,220 @@
+
+
+FUNCTION FC30 : VOID //FC de rearranjo para envio ao CLP de Elétrica
+VAR
+    tmp1: DINT;
+    tmp2: DINT;
+    tmp3: DINT;
+END_VAR
+
+
+BEGIN //code section           
+
+
+   Q1.0 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[1,0]; //DJ 52-01 Teste - SPARE; sinal: YSHLC1A_03;
+   Q1.1 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[1,2]; //Prote��o Func. 86 - SPARE; sinal: YSC1A_RD_03;
+   Q1.2 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[1,3]; //Prote��o Func. 27 - SPARE; sinal: YSC1A_TEST_03;
+   Q1.3 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[1,5]; //Prote��o Func. 37 - SPARE; sinal: YSC1A_P86_03;
+   Q1.4 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[53,6]; //Prote��o Func. 46 - SPARE; sinal: YSC1A_P27_03;
+   Q1.5 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[19,6]; //Prote��o Func. 48 - SPARE; sinal: YSC1A_P37_03;
+   Q1.6 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[15,6]; //Prote��o Func. 50 - SPARE; sinal: YSC1A_P46_03;
+   Q1.7 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[25,2]; //Prote��o Func. 51 - SPARE; sinal: YSC1A_P48_03;
+   Q0.1 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[9,6]; //undefined sinal: YSC1A_P50_03;
+   Q0.2 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[9,6]; //undefined sinal: YSC1A_P51_03;
+   Q0.3 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[15,6]; //undefined sinal: YSC1A_P51N_03;
+   Q3.7 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[77,0]; //DJ 52-03 Teste - TF-514401A; sinal: YSHLC2B_03;
+   Q2.0 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[77,1]; //Prote��o Func. 86 - TF-514401A; sinal: YSC2B_RD_03;
+   Q2.1 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[77,2]; //Prote��o Func. 50 - TF-514401A; sinal: YSC2B_TEST_03;
+   Q2.2 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[83,2]; //Prote��o Func. 37 - TF-514401A; sinal: YSC2B_P86_03;
+   Q2.3 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[89,6]; //Prote��o Func. 51  - TF-514401A; sinal: YSC2B_P50_03;
+   Q2.4 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[111,6]; //Prote��o Func. 46 - TF-514401A; sinal: YSC2B_P37_03;
+   Q2.5 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[85,6]; //Prote��o Func  48 - TF-514401A; sinal: YSC2B_P51_03;
+   Q2.6 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[113,6]; //Prote��o Func  51N - TF-514401A; sinal: YSC2B_P46_03;
+   Q2.7 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[82,1]; //undefined sinal: YSC2B_P48_03;
+   Q5.1 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[91,6]; //undefined sinal: YSC2B_P51N_03;
+   Q4.5 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[153,0]; //DJ 52-05 Teste - GD-526001A; sinal: YSHLC3A_03;
+   Q4.6 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[153,1]; //Prote��o Func. 86 - GD-526001A; sinal: YSC3A_RD_03;
+   Q4.7 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[153,2]; //Prote��o Func. 50 - GD-526001A; sinal: YSC3A_TEST_03;
+   Q7.0 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[159,2]; //Prote��o Func. 37 - GD-526001A; sinal: YSC3A_P86_03;
+   Q7.1 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[165,6]; //Prote��o Func. 51  - GD-526001A; sinal: YSC3A_P50_03;
+   Q7.2 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[187,6]; //Prote��o Func. 46 - GD-526001A; sinal: YSC3A_P37_03;
+   Q7.3 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[161,6]; //Prote��o Func  48 - GD-526001A; sinal: YSC3A_P51_03;
+   Q7.4 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[189,6]; //Prote��o Func  51N - GD-526001A; sinal: YSC3A_P46_03;
+   Q7.5 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[158,1]; //undefined sinal: YSC3A_P48_03;
+   Q7.7 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[167,6]; //undefined sinal: YSC3A_P51N_03;
+   Q0.4 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[229,0]; //DJ 52-02 Teste - SPARE; sinal: YSHLC2A_03;
+   Q0.5 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[229,1]; //Prote��o Func. 86 - SPARE; sinal: YSC2A_RD_03;
+   Q0.6 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[229,2]; //Prote��o Func. 50 - SPARE; sinal: YSC2A_TEST_03;
+   Q0.7 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[235,2]; //Prote��o Func. 37 - SPARE; sinal: YSC2A_P86_03;
+   Q3.0 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[241,6]; //Prote��o Func. 51  - SPARE; sinal: YSC2A_P50_03;
+   Q3.1 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[263,6]; //Prote��o Func. 46 - SPARE; sinal: YSC2A_P37_03;
+   Q3.2 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[237,6]; //Prote��o Func  48 - SPARE; sinal: YSC2A_P51_03;
+   Q3.3 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[265,6]; //Prote��o Func  51N - SPARE; sinal: YSC2A_P46_03;
+   Q3.4 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[234,1]; //undefined sinal: YSC2A_P48_03;
+   Q3.6 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[243,6]; //undefined sinal: YSC2A_P51N_03;
+   Q5.2 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[305,0]; //DJ 52-04 Teste - GD-526002A; sinal: YSHLC2C_03;
+   Q5.3 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[305,1]; //Prote��o Func. 86 - GD-526002A; sinal: YSC2C_RD_03;
+   Q5.4 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[305,2]; //Prote��o Func. 50 - GD-526002A; sinal: YSC2C_TEST_03;
+   Q5.5 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[311,2]; //Prote��o Func. 37 - GD-526002A; sinal: YSC2C_P86_03;
+   Q5.6 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[317,6]; //Prote��o Func. 51  - GD-526002A; sinal: YSC2C_P50_03;
+   Q5.7 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[339,6]; //Prote��o Func. 46 - GD-526002A; sinal: YSC2C_P37_03;
+   Q4.0 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[313,6]; //Prote��o Func  48 - GD-526002A; sinal: YSC2C_P51_03;
+   Q4.1 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[341,6]; //Prote��o Func  51N - GD-526002A; sinal: YSC2C_P46_03;
+   Q4.2 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[310,1]; //undefined sinal: YSC2C_P48_03;
+   Q4.4 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[319,6]; //undefined sinal: YSC2C_P51N_03;
+   Q6.0 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[381,0]; //DJ 52-06 Teste -  UH-520001; sinal: YSHLC3B_03;
+   Q6.1 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[381,1]; //Prote��o Func. 86 -  UH-520001; sinal: YSC3B_RD_03;
+   Q6.2 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[381,2]; //Prote��o Func. 50 -  UH-520001; sinal: YSC3B_TEST_03;
+   Q6.3 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[387,2]; //Prote��o Func. 37 -  UH-520001; sinal: YSC3B_P86_03;
+   Q6.4 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[393,6]; //Prote��o Func. 51  -  UH-520001; sinal: YSC3B_P50_03;
+   Q6.5 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[415,6]; //Prote��o Func. 46 -  UH-520001; sinal: YSC3B_P37_03;
+   Q6.6 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[389,6]; //Prote��o Func  48 -  UH-520001; sinal: YSC3B_P51_03;
+   Q6.7 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[417,6]; //Prote��o Func  51N -  UH-520001; sinal: YSC3B_P46_03;
+   Q9.0 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[386,1]; //undefined sinal: YSC3B_P48_03;
+   Q9.2 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[395,6]; //undefined sinal: YSC3B_P51N_03;
+
+
+   tmp1 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DD[64])/100;
+   tmp2 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DD[68])/100;
+   tmp3 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DD[72])/100;
+   QW12 := DINT_TO_WORD((tmp1 + tmp2 + tmp3 )/3);//  Anal�gicas - Corrente m�dia entre fases - SPARE
+
+   tmp1 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DD[140])/100;
+   tmp2 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DD[144])/100;
+   tmp3 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DD[148])/100;
+   QW16 := DINT_TO_WORD((tmp1 + tmp2 + tmp3 )/3);//  Anal�gicas - Corrente m�dia entre fases - TF-514401A
+
+   tmp1 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DD[216])/100;
+   tmp2 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DD[220])/100;
+   tmp3 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DD[224])/100;
+   QW20 := DINT_TO_WORD((tmp1 + tmp2 + tmp3 )/3);//  Anal�gicas - Corrente m�dia entre fases - GD-526001A
+
+   tmp1 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DD[292])/100;
+   tmp2 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DD[296])/100;
+   tmp3 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DD[300])/100;
+   QW14 := DINT_TO_WORD((tmp1 + tmp2 + tmp3 )/3);//  Anal�gicas - Corrente m�dia entre fases - SPARE
+
+   tmp1 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DD[368])/100;
+   tmp2 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DD[372])/100;
+   tmp3 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DD[376])/100;
+   QW18 := DINT_TO_WORD((tmp1 + tmp2 + tmp3 )/3);//  Anal�gicas - Corrente m�dia entre fases - GD-526002A
+
+   tmp1 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DD[444])/100;
+   tmp2 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DD[448])/100;
+   tmp3 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DD[452])/100;
+   QW22 := DINT_TO_WORD((tmp1 + tmp2 + tmp3 )/3);//  Anal�gicas - Corrente m�dia entre fases -  UH-520001
+
+   Q25.0 := WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DX[1,0]; //DJ 52-07 Teste -  PN-514007; sinal: YSHLC3C_03;
+   Q25.1 := WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DX[1,1]; //Prote��o Func. 86 -  PN-514007; sinal: YSC3C_RD_03;
+   Q25.2 := WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DX[1,2]; //Prote��o Func. 50 -  PN-514007; sinal: YSC3C_TEST_03;
+   Q25.3 := WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DX[7,2]; //Prote��o Func. 37 -  PN-514007; sinal: YSC3C_P86_03;
+   Q25.4 := WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DX[13,6]; //Prote��o Func. 51  -  PN-514007; sinal: YSC3C_P50_03;
+   Q25.5 := WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DX[35,6]; //Prote��o Func. 46 -  PN-514007; sinal: YSC3C_P37_03;
+   Q25.6 := WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DX[9,6]; //Prote��o Func  48 -  PN-514007; sinal: YSC3C_P51_03;
+   Q25.7 := WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DX[37,6]; //Prote��o Func  51N -  PN-514007; sinal: YSC3C_P46_03;
+   Q24.0 := WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DX[6,1]; //undefined sinal: YSC3C_P48_03;
+   Q24.2 := WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DX[15,6]; //undefined sinal: YSC3C_P51N_03;
+   Q27.6 := WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DX[77,0]; //Contator DJ 52-03.A Teste -  52-03.A; sinal: YSHLC6A_03;
+   Q27.7 := WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DX[77,1]; //Prote��o Func. 86 -  52-03.A; sinal: YSC6A_RD_03;
+   Q26.0 := WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DX[77,2]; //Prote��o Func. 50 -  52-03.A; sinal: YSC6A_TEST_03;
+   Q26.1 := WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DX[83,2]; //Prote��o Func. 50GS  -  52-03.A; sinal: YSC6A_P86_03;
+   Q26.2 := WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DX[89,6]; //Prote��o Func. 51 -  52-03.A; sinal: YSC6A_P50_03;
+   Q26.3 := WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DX[115,1]; //Prote��o Func. 67 -  52-03.A; sinal: YSC6A_P50GS_03;
+   Q26.4 := WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DX[85,6]; //Prote��o Func. 67N -  52-03.A; sinal: YSC6A_P51_03;
+   Q26.5 := WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DX[87,6]; //Prote��o Func. 27 -  52-03.A; sinal: YSC6A_P67_03;
+   Q26.6 := WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DX[93,6]; //Prote��o Arco -  52-03.A; sinal: YSC6A_P67N_03;
+   Q26.7 := WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DX[83,3]; //undefined sinal: YSC6A_P27_03;
+   Q29.0 := WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DX[76,2]; //undefined sinal: YSC6A_PARCO_03;
+   Q28.6 := WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DX[177,3]; //Prote��o Func. 51 - COMUNIC RELE 01 ; sinal: YSC7B_TEST_03;
+   Q28.7 := WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DX[177,4]; //Prote��o Func. 67 - COMUNIC RELE 01 ; sinal: YSC7B_P86_03;
+   Q31.2 := WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DX[185,6]; //undefined sinal: YSC7B_P51_03;
+   Q31.3 := WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DX[187,6]; //undefined sinal: YSC7B_P67_03;
+   Q28.4 := WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DX[177,1]; //undefined sinal: YSHLC7B_03;
+   Q28.5 := WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DX[177,2]; //undefined sinal: YSC7B_RD_03;
+   Q24.3 := WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DX[277,0]; //DJ 52-08 Teste -  PN-514005; sinal: YSHLC4A_03;
+   Q24.4 := WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DX[277,1]; //Prote��o Func. 86 -  PN-514005; sinal: YSC4A_RD_03;
+   Q24.5 := WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DX[277,2]; //Prote��o Func. 50 -  PN-514005; sinal: YSC4A_TEST_03;
+   Q24.6 := WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DX[283,2]; //Prote��o Func. 37 -  PN-514005; sinal: YSC4A_P86_03;
+   Q24.7 := WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DX[289,6]; //Prote��o Func. 51  -  PN-514005; sinal: YSC4A_P50_03;
+   Q27.0 := WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DX[311,6]; //Prote��o Func. 46 -  PN-514005; sinal: YSC4A_P37_03;
+   Q27.1 := WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DX[285,6]; //Prote��o Func  48 -  PN-514005; sinal: YSC4A_P51_03;
+   Q27.2 := WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DX[313,6]; //Prote��o Func  51N -  PN-514005; sinal: YSC4A_P46_03;
+   Q27.3 := WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DX[282,1]; //undefined sinal: YSC4A_P48_03;
+   Q27.5 := WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DX[291,6]; //undefined sinal: YSC4A_P51N_03;
+   Q29.3 := WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DX[353,3]; //Prote��o Func. 50 - 52-03.C-A; sinal: YSC7A_TEST_03;
+   Q29.4 := WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DX[353,4]; //Prote��o Func. 51 - 52-03.C-A; sinal: YSC7A_P86_03;
+   Q29.5 := WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DX[365,6]; //Prote��o Func. 67 - 52-03.C-A; sinal: YSC7A_P50_03;
+   Q29.7 := WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DX[361,6]; //Prote��o Func. 27 - 52-03.C-A; sinal: YSC7A_P51_03;
+   Q28.0 := WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DX[363,6]; //Prote��o Arco - 52-03.C-A; sinal: YSC7A_P67_03;
+   Q28.1 := WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DX[369,6]; //Posi��o DJ 52-03.C-A - 52-03.C-A; sinal: YSC7A_P67N_03;
+   Q28.2 := WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DX[359,3]; //Contator DJ 52-03.C-A Ready - 52-03.C-A; sinal: YSC7A_P27_03;
+   Q28.3 := WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DX[352,2]; //undefined sinal: YSC7A_PARCO_03;
+   Q29.1 := WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DX[353,1]; //undefined sinal: YSHLC7A_03;
+   Q29.2 := WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DX[353,2]; //undefined sinal: YSC7A_RD_03;
+   Q31.7 := WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DX[453,3]; //Contator DJ 52-03.B Teste -  52-03.B; sinal: YSHLC9A_03;
+   Q30.0 := WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DX[453,4]; //Prote��o Func. 86 -  52-03.B; sinal: YSC9A_RD_03;
+   Q30.1 := WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DX[465,6]; //Prote��o Func. 51 -  52-03.B; sinal: YSC9A_TEST_03;
+   Q30.2 := WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DX[491,1]; //Prote��o Func. 67 -  52-03.B; sinal: YSC9A_P86_03;
+   Q30.5 := WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DX[469,6]; //undefined sinal: YSC9A_P51_03;
+   Q30.6 := WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DX[459,3]; //undefined sinal: YSC9A_P67_03;
+   Q33.0 := WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DX[453,1]; //undefined sinal: YSC9A_P27_03;
+
+
+   tmp1 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DD[152])/100;
+   QW38 := DINT_TO_WORD(tmp1);//Anal�gicas - Tens�o Fase R Barra 1 -  52-03.A, sinal: ETC6A_R_03
+
+   tmp2 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DD[156])/100;
+   QW40 := DINT_TO_WORD(tmp2);//Anal�gicas - Tens�o Fase S Barra 1 -  52-03.A, sinal: ETC6A_S_03
+
+   tmp3 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DD[160])/100;
+   QW42 := DINT_TO_WORD(tmp3);//Anal�gicas - Tens�o Fase T Barra 1 -  52-03.A, sinal: ETC6A_T_03
+
+   tmp1 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DD[428])/100;
+   QW52 := DINT_TO_WORD(tmp1);//Anal�gicas - Tens�o Fase R Barra 1 - 52-03.C-A, sinal: ETC7A_R_03
+
+   tmp2 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DD[432])/100;
+   QW54 := DINT_TO_WORD(tmp2);//Anal�gicas - Tens�o Fase S Barra 1 - 52-03.C-A, sinal: ETC7A_S_03
+
+   tmp3 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DD[436])/100;
+   QW56 := DINT_TO_WORD(tmp3);//Anal�gicas - Tens�o Fase T Barra 1 - 52-03.C-A, sinal: ETC7A_T_03
+
+   tmp1 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DD[64])/100;
+   tmp2 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DD[68])/100;
+   tmp3 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DD[72])/100;
+   QW34 := DINT_TO_WORD((tmp1 + tmp2 + tmp3 )/3);//  Anal�gicas - Corrente m�dia entre fases -  PN-514007
+
+   tmp1 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DD[140])/100;
+   tmp2 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DD[144])/100;
+   tmp3 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DD[148])/100;
+   QW44 := DINT_TO_WORD((tmp1 + tmp2 + tmp3 )/3);//  Anal�gicas - Corrente m�dia entre fasesBarra 1 -  52-03.A
+
+   tmp1 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DD[340])/100;
+   tmp2 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DD[344])/100;
+   tmp3 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DD[348])/100;
+   QW36 := DINT_TO_WORD((tmp1 + tmp2 + tmp3 )/3);//  Anal�gicas - Corrente m�dia entre fases -  PN-514005
+
+   tmp1 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DD[416])/100;
+   tmp2 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DD[420])/100;
+   tmp3 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DD[424])/100;
+   QW58 := DINT_TO_WORD((tmp1 + tmp2 + tmp3 )/3);//  Anal�gicas - Corrente m�dia entre fasesBarra 1 - 52-03.C-A
+
+   tmp1 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DD[164])/100;
+   QW46 := DINT_TO_WORD(tmp1);//Anal�gicas - Potencia Ativa -  52-03.A
+
+   tmp2 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DD[168])/100;
+   QW48 := DINT_TO_WORD(tmp2);//Anal�gicas - Potencia Reativa -  52-03.A
+
+   tmp3 := WORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DW[172])/100;
+   QW50 := DINT_TO_WORD(tmp3);//Anal�gicas - Fator de Potencia -  52-03.A
+
+   tmp1 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DD[440])/100;
+   QW60 := DINT_TO_WORD(tmp1);//Anal�gicas - Potencia Ativa - 52-03.C-A
+
+   tmp2 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DD[444])/100;
+   QW62 := DINT_TO_WORD(tmp2);//Anal�gicas - Potencia Reativa - 52-03.C-A
+
+   tmp3 := WORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DW[448])/100;
+   QW64 := DINT_TO_WORD(tmp3);//Anal�gicas - Fator de Potencia - 52-03.C-A
+
+   
+END_FUNCTION

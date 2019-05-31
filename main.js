@@ -1,6 +1,7 @@
 const path = require('path');
-const getData = require(path.resolve(__dirname,'src/modules/testeCriaFc'));
-path.resolve('src/assets/lists', arquivoCP)
+const getData = require(path.resolve('src/modules','testeCriaFc'));
+
+//C:\Users\adm\Desktop\DEV\modreconfig\modreconfigApp-win32-x64\resources\app\src\modules
 const {app, BrowserWindow, Menu, ipcMain} = require('electron');
 
 function createWindow(){
@@ -16,14 +17,22 @@ function createWindow(){
     win.loadFile('index.html')
 
     ipcMain.on('msg', function(e, msg){
+        
+        if (msg.comando === 'lf'){
+            console.log(msg)
+
+            getData.fetchFiles(msg)
+            //const getData = require(path.resolve('src/modules','testeCriaFc'));
+            e.reply('asynchronous-reply','Acabou')
+        }
         // Envia a parada para o conteudo da janela principal 
         // mainWindow.webContent.send()
-        if(msg === 'lf'){
-            let painel = '02';
-            console.log(msg,'vou fazer as paradas entao..');
-            getData.fetchFiles(painel);
-        }          
-        console.log(getData.getData())        
+        //if(msg === 'lf'){
+        //    let painel = '02';
+        //    console.log(msg,'vou fazer as paradas entao..');
+        //    getData.fetchFiles(painel);
+        //}          
+        //console.log(getData.getData())        
         //win.close()// Todo ... stuff    
     })
 }

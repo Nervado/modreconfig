@@ -13,16 +13,6 @@ BEGIN //code section
 
 
 
-   QW16 := DINT_TO_WORD((tmp1 + tmp2 + tmp3 )/3);//  Analógicas - Média entre fases - M-B-UT-Z-125101-01D
-
-   QW22 := DINT_TO_WORD((tmp1 + tmp2 + tmp3 )/3);//  Analógicas - Média entre fases - M-B-UT-Z-125101-01B
-
-   QW28 := DINT_TO_WORD((tmp1 + tmp2 + tmp3 )/3);//  Analógicas - Média entre fases - SPARE
-
-   QW34 := DINT_TO_WORD((tmp1 + tmp2 + tmp3 )/3);//  Analógicas - Média entre fases - M-B-533501B
-
-   QW40 := DINT_TO_WORD((tmp1 + tmp2 + tmp3 )/3);//  Analógicas - Média entre fases -  M-B-512401D
-
    QW46 := DINT_TO_WORD((tmp1 + tmp2 + tmp3 )/3);//  Analógicas - Média entre fases -  M-B-512401B
 
 

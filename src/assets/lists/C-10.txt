@@ -1,5 +1,5 @@
 PN-514002 - C264 - 10|||
-B11_SPARE   -   7   -   p241|||
+B11_SPARE   -   7   -   P241|||
 Função no Relé a Ser Lida|Endereçamento Modbus||
 HSL2B11_02 - Comando Abrir DJ - SPARE|20.0||
 HSH2B11_02 - Comando Fechar DJ - SPARE|20.1||
@@ -25,7 +25,7 @@ YS2B11_P48_02  - Proteção Func. 48 - SPARE|734.2||
 YS2B11_P59_02  - Proteção Func. 59 - SPARE|735.2||
 YS2B11_P87_02  - Proteção Func. 87 - SPARE|737.5||
 YS2B11_STUS_02  - STATUS RELE 07|19.4||
-B3_M-C-UC-122501B    -   8   -   p241|||
+B3_M-C-UC-122501B    -   8   -   P241|||
 Função no Relé a Ser Lida|Endereçamento Modbus||
 HSL2B3_02 - Comando Abrir DJ - M-C-UC-122501B|20.0||
 HSH2B3_02 - Comando Fechar DJ - M-C-UC-122501B|20.1||
@@ -51,7 +51,7 @@ YS2B3_P48_02  - Proteção Func. 48 - M-C-UC-122501B|734.2||
 YS2B3_P59_02  - Proteção Func. 59 - M-C-UC-122501B|735.2||
 YS2B3_P87_02  - Proteção Func. 87 - M-C-UC-122501B|737.5||
 YS2B3_STUS_02  - STATUS RELE 08|19.4||
-B4_M-B-511104B   -   9   -   p241|||
+B4_M-B-511104B   -   9   -   P241|||
 Função no Relé a Ser Lida|Endereçamento Modbus||
 HSL2B4_02 - Comando Abrir DJ - M-B-511104B|20.0||
 HSH2B4_02 - Comando Fechar DJ - M-B-511104B|20.1||
@@ -77,7 +77,7 @@ YS2B4_P48_02  - Proteção Func. 48 - M-B-511104B|734.2||
 YS2B4_P59_02  - Proteção Func. 59 - M-B-511104B|735.2||
 YS2B4_P87_02  - Proteção Func. 87 - M-B-511104B|737.5||
 YS2B4_STUS_02  - STATUS RELE 09|19.4||
-B2_M-B-511101D   -   10   -   p241|||
+B2_M-B-511101D   -   10   -   P241|||
 Função no Relé a Ser Lida|Endereçamento Modbus||
 HSL2B2_02 - Comando Abrir DJ - M-B-511101D|20.0||
 HSH2B2_02 - Comando Fechar DJ - M-B-511101D|20.1||
@@ -103,7 +103,7 @@ YS2B2_P48_02  - Proteção Func. 48 - M-B-511101D|734.2||
 YS2B2_P59_02  - Proteção Func. 59 - M-B-511101D|735.2||
 YS2B2_P87_02  - Proteção Func. 87 - M-B-511101D|737.5||
 YS2B2_STUS_02  - STATUS RELE 10|19.4||
-B1_M-B-511101B   -   11   -   p241|||
+B1_M-B-511101B   -   11   -   P241|||
 Função no Relé a Ser Lida|Endereçamento Modbus||
 HSL2B1_02 - Comando Abrir DJ - M-B-511101B|20.0||
 HSH2B1_02 - Comando Fechar DJ - M-B-511101B|20.1||
@@ -129,7 +129,7 @@ YS2B1_P48_02  - Proteção Func. 48 - M-B-511101B|734.2||
 YS2B1_P59_02  - Proteção Func. 59 - M-B-511101B|735.2||
 YS2B1_P87_02  - Proteção Func. 87 - M-B-511101B|737.5||
 YS2B1_STUS_02  - STATUS RELE 11|19.4||
-A1_M-B-511101A   -   12   -   p241|||
+A1_M-B-511101A   -   12   -   P241|||
 Função no Relé a Ser Lida|Endereçamento Modbus||
 HSL2A1_02 - Comando Abrir DJ - M-B-511101A|20.0||
 HSH2A1_02 - Comando Fechar DJ - M-B-511101A|20.1||

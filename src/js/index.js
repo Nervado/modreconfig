@@ -1,5 +1,5 @@
 const electron = require('electron');
-const {ipcRenderer} = electron;
+const { ipcRenderer } = electron;
 
 //var $ = require('node_modules/jQuery');
 var x, i, j, selElmnt, a, b, c;
@@ -77,10 +77,50 @@ function closeAllSelect(elmnt) {
 then close all select boxes: */
 document.addEventListener("click", closeAllSelect);
 
-$('.bt').click((e)=>{
-    $('.outputarea').html(e.target.textContent);
-    // manda informação para o backend
-    const msg = e.target.id;
-    // the key is here!!!!
-    ipcRenderer.send('msg',msg);
+let loaddiv = '<div class="percentual">0%</div>'
+let load = 0
+let animabarra;
+
+// Emite objeto para o controle Backend
+$('.bt').click((e) => {
+    stopAnimacao()
+    $('.outputarea').html('<div class="aviso">' + e.target.textContent + '...' + '</div>');
+   
+    const msg = {
+        'comando': e.target.id,
+        'painel': $('.select-selected').text()
+    }
+    
+    ipcRenderer.send('msg', msg);
+    $('.outputarea').prepend('<div class="c100 p0 big orange load"><span>' + loaddiv + '</span><div class="slice"><div class="bar"></div><div class="fill"></div></div></div>')
+    animabarra = setInterval(animaLoad, 1000);
 })
+
+// Recebe resposta
+ipcRenderer.on('asynchronous-reply', (event, arg) => {   
+    stopAnimacao()
+    let load = '100%'
+    $('.load').removeClass('orange')
+    $('.load').removeClass('p25')
+    $('.load').addClass('green')
+    $('.load').addClass('p100')
+    $('.percentual').text(load)    
+    $('.aviso').html('<div class="concluido">Concluido!</div>')
+})
+
+
+function animaLoad() {
+    load +=2
+    $('.load').removeClass(`p${load - 2}`)
+    $('.load').addClass(`p${load}`)
+    $('.percentual').text(`${load}%`)
+}
+
+function stopAnimacao() {
+    clearInterval(animabarra)
+    $('.load').removeClass(`p${load}`)
+    load = 0;
+    $('.load').addClass(`p${load}`)
+    $('.percentual').text(`${load}%`)
+}
+

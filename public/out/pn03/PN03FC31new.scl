@@ -1,0 +1,85 @@
+
+
+FUNCTION FC31 : VOID //FC de rearranjo para envio ao CLP de Elétrica
+VAR
+    tmp1: DINT;
+    tmp2: DINT;
+    tmp3: DINT;
+END_VAR
+
+
+BEGIN //code section           
+
+
+
+
+   QW12 := DINT_TO_WORD((tmp1 + tmp2 + tmp3 )/3);//  Anal�gicas - Corrente m�dia entre fases - SPARE
+
+   QW16 := DINT_TO_WORD((tmp1 + tmp2 + tmp3 )/3);//  Anal�gicas - Corrente m�dia entre fases - TF-514401A
+
+   QW20 := DINT_TO_WORD((tmp1 + tmp2 + tmp3 )/3);//  Anal�gicas - Corrente m�dia entre fases - GD-526001A
+
+   QW14 := DINT_TO_WORD((tmp1 + tmp2 + tmp3 )/3);//  Anal�gicas - Corrente m�dia entre fases - SPARE
+
+   QW18 := DINT_TO_WORD((tmp1 + tmp2 + tmp3 )/3);//  Anal�gicas - Corrente m�dia entre fases - GD-526002A
+
+   QW22 := DINT_TO_WORD((tmp1 + tmp2 + tmp3 )/3);//  Anal�gicas - Corrente m�dia entre fases -  UH-520001
+
+
+
+   tmp1 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DD[252])/100;
+   QW0 := DINT_TO_WORD(tmp1);//Anal�gicas - Tens�o Fase R Barra 1 - COMUNIC RELE 01 , sinal: ETC7B_R_03
+
+   tmp2 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DD[256])/100;
+   QW2 := DINT_TO_WORD(tmp2);//Anal�gicas - Tens�o Fase S Barra 1 - COMUNIC RELE 01 , sinal: ETC7B_S_03
+
+   tmp3 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DD[260])/100;
+   QW4 := DINT_TO_WORD(tmp3);//Anal�gicas - Tens�o Fase T Barra 1 - COMUNIC RELE 01 , sinal: ETC7B_T_03
+
+   tmp1 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DD[528])/100;
+   QW14 := DINT_TO_WORD(tmp1);//Anal�gicas - Tens�o Fase R Barra 1 -  52-03.B, sinal: ETC9A_R_03
+
+   tmp2 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DD[532])/100;
+   QW16 := DINT_TO_WORD(tmp2);//Anal�gicas - Tens�o Fase S Barra 1 -  52-03.B, sinal: ETC9A_S_03
+
+   tmp3 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DD[536])/100;
+   QW18 := DINT_TO_WORD(tmp3);//Anal�gicas - Tens�o Fase T Barra 1 -  52-03.B, sinal: ETC9A_T_03
+
+   QW34 := DINT_TO_WORD((tmp1 + tmp2 + tmp3 )/3);//  Anal�gicas - Corrente m�dia entre fases -  PN-514007
+
+   QW44 := DINT_TO_WORD((tmp1 + tmp2 + tmp3 )/3);//  Anal�gicas - Corrente m�dia entre fasesBarra 1 -  52-03.A
+
+   tmp1 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DD[240])/100;
+   tmp2 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DD[244])/100;
+   tmp3 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DD[248])/100;
+   QW6 := DINT_TO_WORD((tmp1 + tmp2 + tmp3 )/3);//  Anal�gicas - Corrente m�dia entre fasesBarra 1 - COMUNIC RELE 01 
+
+   QW36 := DINT_TO_WORD((tmp1 + tmp2 + tmp3 )/3);//  Anal�gicas - Corrente m�dia entre fases -  PN-514005
+
+   QW58 := DINT_TO_WORD((tmp1 + tmp2 + tmp3 )/3);//  Anal�gicas - Corrente m�dia entre fasesBarra 1 - 52-03.C-A
+
+   tmp1 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DD[516])/100;
+   tmp2 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DD[520])/100;
+   tmp3 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DD[524])/100;
+   QW20 := DINT_TO_WORD((tmp1 + tmp2 + tmp3 )/3);//  Anal�gicas - Corrente m�dia entre fasesBarra 1 -  52-03.B
+
+   tmp1 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DD[264])/100;
+   QW8 := DINT_TO_WORD(tmp1);//Anal�gicas - Potencia Ativa - COMUNIC RELE 01 
+
+   tmp2 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DD[268])/100;
+   QW10 := DINT_TO_WORD(tmp2);//Anal�gicas - Potencia Reativa - COMUNIC RELE 01 
+
+   tmp3 := WORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DW[272])/100;
+   QW12 := DINT_TO_WORD(tmp3);//Anal�gicas - Fator de Potencia - COMUNIC RELE 01 
+
+   tmp1 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DD[540])/100;
+   QW22 := DINT_TO_WORD(tmp1);//Anal�gicas - Potencia Ativa -  52-03.B
+
+   tmp2 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DD[544])/100;
+   QW24 := DINT_TO_WORD(tmp2);//Anal�gicas - Potencia Reativa -  52-03.B
+
+   tmp3 := WORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(309)).DW[548])/100;
+   QW26 := DINT_TO_WORD(tmp3);//Anal�gicas - Fator de Potencia -  52-03.B
+
+   
+END_FUNCTION

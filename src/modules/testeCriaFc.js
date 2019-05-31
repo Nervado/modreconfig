@@ -7,12 +7,13 @@ const dbW = require('./criaDBEscritas')
 const fcMake = require('./criaFC')
 const fs = require('fs')
 
-exports.fetchFiles = function(painel){
+exports.fetchFiles = function(dados){
 //copiado para remota analisa rearranjo.js
-let remota = remotas.getRemota(`RemotaPn${painel}`)
-console.log(remota)
+//console.log(dados)
+//dados ={'painel':'painel 02'}
+let remota = remotas.getRemota(`RemotaPn${dados.painel.split(' ')[1]}`)
+//console.log(remota)
 let diretorio = remota.nome.split('N')[1]
-
 //cria redes para cada cp
 let vetorRedes = []
 let k = 0
@@ -27,7 +28,7 @@ remota.numCPs.forEach(function (numCP) {
     console.log('Encontrado: ' + arquivoCP)
     data = data.map(function (linha) { return linha.trim() })
     let parametros = cp.getDadosUteisDoLevantamento(data, remota.tipos)
-    //console.log(parametros.matrix_registradores)
+    console.log(parametros.matrix_registradores)
     vetorRedes.push(redes.criaRede(parametros, remota.tipos, remota.dataSymblDbs[k]))
     k++
 })
@@ -68,7 +69,7 @@ if (remota.numDBsLeituras.length === vetorRedes.length) {//verificar se o numero
         // salvar arquivo no diretorio local 
         fs.writeFile(_path, sclFonteDB, function (erro) {
             if (erro) { throw erro }
-            console.log(`Arquivo salvo em: `, _path)
+            //console.log(`Arquivo salvo em: `, _path)
             //console.log(sclFonteDB)
         })
 
@@ -87,7 +88,7 @@ if (remota.numDBsEscritas.length === vetorRedes.length) {//verificar se o numero
         // salvar arquivo no diretorio local 
         fs.writeFile(_path, db, function (erro) {
             if (erro) { throw erro }
-            console.log(`Arquivo salvo em: `, _path)
+            //console.log(`Arquivo salvo em: `, _path)
             //console.log(sclFonteDB)
         })
     })
@@ -130,15 +131,15 @@ END_DATA_BLOCK
     //Salva no diretorio atual
     fs.writeFile(_path, dbDTRCV, function (erro) {
         if (erro) { throw erro }
-        console.log(`Arquivo salvo em: `, _path)
+        //console.log(`Arquivo salvo em: `, _path)
         //console.log(dbDTRCV)
     })
 
-    console.log('Scan total time ' + `Network ${i++}`, totalizaTempo.toFixed(2), 'ms')
+    //console.log('Scan total time ' + `Network ${i++}`, totalizaTempo.toFixed(2), 'ms')
     //console.log('Quantidade de dados: ' + totalizaData*2 + ' Bytes') //esse valor corresponde ao tamanho em bytes da DB de saida dos dados
 })
 
-
+/*
 vetorRedes.forEach(rede => {
     rede.forEach(rele => {
         console.log('Tag: ', rele.tag, ',',
@@ -151,8 +152,8 @@ vetorRedes.forEach(rede => {
 
     })
 })
-//**/
 
+*/
 
 //Exibe dados das Redes
 

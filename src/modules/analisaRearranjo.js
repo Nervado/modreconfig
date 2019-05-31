@@ -1,6 +1,6 @@
 remotas = require('./remotas')
 let remotaPn03 = remotas.getRemota('RemotaPn02') 
-console.log(remotaPn03)
+//console.log(remotaPn03)
 //linhas de saidas discretas - copiado 
 
 //

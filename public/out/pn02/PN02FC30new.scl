@@ -11,174 +11,34 @@ END_VAR
 BEGIN //code section           
 
 
-   Q0.1 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[25,1]; //Posição Chave Terra  - M-B-UT-125101-01D; sinal: YS2B9_P47_02;
-   Q0.4 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[25,3]; //Proteção Func. 49 - M-B-UT-125101-01D; sinal: YS2B9_P50_02;
-   Q0.7 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[25,5]; //Proteção Func. 37 - M-B-UT-125101-01D; sinal: YS2B9_P66_02;
-   Q1.0 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[29,0]; //Proteção Func. 46 - M-B-UT-125101-01D; sinal: YSHL2B9_02;
-   Q1.1 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[29,1]; //Proteção Func. 27 - M-B-UT-125101-01D; sinal: YS2B9_RD_02;
-   Q1.2 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[29,2]; //Proteção Func. 50GS - M-B-UT-125101-01D; sinal: YS2B9_TEST_02;
-   Q1.3 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[29,3]; //Proteção Func. 48 - M-B-UT-125101-01D; sinal: YS2B9_P86_02;
-   Q1.4 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[29,5]; //Proteção Func. 59 - M-B-UT-125101-01D; sinal: YS2B9_CTER_02;
-   Q0.3 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[39,3]; //Proteção Func. 87 - M-B-UT-125101-01D; sinal: YS2B9_P49_02;
-   Q1.6 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[43,4]; //STATUS RELE 01 ; sinal: YS2B9_P37_02;
-   Q0.0 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[42,1]; //undefined sinal: YS2B9_P46_02;
-   Q1.5 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[42,6]; //undefined sinal: YS2B9_P27_02;
-   Q0.5 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[44,4]; //undefined sinal: YS2B9_P50G_02;
-   Q0.2 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[47,2]; //undefined sinal: YS2B9_P48_02;
-   Q1.7 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[49,2]; //undefined sinal: YS2B9_P59_02;
-   Q0.6 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[53,5]; //undefined sinal: YS2B9_P87_02;
-   Q13.0 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[1,4]; //undefined sinal: YS2B9_STUS_02;
-   Q2.1 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[77,1]; //Posição Chave Terra  - M-B-UT-125101-01B; sinal: YS2B8_P47_02;
-   Q2.4 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[77,3]; //Proteção Func. 49 - M-B-UT-125101-01B; sinal: YS2B8_P50_02;
-   Q2.7 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[77,5]; //Proteção Func. 37 - M-B-UT-125101-01B; sinal: YS2B8_P66_02;
-   Q3.0 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[81,0]; //Proteção Func. 46 - M-B-UT-125101-01B; sinal: YSHL2B8_02;
-   Q3.1 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[81,1]; //Proteção Func. 27 - M-B-UT-125101-01B; sinal: YS2B8_RD_02;
-   Q3.2 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[81,2]; //Proteção Func. 50GS - M-B-UT-125101-01B; sinal: YS2B8_TEST_02;
-   Q3.3 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[81,3]; //Proteção Func. 48 - M-B-UT-125101-01B; sinal: YS2B8_P86_02;
-   Q3.4 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[81,5]; //Proteção Func. 59 - M-B-UT-125101-01B; sinal: YS2B8_CTER_02;
-   Q2.3 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[91,3]; //Proteção Func. 87 - M-B-UT-125101-01B; sinal: YS2B8_P49_02;
-   Q3.6 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[95,4]; //STATUS RELE 02; sinal: YS2B8_P37_02;
-   Q2.0 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[94,1]; //undefined sinal: YS2B8_P46_02;
-   Q3.5 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[94,6]; //undefined sinal: YS2B8_P27_02;
-   Q2.5 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[96,4]; //undefined sinal: YS2B8_P50G_02;
-   Q2.2 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[99,2]; //undefined sinal: YS2B8_P48_02;
-   Q3.7 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[101,2]; //undefined sinal: YS2B8_P59_02;
-   Q2.6 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[105,5]; //undefined sinal: YS2B8_P87_02;
-   Q13.1 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[55,4]; //undefined sinal: YS2B8_STUS_02;
-   Q4.1 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[131,1]; //Posição Chave Terra  - SPARE; sinal: YS2B12_P47_02;
-   Q4.4 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[131,3]; //Proteção Func. 49 - SPARE; sinal: YS2B12_P50_02;
-   Q4.7 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[131,5]; //Proteção Func. 37 - SPARE; sinal: YS2B12_P66_02;
-   Q5.0 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[135,0]; //Proteção Func. 46 - SPARE; sinal: YSHL2B12_02;
-   Q5.1 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[135,1]; //Proteção Func. 27 - SPARE; sinal: YS2B12_RD_02;
-   Q5.2 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[135,2]; //Proteção Func. 50GS - SPARE; sinal: YS2B12_TEST_02;
-   Q5.3 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[135,3]; //Proteção Func. 48 - SPARE; sinal: YS2B12_P86_02;
-   Q5.4 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[135,5]; //Proteção Func. 59 - SPARE; sinal: YS2B12_CTER_02;
-   Q4.3 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[137,3]; //Proteção Func. 87 - SPARE; sinal: YS2B12_P49_02;
-   Q5.6 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[141,4]; //STATUS RELE 03; sinal: YS2B12_P37_02;
-   Q4.0 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[140,1]; //undefined sinal: YS2B12_P46_02;
-   Q5.5 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[140,6]; //undefined sinal: YS2B12_P27_02;
-   Q4.5 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[142,4]; //undefined sinal: YS2B12_P50G_02;
-   Q4.2 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[145,2]; //undefined sinal: YS2B12_P48_02;
-   Q5.7 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[147,2]; //undefined sinal: YS2B12_P59_02;
-   Q4.6 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[151,5]; //undefined sinal: YS2B12_P87_02;
-   Q13.2 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[107,4]; //undefined sinal: YS2B12_STUS_02;
-   Q6.1 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[177,1]; //Posição Chave Terra  - M-B-533501B; sinal: YS2B7_P47_02;
-   Q6.4 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[177,3]; //Proteção Func. 49 - M-B-533501B; sinal: YS2B7_P50_02;
-   Q6.7 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[177,5]; //Proteção Func. 37 - M-B-533501B; sinal: YS2B7_P66_02;
-   Q7.0 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[181,0]; //Proteção Func. 46 - M-B-533501B; sinal: YSHL2B7_02;
-   Q7.1 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[181,1]; //Proteção Func. 27 - M-B-533501B; sinal: YS2B7_RD_02;
-   Q7.2 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[181,2]; //Proteção Func. 50GS - M-B-533501B; sinal: YS2B7_TEST_02;
-   Q7.3 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[181,3]; //Proteção Func. 48 - M-B-533501B; sinal: YS2B7_P86_02;
-   Q7.4 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[181,5]; //Proteção Func. 59 - M-B-533501B; sinal: YS2B7_CTER_02;
-   Q6.3 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[191,3]; //Proteção Func. 87 - M-B-533501B; sinal: YS2B7_P49_02;
-   Q7.6 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[195,4]; //STATUS RELE 04; sinal: YS2B7_P37_02;
-   Q6.0 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[194,1]; //undefined sinal: YS2B7_P46_02;
-   Q7.5 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[194,6]; //undefined sinal: YS2B7_P27_02;
-   Q6.5 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[196,4]; //undefined sinal: YS2B7_P50G_02;
-   Q6.2 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[199,2]; //undefined sinal: YS2B7_P48_02;
-   Q7.7 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[201,2]; //undefined sinal: YS2B7_P59_02;
-   Q6.6 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[205,5]; //undefined sinal: YS2B7_P87_02;
-   Q13.3 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[153,4]; //undefined sinal: YS2B7_STUS_02;
-   Q8.1 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[231,1]; //Posição Chave Terra  - M-B-512401D; sinal: YS2B6_P47_02;
-   Q8.4 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[231,3]; //Proteção Func. 49 - M-B-512401D; sinal: YS2B6_P50_02;
-   Q8.7 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[231,5]; //Proteção Func. 37 - M-B-512401D; sinal: YS2B6_P66_02;
-   Q9.0 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[235,0]; //Proteção Func. 46 - M-B-512401D; sinal: YSHL2B6_02;
-   Q9.1 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[235,1]; //Proteção Func. 27 - M-B-512401D; sinal: YS2B6_RD_02;
-   Q9.2 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[235,2]; //Proteção Func. 50GS - M-B-512401D; sinal: YS2B6_TEST_02;
-   Q9.3 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[235,3]; //Proteção Func. 48 - M-B-512401D; sinal: YS2B6_P86_02;
-   Q9.4 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[235,5]; //Proteção Func. 59 - M-B-512401D; sinal: YS2B6_CTER_02;
-   Q8.3 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[237,3]; //Proteção Func. 87 - M-B-512401D; sinal: YS2B6_P49_02;
-   Q9.6 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[241,4]; //STATUS RELE 05; sinal: YS2B6_P37_02;
-   Q8.0 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[240,1]; //undefined sinal: YS2B6_P46_02;
-   Q9.5 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[240,6]; //undefined sinal: YS2B6_P27_02;
-   Q8.5 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[242,4]; //undefined sinal: YS2B6_P50G_02;
-   Q8.2 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[245,2]; //undefined sinal: YS2B6_P48_02;
-   Q9.7 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[247,2]; //undefined sinal: YS2B6_P59_02;
-   Q8.6 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[251,5]; //undefined sinal: YS2B6_P87_02;
-   Q13.4 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[207,4]; //undefined sinal: YS2B6_STUS_02;
-   Q10.1 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[277,1]; //Posição Chave Terra  - M-B-512401B; sinal: YS2B5_P47_02;
-   Q10.4 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[277,3]; //Proteção Func. 49 - M-B-512401B; sinal: YS2B5_P50_02;
-   Q10.7 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[277,5]; //Proteção Func. 37 - M-B-512401B; sinal: YS2B5_P66_02;
-   Q11.0 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[279,0]; //Proteção Func. 46 - M-B-512401B; sinal: YSHL2B5_02;
-   Q11.1 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[279,1]; //Proteção Func. 50GS - M-B-512401B; sinal: YS2B5_RD_02;
-   Q11.2 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[279,2]; //Proteção Func. 27 - M-B-512401B; sinal: YS2B5_TEST_02;
-   Q11.3 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[279,3]; //Proteção Func. 48 - M-B-512401B; sinal: YS2B5_P86_02;
-   Q11.4 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[279,5]; //Proteção Func. 59 - M-B-512401B; sinal: YS2B5_CTER_02;
-   Q10.3 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[289,3]; //Proteção Func. 51 - M-B-512401B; sinal: YS2B5_P49_02;
-   Q11.6 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[293,4]; //STATUS RELE 06; sinal: YS2B5_P37_02;
-   Q10.0 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[292,1]; //undefined sinal: YS2B5_P46_02;
-   Q10.5 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[294,4]; //undefined sinal: YS2B5_P50G_02;
-   Q11.5 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[292,6]; //undefined sinal: YS2B5_P27_02;
-   Q10.2 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[297,2]; //undefined sinal: YS2B5_P48_02;
-   Q11.7 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[299,2]; //undefined sinal: YS2B5_P59_02;
-   Q10.6 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[303,5]; //undefined sinal: YS2B5_P51_02;
-   Q13.5 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[253,4]; //undefined sinal: YS2B5_STUS_02;
+   Q10.1 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[25,1]; //Posição Chave Terra  - M-B-512401B; sinal: YS2B5_P47_02;
+   Q10.4 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[25,3]; //Proteção Func. 49 - M-B-512401B; sinal: YS2B5_P50_02;
+   Q10.7 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[25,5]; //Proteção Func. 37 - M-B-512401B; sinal: YS2B5_P66_02;
+   Q11.0 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[29,0]; //Proteção Func. 46 - M-B-512401B; sinal: YSHL2B5_02;
+   Q11.1 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[29,1]; //Proteção Func. 50GS - M-B-512401B; sinal: YS2B5_RD_02;
+   Q11.2 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[29,2]; //Proteção Func. 27 - M-B-512401B; sinal: YS2B5_TEST_02;
+   Q11.3 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[29,3]; //Proteção Func. 48 - M-B-512401B; sinal: YS2B5_P86_02;
+   Q11.4 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[29,5]; //Proteção Func. 59 - M-B-512401B; sinal: YS2B5_CTER_02;
+   Q10.3 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[39,3]; //Proteção Func. 51 - M-B-512401B; sinal: YS2B5_P49_02;
+   Q11.6 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[43,4]; //STATUS RELE 06; sinal: YS2B5_P37_02;
+   Q10.0 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[42,1]; //undefined sinal: YS2B5_P46_02;
+   Q10.5 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[44,4]; //undefined sinal: YS2B5_P50G_02;
+   Q11.5 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[42,6]; //undefined sinal: YS2B5_P27_02;
+   Q10.2 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[47,2]; //undefined sinal: YS2B5_P48_02;
+   Q11.7 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[49,2]; //undefined sinal: YS2B5_P59_02;
+   Q10.6 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[53,5]; //undefined sinal: YS2B5_P51_02;
+   Q13.5 := WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DX[1,4]; //undefined sinal: YS2B5_STUS_02;
 
 
    tmp1 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DD[2])/1000;
    tmp2 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DD[6])/1000;
    tmp3 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DD[10])/1000;
-   QW16 := DINT_TO_WORD((tmp1 + tmp2 + tmp3 )/3);//  Analógicas - Média entre fases - M-B-UT-Z-125101-01D
-
-   tmp1 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DD[56])/1000;
-   tmp2 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DD[60])/1000;
-   tmp3 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DD[64])/1000;
-   QW22 := DINT_TO_WORD((tmp1 + tmp2 + tmp3 )/3);//  Analógicas - Média entre fases - M-B-UT-Z-125101-01B
-
-   tmp1 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DD[108])/1000;
-   tmp2 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DD[112])/1000;
-   tmp3 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DD[116])/1000;
-   QW28 := DINT_TO_WORD((tmp1 + tmp2 + tmp3 )/3);//  Analógicas - Média entre fases - SPARE
-
-   tmp1 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DD[154])/1000;
-   tmp2 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DD[158])/1000;
-   tmp3 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DD[162])/1000;
-   QW34 := DINT_TO_WORD((tmp1 + tmp2 + tmp3 )/3);//  Analógicas - Média entre fases - M-B-533501B
-
-   tmp1 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DD[208])/1000;
-   tmp2 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DD[212])/1000;
-   tmp3 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DD[216])/1000;
-   QW40 := DINT_TO_WORD((tmp1 + tmp2 + tmp3 )/3);//  Analógicas - Média entre fases -  M-B-512401D
-
-   tmp1 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DD[254])/1000;
-   tmp2 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DD[258])/1000;
-   tmp3 := DWORD_TO_DINT(WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DD[262])/1000;
    QW46 := DINT_TO_WORD((tmp1 + tmp2 + tmp3 )/3);//  Analógicas - Média entre fases -  M-B-512401B
 
    tmp1 := REAL_TO_DINT(DWORD_TO_REAL(WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DD[14]));
-   QW18 := DINT_TO_WORD(tmp1);//Analógicas - Potencia Ativa - M-B-UT-125101-01D
-
-   tmp2 := REAL_TO_DINT(DWORD_TO_REAL(WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DD[20]));
-   QW20 := DINT_TO_WORD(tmp2);//Analógicas - Potencia Reativa  - M-B-UT-125101-01D
-
-   tmp1 := REAL_TO_DINT(DWORD_TO_REAL(WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DD[68]));
-   QW24 := DINT_TO_WORD(tmp1);//Analógicas - Potencia Ativa - M-B-UT-125101-01B
-
-   tmp2 := REAL_TO_DINT(DWORD_TO_REAL(WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DD[72]));
-   QW26 := DINT_TO_WORD(tmp2);//Analógicas - Potencia Reativa  - M-B-UT-125101-01B
-
-   tmp1 := REAL_TO_DINT(DWORD_TO_REAL(WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DD[120]));
-   QW30 := DINT_TO_WORD(tmp1);//Analógicas - Potencia Ativa - SPARE
-
-   tmp2 := REAL_TO_DINT(DWORD_TO_REAL(WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DD[126]));
-   QW32 := DINT_TO_WORD(tmp2);//Analógicas - Potencia Reativa  - SPARE
-
-   tmp1 := REAL_TO_DINT(DWORD_TO_REAL(WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DD[166]));
-   QW36 := DINT_TO_WORD(tmp1);//Analógicas - Potencia Ativa - M-B-533501B
-
-   tmp2 := REAL_TO_DINT(DWORD_TO_REAL(WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DD[172]));
-   QW38 := DINT_TO_WORD(tmp2);//Analógicas - Potencia Reativa  - M-B-533501B
-
-   tmp1 := REAL_TO_DINT(DWORD_TO_REAL(WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DD[220]));
-   QW42 := DINT_TO_WORD(tmp1);//Analógicas - Potencia Ativa - M-B-512401D
-
-   tmp2 := REAL_TO_DINT(DWORD_TO_REAL(WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DD[226]));
-   QW44 := DINT_TO_WORD(tmp2);//Analógicas - Potencia Reativa  - M-B-512401D
-
-   tmp1 := REAL_TO_DINT(DWORD_TO_REAL(WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DD[266]));
    QW48 := DINT_TO_WORD(tmp1);//Analógicas - Potencia Ativa - M-B-512401B
 
-   tmp2 := REAL_TO_DINT(DWORD_TO_REAL(WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DD[272]));
+   tmp2 := REAL_TO_DINT(DWORD_TO_REAL(WORD_TO_BLOCK_DB(INT_TO_WORD(303)).DD[20]));
    QW50 := DINT_TO_WORD(tmp2);//Analógicas - Potencia Reativa  - M-B-512401B
 
 
